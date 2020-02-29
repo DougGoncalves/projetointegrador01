@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+    font-family: 'Roboto' Verdana Tahoma, sans-serif;  
+}
+
+#logoLogin {
+    position: absolute;
+    z-index: 2;
+    margin-top: 5px; 
+    top: 5px;
+    left: 10px;
+    width: 170px;
+    height: 140px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 0.6;
+}
+
+#fundo {
+    position: relative; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100vw;
+    height: 100vh;
+    background: url('../Galeria/imageDB/Cidades/saopaulo_ponteestaiada.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+} 
+  
+.container {
+    height: 100%;
+    align-content: center;    
+    }
+    
+.card {
+    background-color:rgba(116,127,155, 0.5);
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 550px;
+    text-align: center;
+    
+    } 
+    
+.card-header h3 {
+    /* color: #0F0101; */
+    color: white;
+    }
+
+.card-header h4 {
+    /* color:  #0F0101; */
+    color: white;
+    font-size: 14px;
+    }
+    
+.card-footer a {
+    color: white;
+    margin-bottom: 15px;
+}
+    
+.input-group-prepend span {
+    height: 40px;
+    background-color:#2A6FE8;
+    /* color: #707070; */
+    color: white;
+    border:0;
+}
+
+#btn-TelaLogin {
+    width: 130px;
+    height: 35px;
+    border-radius: 8px;
+    text-align: center;
+    font: Bold 23px/27px Roboto;
+    color: #FFF;
+    background: #4A2AEB 0% 0% no-repeat padding-box;
+    border: #fff 1px;
+}
+
+#btn-TelaLogin:hover {
+    color: black;
+}
+
+.user-click, .pass-click{
+    margin-bottom: 0;
+}
+
+/*--------------------------------RESPONSIVIDADE------------------------------*/
+/*---------------------------------EXTRA SMALL--------------------------------*/
+@media only screen and (min-width:300px) and (max-width:414px) {
+    #logoLogin {
+            width:98px;
+            height: 80px;
+            margin-top: 4px;
+    }
+}
+
+/*----------------------------------SMALL-------------------------------------*/
+@media only screen and (min-width:415px) and (max-width: 576px) {
+    #logoLogin {
+        width:98px;
+        height: 80px;
+        margin-top: 4px;
+    }
+}
+
+/*---------------------------------MEDIUM-------------------------------------*/
+@media only screen and (min-width:577px) and (max-width: 767px) {
+    #logoLogin {
+        width: 118px;
+        height: 100px;
+        margin-top: 6px;
+    }
+}
+
+/*---------------------------------LARGE--------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    #logoLogin {
+        width: 140px;
+        height: 122px;
+        margin-top: 8px;
+    }
+}
+
+/*------------------------------EXTRA-LARGE-----------------------------------*/
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    #logoLogin {
+        top: 5px;
+        left: 10px;
+        width: 200px;
+        height: 170px;
+    }
+
+    .card {
+        background-color:rgba(116,127,155, 0.5);
+        height: 450px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 600px;
+        text-align: center;
+    } 
+    
+
+}

@@ -1,0 +1,3386 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+}
+/*===========================Composição Header================================*/
+nav {
+    height: 150px;
+    width: 100%;
+    background: transparent linear-gradient(85deg, #8A2EFF 0%, #4A2AEB 38%, #3B4EFF 100%);
+}
+#logo{
+    margin-top: -12px;
+    left: 23px;
+    width: 178px;
+    height: 160px;
+}
+nav ul {
+    position: relative;
+    margin-left: 250px;
+    margin-top: -45px;
+}
+nav ul li {
+    list-style: none;
+    font: Bold 22px 'Roboto';
+    display: inline-block;
+    padding-right: 130px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+}
+#cadastro {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 1290px;
+    margin-top: -130px;
+}
+#btn-login {
+    width: 130px;
+    height: 35px;
+    border-radius: 8px;
+    text-align: center;
+    font: Bold 23px 'Roboto';
+    color: #FFF;
+    background: #4A2AEB;
+    border: #fff 1px;
+    margin-left: 1260px;
+    position: absolute;
+    margin-top: -50px;
+}
+#busca{
+    position: absolute;
+    margin-left: 1240px;
+    margin-top: -92px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    text-align: center
+}
+#btn-busca {
+    width: 130px;
+    height: 35px;
+    border-radius: 8px;
+    text-align: center;
+    font: Bold 23px/27px 'Roboto';
+    color: #FFF;
+    background: #4A2AEB;
+    border: none;
+    position: absolute;
+    margin-left: 1090px;
+    margin-top: -110px;
+}
+/* ========================Composição do Slider Carrossel=====================*/
+#textoslider{
+    font-size:80px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left:160px;
+    margin-top:40px;
+    z-index:11;
+}
+.slider {
+    width:100%;
+    height:900px;
+    position: relative;
+    display: block;
+}
+.slider li {
+    list-style:none;
+    position: absolute;
+}
+.slider li img {
+    margin: auto;
+    width: 100%;
+    height: 630px;
+    vertical-align: top;
+    transition: 1s;
+}
+.slider input {
+    display:none;
+}
+.slider label {
+    background-color: #FFF;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 6px;
+    opacity: 0.7;
+    position: absolute;
+    width: 40px;
+    z-index: 10;
+}
+.slider li:nth-child(1) label {
+    left: 650px;
+}
+.slider li:nth-child(2) label {
+    left: 700px;
+}
+.slider li:nth-child(3) label {
+    left: 750px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility:visible;
+    z-index: 10;
+}
+/*=============================== Composição seção o que fazer ? HOME=========*/
+.titulos{
+   font-family: 'Roboto';
+   font-weight: bold;
+   font-size: 67px;
+   position: relative;
+   margin: auto;
+   text-align: center;
+   margin-top: -200px;
+   margin-bottom:80px;
+}
+#fotoprincipal {
+    width: 700px;
+}
+#fotoprincipal:hover{
+    filter: blur(5px);
+}
+#iconemaior{
+    width:200px;
+    height:200px;
+    position: absolute;
+    left: 230px;
+    margin-top: 120px;
+}
+#titulomaior{
+    font-size: 32px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color:#fff;
+    position: absolute;
+    left:270px;
+    margin-top: -230px;
+}
+#iconecultura {
+    width: 150px;
+    height:150px;
+    position: absolute;
+    left: 830px;
+    margin-top:30px;
+}
+#tituloicon1{
+    font-size:26px;
+    font-family:'Roboto';
+    font-weight: bold;
+    color: #FFF;
+    position: absolute;
+    left: 830px;
+    margin-top:180px;
+}
+#iconecomida{
+    width: 130px;
+    height:130px;
+    position: absolute;
+    left: 840px;
+    margin-top:50px;
+}
+#tituloicon2{
+    font-size:26px;
+    font-family:'Roboto';
+    font-weight: bold;
+    color: #FFF;
+    position: absolute;
+    left: 855px;
+    margin-top:190px;
+}
+#iconeaventura{
+    width: 150px;
+    height:150px;
+    position: absolute;
+    left: 1170px;
+    margin-top:30px;
+}
+#tituloicon3{
+    font-size:26px;
+    font-family:'Roboto';
+    font-weight: bold;
+    color: #FFF;
+    position: absolute;
+    left: 1170px;
+    margin-top:180px;
+}
+#iconenatureza{
+    width: 150px;
+    height:150px;
+    position: absolute;
+    left: 1170px;
+    margin-top:50px;
+}
+#tituloicon4{
+    font-size:26px;
+    font-family:'Roboto';
+    font-weight: bold;
+    color: #FFF;
+    position: absolute;
+    left: 1170px;
+    margin-top:190px;
+}
+.container {
+    max-width: 650px;
+    margin-left: 720px;
+    margin-top: -581px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.miniaturas {
+    width:295px;
+    height: 275px;
+    margin: 5px;
+    margin-left: 20px;
+
+}
+.miniaturas:hover{
+    filter: blur(5px);
+}
+/*=============================Composição seção ONDE IR? HOME=================*/
+.titulomap, .titulo-carrinho{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 67px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.subtitulos{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size:32px;
+    position: relative;
+    margin-left:100px;
+    margin-bottom: 15px;
+}
+.expmapa{
+    font-size:20px;
+    font-family: 'Roboto';
+    color: grey;
+    position: relative;
+    margin-left: 100px;
+    max-width: 300px;
+    margin-bottom:80px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width:1000px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    right: 660px;
+    margin-top: 600px;
+    margin-bottom: 100px;
+    overflow: hidden;
+
+}
+.box .imgbx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.box:hover .imgbx img {
+    opacity:0;
+}
+.box .content {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height:60px;
+    background: #4A2AEB;
+    transition: 0.5s;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+.box:hover .content {
+    width: 100%;
+    height:100%;
+    bottom: 0;
+    left:0;
+}
+.box .content h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #fff;
+}
+.box .content p {
+    margin: 10px 0 0 0 ;
+    padding-rigth: 10px;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #fff;
+
+}
+.box:hover .content p {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.map {
+    position: relative;
+    top: 50%;
+    left: 75%;
+    margin-top:-500px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-family:'Roboto';
+    font-size: 12px;
+    width: 550px;
+    height: 615px;
+
+  }
+  .map .shape {
+    fill: grey;
+    transition: all 350ms linear;
+  }
+  .map .shape:hover {
+    fill: #3B4EFF;
+  }
+  .map .label-state {
+    fill: #FFF;
+  }
+  .map .icon-state {
+    fill: #bdc3c7;
+  }
+/*===================Composição seção COMPARTILHE HOME========================*/
+.subtitulofeed{
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size:26px;
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.ig {
+    width: 250px;
+    height:300px;
+    padding:8px;
+}
+.feedlinha1 {
+    margin-left:40px;
+}
+.feedlinha2 {
+    margin-bottom:100px;
+    margin-left:40px;
+}
+/*=======================Seção Clima - SUA VIAGEM ============================*/
+.clima, .chegar, .h1imperdivel, .titlebrasil, .titlehistoria, .titledestinos{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 67px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#fotoclima, #fotochegar, #fotobrasil, #fotohistoria{
+    width: 100%;
+    height:700px;
+}
+#opclima{
+    width:60%;
+    height:700px;
+    background:#fff;
+    opacity: 0.8;
+    position: absolute;
+    margin-top:-704px;
+}
+.tituloclima {
+    font-family: 'Roboto';
+    font-size: 2em;
+    margin-left: 50px;
+}
+.txtclima{
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    color: #000;
+    text-align: justify;
+    margin: 50px 50px 0 50px;
+}
+.txtclima2{
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    color: #000;
+    text-align: justify;
+    margin-left:50px;
+}
+/*=======================Seção Como Chegar - SUA VIAGEM ======================*/
+
+.opchegar{
+    width:60%;
+    height:700px;
+    background:#fff;
+    opacity: 0.8;
+    position: absolute;
+    margin-top:-704px;
+    right:0;
+}
+.txtchegar{
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    color: #000;
+    text-align: justify;
+    margin: 50px 50px 0 50px;
+}
+/*=======================Seção Imperdível - SUA VIAGEM =======================*/
+
+.containerimperdivel{
+    display:flex;
+    align-items: center;
+    font-family: 'Roboto';
+    width: 1000px;
+    position: relative;
+    justify-content: space-between;
+
+}
+.containerimperdivel .cardimperdivel{
+    position: relative;
+    margin-left:55px
+}
+.containerimperdivel .cardimperdivel .cara {
+    width: 400px;
+    height: 300px;
+    transition: 0.5s;
+}
+.containerimperdivel .cardimperdivel .cara.cara1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    transform:translateY(150px);
+}
+.containerimperdivel .cardimperdivel:hover .cara.cara1{
+    background:#8A2EFF;
+    transform:translateY(0px);
+}
+.containerimperdivel .cardimperdivel .cara.cara1 .contentimperdivel{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.containerimperdivel .cardimperdivel:hover .cara.cara1 .contentimperdivel{
+    opacity: 1;
+}
+.containerimperdivel .cardimperdivel:hover .cara.cara1 .contentimperdivel img{
+    max-width: 500px;
+}
+.containerimperdivel .cardimperdivel .cara.cara1 .contentimperdivel h3{
+    text-align:center;
+    font-size:2em;
+}
+
+.containerimperdivel .cardimperdivel:hover .cara.cara1 .contentimperdivel h3{
+    margin: 10px 0 0;
+    padding:0;
+    color: #333;
+    font-size:2.5em;
+}
+h3{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+.containerimperdivel .cardimperdivel .cara.cara2{
+    position: relative;
+    background: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    transform:translateY(-150px);
+}
+.containerimperdivel .cardimperdivel:hover .cara.cara2{
+    transform:translateY(0px);
+}
+.containerimperdivel .cardimperdivel .cara.cara2 .contentimperivel p {
+    margin: 0;
+    padding: 0;
+}
+.containerimperdivel .cardimperdivel .cara.cara2 .contentimperivel a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color:#333;
+    padding: 5px;
+    border-radius:6px;
+    align-self: auto;
+}
+.containerimperdivel .cardimperdivel .cara.cara2 .contentimperivel a:hover{
+    background: #3B4EFF;
+    color: #fff;
+}
+/*===========================Seção O BRASIL - CONHEÇA=========================*/
+#opbrasil{
+    width:100%;
+    height:200px;
+    background:#fff;
+    opacity: 0.8;
+    position: absolute;
+    margin-top:-454px;
+}
+.txtbrasil,.txthistoria{
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    color: #000;
+    text-align: justify;
+    margin: 50px 50px 0px 50px;
+}
+/*===========================Seção HISTÓRIA - CONHEÇA=========================*/
+
+#ophistoria{
+    width:100%;
+    height:750px;
+    background:#fff;
+    opacity: 0;
+    position: absolute;
+    margin-top:-750px;
+}
+#ophistoria:hover {
+    opacity: 0.90;
+    position: absolute;
+}
+/*===========================Seção DESTINOS- CONHEÇA==========================*/
+.containerdestinos{
+    display:flex;
+    font-family: 'Roboto';
+    min-height: 100vh;
+    margin: 0 10px 50px 10px;
+    margin-bottom: 150px;
+}
+.cardestinos{
+    position: absolute;
+    width:300px;
+    height: 400px;
+    background: #262626;
+    left: 35px;
+}
+input#checkdestinos, .toggled{
+    position: absolute;
+    width:  50px;
+    height: 50px;
+    bottom: 20px;
+    right:  20px;
+    outline: none;
+    z-index: 10;
+}
+input#checkdestinos{
+    opacity: 0;
+}
+.toggled{
+    pointer-events: none;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.5s;
+    text-align: center;
+    line-height: 50px;
+    font-size: 36px;
+    box-shadow: 0 0 0 0px #3B4EFF;
+}
+input#checkdestinos:checked ~ .toggled{
+    box-shadow: 0 0 0 500px #3B4EFF;
+    transform: rotate(225deg);
+}
+.imgBxdestinos, .detalhesdestinos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.detalhesdestinos {
+    padding: 20px;
+    box-sizing: border-box;
+    z-index:11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+input#checkdestinos:checked ~ .detalhesdestinos{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.detalhesdestinos .cardcalldestinos{
+    margin-bottom: 5px;
+    color: #FFF;
+
+}
+.detalhesdestinos .descdestinos{
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+}
+.cardestinos2{
+    position: relative;
+    width:300px;
+    height: 400px;
+    background: #262626;
+    left: 350px;
+}
+.cardestinos3{
+    position: relative;
+    width:300px;
+    height: 400px;
+    background: #262626;
+    left: 350px;
+}
+.cardestinos4{
+    position: relative;
+    width:300px;
+    height: 400px;
+    background: #262626;
+    left: 350px;
+}
+.cardestinos5{
+    position: relative;
+    width:300px;
+    height: 400px;
+    background: #262626;
+    right: 700px;
+    top:450px;
+}
+.cardestinos6{
+    position: relative;
+    width:300px;
+    height: 400px;
+    background: #262626;
+    left:350px;
+}
+/*================= Composição EXPERIENCIAS - Seção Escolha===================*/
+#fotoescolha {
+    width:100%;
+    height: 700px;
+    position: relative;
+    margin-bottom: 50px;
+    z-index:1;
+}
+#ttescolhaexp{
+    font-family: 'Roboto';
+    color: #fff;
+    position: relative;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: -40px;
+    z-index:10;
+    padding:0;
+    padding-top:30px;
+}
+.callexp{
+    background: #747F9B 0% 0% no-repeat padding-box;
+    opacity: 0.9;
+    width: 700px;
+    height: 348px;
+    border-radius: 10px;
+    position: relative;
+    align-self: center;
+    margin-top: -550px;
+    z-index:11;
+    left: 360px;
+    margin-bottom: 200px;
+}
+#btnaven {
+    font-family:'Roboto';
+    font-size: 22px;
+    list-style:none;
+    font-weight: bold;
+    color:#fff;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    background-color: #2a6fe8;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-left:150px;
+    margin-top: 120px;
+}
+#btncid {
+    font-family:'Roboto';
+    font-size: 22px;
+    list-style:none;
+    font-weight: bold;
+    color:#fff;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    background-color: #2a6fe8;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 120px;
+
+}
+#btngas{
+    font-family:'Roboto';
+    font-size: 22px;
+    list-style:none;
+    font-weight: bold;
+    color:#fff;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    background-color: #2a6fe8;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 120px;
+}
+#btncult{
+    font-family:'Roboto';
+    font-size: 22px;
+    list-style:none;
+    font-weight: bold;
+    color:#fff;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    background-color: #2a6fe8;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-left: 90px;
+}
+#btnnat {
+    font-family:'Roboto';
+    font-size: 22px;
+    list-style:none;
+    font-weight: bold;
+    color:#fff;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    background-color: #2a6fe8;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+#btnvid {
+    font-family:'Roboto';
+    font-size: 22px;
+    list-style:none;
+    font-weight: bold;
+    color:#fff;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    background-color: #2a6fe8;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+/*=================Composição EXPERIENCIAS - Seção Ofertas====================*/
+#ttofertasexp, #ttaproveiteexp, #ttviajantesexp{
+    font-family: 'Roboto';
+    position: relative;
+    font-size: 32px;
+    left: 40px;
+    margin-bottom: 50px;
+}
+.carrosselexp {
+    margin-bottom: -120px;
+}
+.imagenssliderexp {
+    display: block;
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.imagenssliderexp  li{
+   list-style: none;
+   position: absolute;
+}
+.imagenssliderexp  img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    vertical-align: top;
+}
+.imagenssliderexp input {
+    display:none;
+}
+.imagenssliderexp label {
+    background-color: #fff;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+    border-radius: 50%;
+}
+.imagenssliderexp li:nth-child(1) label {
+    left: 650px;
+}
+.imagenssliderexp li:nth-child(2) label {
+    left: 700px;
+}
+.imagenssliderexp li:nth-child(3) label {
+    left: 750px;
+}
+.imagenssliderexp img {
+    opacity: 0;
+    visibility: hidden;
+}
+.imagenssliderexp li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    color: #333;
+}
+/*=================Composição EXPERIENCIAS - Seção Aproveite==================*/
+.aproveitecta {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    left: 50px;
+}
+.aprovfoto {
+    margin-right: 35px;
+    margin-bottom: 35px;
+    margin-left: 30px;
+}
+.aprovfoto:hover{
+    filter: blur(5px);
+}
+#iconeaventaprov{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left:230px;
+    top: 100px;
+}
+#ttaventaprov {
+    position: absolute;
+    left:230px;
+    top: 300px;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight:bold;
+    color: #fff;
+}
+#iconecidaprov{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left:880px;
+}
+#ttcidaprov{
+    position: absolute;
+    top: 320px;
+    left:900px;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight:bold;
+    color: #fff;
+}
+#iconcultaprov {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left:230px;
+    bottom: 250px;
+}
+#ttcultaprov{
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight:bold;
+    color: #fff;
+    left:230px;
+    bottom: 200px;
+}
+#iconnoturaprov{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 250px;
+    left:880px;
+}
+#ttnoturaprov{
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight:bold;
+    color: #fff;
+    bottom: 190px;
+    left:860px;
+}
+/*=================Composição EXPERIENCIAS - Seção Depoimentos================*/
+#fotoviajanteexp {
+    width: 100%;
+    position: relative;
+}
+.cardviajante{
+    max-width: 500px;
+    height: 150px;
+    background:#fff;
+    opacity: 0.8;
+    position: relative;
+    top: -900px;
+    left:60px;
+    margin-bottom: 20px;
+}
+#testmpic1, #testmpic2, #testmpic3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 10px 10px 10px;
+}
+#testm1, #testm2, #testm3 {
+    font-family: 'Roboto';
+    color: #555;
+    font-style: italic;
+    position: absolute;
+    left: 130px;
+    margin-top: -100px;
+}
+#testmname1, #testmname2, #testmname3{
+    font-family: 'Roboto';
+    color: #555;
+    font-style: italic;
+    position: absolute;
+    left: 350px;
+    word-wrap: break-word;
+}
+
+.inscrevaexp {
+    background:  #A0A8B8 0% 0% no-repeat padding-box;
+    opacity: 0.9;
+    width:700px;
+    height: 230px;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+    left: 400px;
+    top: -780px;
+    margin-bottom: 50px;
+}
+#inscrevactaexp {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight:bold;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+#inscrevamailexp {
+    height: 30px;
+    width: 600px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    left: 45px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+#inscrevamailexp::-webkit-input-placeholder{
+    text-align: center;
+    font-size: 1.8em;
+}
+#inscrevabtn{
+    font-family:'Roboto';
+    font-size: 22px;
+    font-weight: bold;
+    color:#fff;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    background-color: #2a6fe8;
+    border: none;
+    border-radius: 10px;
+    margin-left: 320px;
+    margin-top: 50px;
+}
+
+/*=================Composição EXPERIENCIAS - Seção Aventura===================*/
+#ttaventura{
+    font-family: 'Roboto';
+    position: relative;
+    font-size: 43px;
+    left: 40px;
+    text-align: center;
+    margin-top: -750px;
+    margin-bottom: 50px
+}
+.meioexp{
+    position:relative;
+    left:50%;
+    margin-left: 240px;
+    margin-right:40px;
+}
+.cardexp{
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
+}
+.frontexp, .backexp{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+.frontexp img {
+    height: 100%;
+}
+.backexp {
+    background: #fff;
+    transform: perspective(600px) rotateY(180deg);
+}
+.backexpe {
+    background: #fff;
+    transform: perspective(600px) rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+    left: -370px;
+}
+.backexpd{
+    background: #fff;
+    transform: perspective(600px) rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+    left: -360px;
+}
+.frontexp {
+    transform: perspective(600px) rotateY(0deg);
+}
+.backcontentexp{
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 1.3em;
+}
+.btnsaibaexp a{
+    background: #3B4EFF;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Roboto';
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    width: 140px;
+    margin-top:20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+.cardexp:hover > .frontexp{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.cardexp:hover > .backexp{
+    transform: perspective(600px) rotateY(0deg);
+}
+.cardexp:hover > .backexpe{
+    transform: perspective(600px) rotateY(0deg);
+}
+.cardexp:hover > .backexpd{
+    transform: perspective(600px) rotateY(0deg);
+}
+.esquerdaexp {
+    position:relative;
+    left: 120%;
+}
+.direitaexp{
+    position:relative;
+    left:10%;
+
+}
+/*Composição EXPERIENCIAS - Seção Cidades,Gastronomia,Cultura, Natureza,Vida Noturna*/
+#ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural {
+    font-family: 'Roboto';
+    position: relative;
+    font-size: 43px;
+    left: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top:50px;
+}
+/*===============================PRODUTO======================================*/
+/*======================Seção Descrição - Produto=============================*/
+.titleproddesc{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 56px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.carrosselproduto{
+    height:400px;
+    width: 580px;
+    margin:50px 20px 50px 50px;
+    position: relative;
+    overflow: hidden;
+}
+.fotoproduto{
+    position: absolute;
+    opacity: 0;
+    animation-name: animacaoprod;
+    animation-duration: 25s;
+    animation-iteration-count:infinite;
+}
+@keyframes animacaoprod{
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.fotoproduto:nth-child(1){
+
+}
+.fotoproduto:nth-child(2){
+    animation-delay: 5s;
+}
+.fotoproduto:nth-child(3){
+    animation-delay: 10s;
+}
+.fotoproduto:nth-child(4){
+    animation-delay: 15s;
+}
+.fotoproduto:nth-child(5){
+    animation-delay: 20s;
+}
+.txtprodutodesc{
+    width:645px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    margin-top: -450px;
+    margin-bottom: 40px;
+    margin-right: -40px;
+    text-align: justify
+}
+.txtprodutodescint{
+    font-size: 18px;
+}
+#btn-comprar-produto{
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: Bold;
+    color: #FFF;
+    background: #4A2AEB;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+/*======================Seção Relacionados - Produto==========================*/
+#titlerelacionados{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size:50px;
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: -90px;
+}
+
+/*===========================Composição do Footer=============================*/
+footer {
+    height: 256px;
+    width: 100%;
+    background-color: #868080;
+    position: relative;
+    bottom:0;
+    margin-top:20px;
+}
+#logofooter{
+    width:200px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top:140px;
+}
+.listafooter {
+    position: absolute;
+    margin-left:260px;
+    margin-top: 40px;
+}
+.listafooter li {
+    font-family: 'Roboto';
+    color: #fff
+    position: absolute;
+    bottom:0;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 40px;
+}
+
+.sublista {
+    font-family: 'Roboto'
+    font: 15px;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+}
+.sublista a:visited {
+    color:white;
+}
+.social {
+    font: 21px 'Roboto';
+    color: white;
+    position: relative;
+    margin-left: 1160px;
+    bottom: 0;
+}
+#cta{
+    position: absolute;
+    z-index:1;
+    left: 18px;
+    margin-top: 150px;
+}
+.redessociais li{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding-top: 200px;
+
+}
+.redessociais li a{
+    z-index:10;
+}
+
+#copy{
+    font: 12px italic;
+    font-family: 'Roboto';
+    color:white;
+    position: absolute;
+    margin-left:650px;
+}
+/*--------------------------------RESPONSIVIDADE------------------------------*/
+/*---------------------------------EXTRA SMALL--------------------------------*/
+@media only screen and (min-width:375px) and (max-width:414px){
+    nav{
+        width: 100%;
+        height: 88px;
+    }
+    #logo{
+        width:98px;
+        height: 80px;
+        margin-top: 4px;
+    }
+    .chamadas{
+        position: absolute;
+        margin-top: 0px;
+        background: #8A2EFF;
+        opacity: 0.9;
+        right: 0;
+        z-index:12;
+        height: 0px;
+        overflow: hidden;
+    }
+    .chamadas--open{
+        height: auto;
+    }
+    nav ul li{
+        display: block;
+        border-bottom: 1px solid #fff;
+    }
+    nav ul li:hover, nav ul li:focus    {
+        background: #3B4EFF;
+    }
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    nav ul li a {
+        display: block;
+        padding: 35px;
+        text-transform: uppercase;
+    }
+    .menu-toggle{
+        position: absolute;
+        right: 1em;
+        top: 20px;
+        cursor: pointer;
+        padding: 20px;
+    }
+    .hamburger, .hamburger::before, .hamburger::after {
+        content: '';
+        display: block;
+        background: #fff;
+        height: 5px;
+        width: 3em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+    }
+    .hamburger::before{
+        transform: translateY(-10px);
+    }
+    .hamburger::after{
+        transform: translateY(5px);
+    }
+    .open .hamburger{
+        transform: rotate(45deg);
+    }
+    .open .hamburger::before{
+        opacity: 0;
+    }
+    .open .hamburger::after{
+        transform: translateY(-5px) rotate(-90deg);
+    }
+    #cadastro {
+        display:none;
+    }
+    #btn-login{
+        display: none;
+    }
+    #busca{
+        display:none;
+    }
+    #btn-busca{
+        display:none;
+    }
+/*-----------------------------------HOME-------------------------------------*/
+#textoslider{
+    font-size:24px;
+    left: 15px;
+}
+.slider li:nth-child(1) label{
+    left: 115px;
+}
+.slider li:nth-child(2) label{
+    left: 165px;
+}
+.slider li:nth-child(3) label{
+    left: 215px;
+}
+.titulos{
+    font-size: 45px;
+}
+#fotoprincipal{
+    display:none;
+}
+#iconemaior{
+    display: none;
+}
+#titulomaior{
+    display: none;
+}
+.container {
+    max-width: 509px;
+    margin-left: -140px;
+    margin-top: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.miniaturas {
+    width:290px;
+    height:270px;
+    margin-left:185px;
+}
+#iconecultura{
+    left:130px;
+    margin-top: -270px;
+}
+#tituloicon1{
+    left:130px;
+    margin-top: -120px;
+}
+#iconecomida{
+    left:120px;
+    margin-top: -230px;
+}
+#tituloicon2{
+    left: 136px;
+    margin-top: -80px;
+}
+#iconeaventura{
+    left: 120px;
+    margin-top: -260px;
+}
+#tituloicon3{
+    left: 120px;
+    margin-top: 470px;
+}
+#iconenatureza{
+    left:120px;
+    margin-top:-260px;
+}
+#tituloicon4{
+    left:130px;
+    margin-top: -110px;
+}
+.titulomap {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.subtitulos {
+    margin: auto;
+    text-align: center;
+}
+.expmapa{
+    margin:auto;
+    text-align: center;
+    color: grey;
+    margin-bottom: 30px;
+}
+.interactive{
+   box-sizing: border-box;
+}
+.cards{
+    display: none;
+}
+.map{
+    margin-top: 210px;
+    left:50%;
+    width: 360px;
+    height: 365px;
+}
+.subtitulofeed{
+    font-size: 20px;
+    margin-top: -140px;
+    margin-left: 5px;
+}
+.feedlinha1{
+    margin-left: 55px;
+}
+.feedlinha2{
+    display: none;
+}
+/*-----------------------------------CONHEÇA----------------------------------*/
+.titlebrasil,.titlehistoria,.titledestinos,.clima,.chegar,.h1imperdivel{
+    font-size: 45px;
+}
+#fotobrasil,#fotohistoria, #fotoclima, #fotochegar{
+    height: 400px;
+}
+#opbrasil{
+    height: 250px;
+    margin-top: -334px;
+    overflow:scroll;
+}
+#ophistoria{
+    height: 405px;
+    margin-top:-405px;
+    overflow:scroll;
+}
+.txtbrasil, .txthistoria{
+    margin: 10px 10px 10px 10px;
+}
+.containerdestinos{
+    margin: 0 0 0 -20px;
+}
+.cardestinos{
+    width: 300px;
+    height:400px;
+    left:10%;
+}
+.cardestinos2,.cardestinos3,.cardestinos4,.cardestinos5,.cardestinos6{
+    display:none;
+}
+/*---------------------------------SUA VIAGEM---------------------------------*/
+#opclima{
+    height: 405px;
+    margin-top: -405px;
+    overflow: scroll;
+}
+.txtclima, .txtchegar{
+    font-size: 16px;
+    margin:20px;
+}
+.txtclima2{
+    margin-left:10px;
+    font-size: 16px;
+}
+.tituloclima{
+    margin-left: 10px;
+}
+.opchegar{
+    height:405px;
+    margin-top:-405px;
+    overflow: scroll;
+}
+.containerimperdivel .cardimperdivel .cara {
+    width: 375px;
+    height: 280px;
+}
+.containerimperdivel .cardimperdivel .cara img{
+    width: 375px;
+    transform:translateY(0px);
+}
+.cardimperdivel{
+    margin-top: -80px;
+    left:-58px;
+}
+.cardimperdivel:nth-child(2){
+    display:none;
+}
+.cardimperdivel:last-child{
+    display:none;
+}
+/*==================================PRODUTO===================================*/
+.titleproddesc{
+    margin-left:8px;
+    font-size: 32px;
+}
+.carrosselproduto{
+    margin-left: 0px;
+    height:300px;
+    width:380px;
+}
+.txtprodutodesc{
+   text-align: justify;
+   left: 5px;
+   width: 360px;
+   font-size: 14px;
+   margin-top:50px;
+}
+#btn-comprar-produto{
+    margin-top:20px;
+    margin-right: 110px;
+}
+#titlerelacionados{
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+.containerimperdivel{
+    width: 375px;
+}
+/*--------------------------------EXPERIÊNCIAS-------------------------------------*/
+/* foto principal */
+#fotoescolha{
+    width: 100%;
+    height: 435px;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+/* box chamada experiências */
+.callexp{
+    width:350px;
+    height: 300px;
+    margin-top: -400px;
+    margin-left: -348px;
+}
+#ttescolhaexp {
+    font-size: 18px;
+}
+#btnaven{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+#btncid{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 210px;
+}
+#btngas{
+    position: absolute;
+    margin-left: 100px;
+}
+#btncult{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 75px;
+}
+#btnnat{
+margin-top: 220px;
+margin-left: 32px;
+}
+#btnvid{
+    position: absolute;
+    margin-top: 220px;
+}
+/* títulos */
+#ttofertasexp, #ttviajantesexp{
+    font-size: 32px;
+    margin-top: -80px;
+    left: 45px;
+}
+.imagenssliderexp img{
+    height: 250px;
+}
+.imagenssliderexp li:nth-child(1) label {
+    left: 150px;
+}
+.imagenssliderexp li:nth-child(2) label {
+    left: 185px;
+}
+.imagenssliderexp li:nth-child(3) label {
+    left: 220px;
+}
+#ttaproveiteexp{
+  left: 10px;
+  top: -270px;
+}
+.aproveitecta{
+    flex-flow: column nowrap;
+    margin-top: -270px;
+    left: 12px;
+    margin-bottom: 100px;
+}
+.aprovfoto {
+    width: 290px;
+    height: 270px;
+}
+#iconeaventaprov{
+    left: 80px;
+    top: 10px;
+}
+#ttaventaprov{
+    left: 80px;
+    top: 210px;
+}
+#iconecidaprov{
+    left: 75px;
+    top: 320px;
+}
+#ttcidaprov {
+    left: 105px;
+    top: 530px;
+}
+#iconcultaprov{
+    left: 80px;
+    top: 620px;
+}
+#ttcultaprov{
+    left: 90px;
+    top: 820px;
+}
+#iconnoturaprov{
+    left: 80px;
+    top: 940px;
+}
+#ttnoturaprov{
+    left: 45px;
+    top: 1145px;
+}
+#ttviajantesexp{
+    margin-right: 40px;
+    left: 25px;
+}
+#fotoviajanteexp{
+    height: 400px;
+    margin-bottom: 140px;
+}
+.cardviajante{
+    max-width: 350px;
+    height: 115px;
+    left: 13px;
+    top: -535px;
+}
+#testmpic1, #testmpic2, #testmpic3 {
+    width: 75px;
+    height: 75px;
+}
+#testm1, #testm2, #testm3 {
+    left: 110px;
+    font-size: 14px;
+}
+#testmname1, #testmname2, #testmname3{
+    font-size: 14px;
+    left: 280px;
+    margin-top: -20px;
+}
+.inscrevaexp {
+    width: 350px;
+    height: 200px;
+    left: 13px;
+    top: -520px;
+    margin-bottom: 280px;
+}
+#inscrevactaexp{
+    font-size: 18px;
+}
+#inscrevamailexp{
+    width: 300px;
+    left: 25px;
+}
+#inscrevabtn {
+    margin-left: 140px;
+    margin-top: 20px;
+}
+#ttaventura{
+    left: 0px;
+}
+.meioexp {
+    display: none;
+}
+.esquerdaexp {
+    display: none;
+}
+.backexp {
+    left: -15px;
+}
+.direitaexp{
+    left: 4.5%;
+}
+#ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
+    left: 0px;
+}
+/*-----------------------------------FOOTER-----------------------------------*/
+    footer{
+        height: 40px;
+        width: 100%;
+        background-color: #868080;
+        position: relative;
+        bottom: 0;
+        margin-top: 20px;
+    }
+    #logofooter{
+        display: none;
+    }
+    .listafooter{
+        display:none;
+    }
+    .listafooter li{
+        display:none;
+    }
+    .sublista {
+        display:none;
+    }
+    .sublista a:visited{
+        display: none;
+    }
+    .social {
+        display: none;
+    }
+    #cta{
+        display: none;
+    }
+    .redessociais li{
+        display:none;
+    }
+    .redessociais li a{
+       display:none;
+    }
+    #copy {
+        font: 12px italic;
+        font-family: 'Roboto';
+        color: #fff;
+        position: absolute;
+        margin-top: 14px;
+        margin-left:130px;
+
+    }
+}
+/*----------------------------------SMALL-------------------------------------*/
+@media only screen and (min-width:415px) and (max-width: 576px){
+/*------------------------------------HEADER----------------------------------*/
+    nav{
+        width: 100%;
+        height: 88px;
+    }
+    #logo{
+        width:98px;
+        height: 80px;
+        margin-top: 4px;
+    }
+    .chamadas{
+        position: absolute;
+        margin-top: 0px;
+        background: #8A2EFF;
+        opacity: 0.9;
+        right: 0;
+        z-index:12;
+        height: 0px;
+        overflow: hidden;
+    }
+    .chamadas--open{
+        height: auto;
+    }
+    nav ul li{
+        display: block;
+        border-bottom: 1px solid #fff;
+    }
+    nav ul li:hover, nav ul li:focus    {
+        background: #3B4EFF;
+    }
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    nav ul li a {
+        display: block;
+        padding: 35px;
+        text-transform: uppercase;
+    }
+    .menu-toggle{
+        position: absolute;
+        right: 1em;
+        top: 20px;
+        cursor: pointer;
+        padding: 20px;
+    }
+    .hamburger, .hamburger::before, .hamburger::after {
+        content: '';
+        display: block;
+        background: #fff;
+        height: 5px;
+        width: 3em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+    }
+    .hamburger::before{
+        transform: translateY(-10px);
+    }
+    .hamburger::after{
+        transform: translateY(5px);
+    }
+    .open .hamburger{
+        transform: rotate(45deg);
+    }
+    .open .hamburger::before{
+        opacity: 0;
+    }
+    .open .hamburger::after{
+        transform: translateY(-5px) rotate(-90deg);
+    }
+    #cadastro {
+        display:none;
+    }
+    #btn-login{
+        display: none;
+    }
+    #busca{
+        display:none;
+    }
+    #btn-busca{
+        display:none;
+    }
+/*-----------------------------------HOME-------------------------------------*/
+    #textoslider{
+        font-size:38px;
+        left: 20px;
+    }
+    .slider li:nth-child(1) label{
+        left: 210px;
+    }
+    .slider li:nth-child(2) label{
+        left: 265px;
+    }
+    .slider li:nth-child(3) label{
+        left: 320px;
+    }
+    .titulos{
+        font-size: 45px;
+    }
+    #fotoprincipal{
+        display:none;
+    }
+    #iconemaior{
+        display: none;
+    }
+    #titulomaior{
+        display: none;
+    }
+    .container {
+        max-width: 509px;
+        margin-left: 35px;
+        margin-top: 0px;
+
+    }
+    .miniaturas {
+        width:230px;
+        height:210px;
+        margin:10px;
+    }
+    #iconecultura{
+        left:90px;
+        margin-top: 20px;
+    }
+    #tituloicon1{
+        left:100px;
+        margin-top: 160px;
+    }
+    #iconecomida{
+        left:100px;
+        margin-top: 30px;
+    }
+    #tituloicon2{
+        left: 120px;
+        margin-top: 170px;
+    }
+    #iconeaventura{
+        left: 350px;
+        margin-top: 20px;
+    }
+    #tituloicon3{
+        left: 355px;
+        margin-top: 160px;
+    }
+    #iconenatureza{
+        left:350px;
+        margin-top:20px;
+    }
+    #tituloicon4{
+        left:355px;
+        margin-top: 170px;
+    }
+    .titulomap {
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+    .subtitulos {
+        margin: auto;
+        text-align: center;
+    }
+    .expmapa{
+        margin:auto;
+        text-align: center;
+        color: grey;
+    }
+    .cards{
+        display: none;
+    }
+    .map{
+        margin-top: 290px;
+        left: 50%;
+    }
+    .subtitulofeed{
+        font-size: 20px;
+        margin-top: -140px;
+        margin-left: 10px;
+    }
+    .feedlinha1{
+        margin-left: 20px;
+    }
+    .feedlinha1 img:last-child{
+        display:none;
+    }
+    .feedlinha2{
+        margin-left: 20px;
+    }
+    .feedlinha2 img:last-child{
+        display:none;
+    }
+/*-----------------------------------CONHEÇA----------------------------------*/
+.titlebrasil,.titlehistoria,.titledestinos,.clima,.chegar,.h1imperdivel{
+    font-size: 45px;
+}
+#fotobrasil,#fotohistoria, #fotoclima, #fotochegar{
+    height: 400px;
+}
+#opbrasil{
+    height: 250px;
+    margin-top: -334px;
+}
+#ophistoria{
+    height: 405px;
+    margin-top:-405px;
+    overflow:scroll;
+}
+.txtbrasil, .txthistoria{
+    margin: 10px 10px 10px 10px;
+}
+.containerdestinos{
+    margin: auto;
+}
+.cardestinos{
+    width: 300px;
+    height:400px;
+    left:25%;
+}
+.cardestinos2,.cardestinos3,.cardestinos4,.cardestinos5,.cardestinos6{
+    display:none;
+}
+/*---------------------------------SUA VIAGEM---------------------------------*/
+#opclima{
+    height: 405px;
+    margin-top: -405px;
+    overflow: scroll;
+}
+.txtclima, .txtchegar{
+    margin:20px;
+}
+.txtclima2{
+    margin-left:20px;
+}
+.opchegar{
+    height:405px;
+    margin-top:-405px;
+    overflow: scroll;
+}
+.containerimperdivel{
+    width: 576px;
+}
+.cardimperdivel{
+    margin-top: -80px;
+    left:35px;
+}
+.cardimperdivel:nth-child(2){
+    display:none;
+}
+.cardimperdivel:last-child{
+    display:none;
+}
+/*==================================PRODUTO===================================*/
+.titleproddesc{
+    margin-left: 10px;
+}
+.carrosselproduto{
+    height:300px;
+    width:480px;
+    margin-right: 0px;
+}
+.txtprodutodesc{
+   text-align: justify;
+   left: 50px;
+   width: 480px;
+   margin-top:50px;
+}
+#titlerelacionados{
+    margin-bottom: 50px;
+    margin-left: 130px;
+}
+/*--------------------------------EXPERIÊNCIAS--------------------------------*/
+#fotoescolha{
+    height: 440px;
+}
+.callexp{
+    width: 500px;
+    height: 330px;
+    margin-top: -435px;
+    margin-left: -323px;
+}
+#btnaven{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+#btncid{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 180px;
+}
+#btngas {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 300px;
+}
+#btncult{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 90px;
+}
+#btnnat{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 305px;
+}
+#btnvid{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 175px;
+}
+#ttofertasexp, #ttviajantesexp{
+    font-size: 32px;
+    margin-top: -100px;
+    left: 30px;
+}
+.imagenssliderexp img{
+    height: 386px;
+}
+.imagenssliderexp li:nth-child(1) label {
+    left: 251px;
+}
+.imagenssliderexp li:nth-child(2) label {
+    left: 283px;
+}
+.imagenssliderexp li:nth-child(3) label {
+    left: 315px;
+}
+#ttaproveiteexp{
+    left: 55px;
+    top: -140px;
+}
+.aproveitecta{
+    flex-flow: column nowrap;
+    left: 5px;
+    margin-top: -140px;
+    margin-bottom: 100px;
+}
+#iconeaventaprov{
+    left: 190px;
+    top: 110px;
+}
+#ttaventaprov{
+    left: 190px;
+    top: 310px;
+}
+#iconecidaprov{
+    left: 180px;
+    top: 670px;
+}
+#ttcidaprov {
+    left: 200px;
+    top: 900px;
+}
+#iconcultaprov{
+    left: 190px;
+    top: 1260px;
+}
+#ttcultaprov{
+    left: 190px;
+    top: 1480px;
+}
+#iconnoturaprov{
+    left: 190px;
+    top: 1800px;
+}
+#ttnoturaprov{
+    left: 160px;
+    top: 2020px;
+}
+#fotoviajanteexp{
+    height: 500px;
+    margin-bottom: 140px;
+}
+.cardviajante{
+    top: -640px;
+    left: 40px;
+}
+.inscrevaexp {
+    width: 550px;
+    height: 250px;
+    left: 13px;
+    top: -620px;
+    margin-bottom: 280px;
+}
+#inscrevamailexp{
+    width: 500px;
+    left: 25px;
+}
+#inscrevabtn {
+    margin-left: 235px;
+    margin-top: 20px;
+}
+#ttaventura{
+    top: -80px;
+    left: 5px;
+    margin-bottom: -30px;
+}
+#ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
+    left: 5px;
+}
+.meioexp {
+    display: none;
+}
+.esquerdaexp {
+    display: none;
+}
+.direitaexp{
+    left: 20.5%;
+}
+.backexp {
+    left: -70px;
+}
+/*-----------------------------------FOOTER-----------------------------------*/
+    footer{
+        height: 40px;
+        width: 100%;
+        background-color: #868080;
+        position: relative;
+        bottom: 0;
+        margin-top: 20px;
+    }
+    #logofooter{
+        display: none;
+    }
+    .listafooter{
+        display:none;
+    }
+    .listafooter li{
+        display:none;
+    }
+    .sublista {
+        display:none;
+    }
+    .sublista a:visited{
+        display: none;
+    }
+    .social {
+        display: none;
+    }
+    #cta{
+        display: none;
+    }
+    .redessociais li{
+        display:none;
+    }
+    .redessociais li a{
+       display:none;
+    }
+    #copy {
+        font: 12px italic;
+        font-family: 'Roboto';
+        color: #fff;
+        position: absolute;
+        margin-top: 14px;
+        margin-left:230px;
+
+    }
+}
+/*---------------------------------MEDIUM-------------------------------------*/
+@media only screen and (min-width:577px) and (max-width: 767px){
+/*--------------------------------HEADER--------------------------------------*/
+nav{
+    width:100%;
+    height:108px;
+}
+#logo {
+    width: 118px;
+    height: 100px;
+    margin-top: 6px;
+}
+.chamadas{
+    position: absolute;
+    margin-top: -4px;
+    background: #8a2eff;
+    opacity: 0.9;
+    right: 0;
+    z-index: 12;
+    height: 0px;
+    overflow: hidden;
+}
+.chamadas--open{
+    height: auto;
+}
+nav ul li {
+    display: block;
+    border-bottom: 2px solid #fff;
+}
+nav ul li:hover, nav ul li:focus{
+    background: #3b4eff;
+}
+nav ul li:last-child{
+    border-bottom: none;
+}
+nav ul li a {
+    display: block;
+    padding: 45px;
+    text-transform: uppercase;
+}
+.menu-toggle{
+        position: absolute;
+        right: 1em;
+        top: 20px;
+        cursor: pointer;
+        padding:30px;
+    }
+    .hamburger, .hamburger::before, .hamburger::after {
+        content: '';
+        display: block;
+        background: #fff;
+        height: 5px;
+        width: 3em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+    }
+    .hamburger::before{
+        transform: translateY(-10px);
+    }
+    .hamburger::after{
+        transform: translateY(5px);
+    }
+    .open .hamburger{
+        transform: rotate(45deg);
+    }
+    .open .hamburger::before{
+        opacity: 0;
+    }
+    .open .hamburger::after{
+        transform: translateY(-5px) rotate(-90deg);
+    }
+#cadastro {
+    position: relative;
+    top: -70px;
+    margin-left: 340px;
+    font: Bold 23px 'Roboto';
+}
+#btn-login{
+    position: relative;
+    top: -110px;
+    margin-left: 500px;
+    border: 1px solid #fff;
+}
+#busca{
+   display:none;
+}
+#btn-busca{
+    display:none;
+}
+/*----------------------------------HOME--------------------------------------*/
+#textoslider{
+    font-size:46px;
+    left:60px;
+}
+.slider li:nth-child(1) label{
+    left: 310px;
+}
+.slider li:nth-child(2) label{
+    left: 360px;
+}
+.slider li:nth-child(3) label{
+    left:410px;
+}
+.titulos{
+    font-size: 52px;
+}
+#fotoprincipal{
+    margin-left: 35px;
+    margin-bottom: 550px;
+}
+#titulomaior{
+    margin-top: -770px;
+    left: 305px;
+}
+.miniaturas{
+    display:none;
+}
+#iconecomida,#iconecultura, #tituloicon1,#tituloicon2,#iconeaventura,#tituloicon3,#iconenatureza, #tituloicon4{
+    display: none;
+}
+.container{
+    margin-left: -100px;
+}
+.titulomap{
+    font-size: 52px;
+}
+.subtitulos{
+    left:-45px;
+}
+.expmapa{
+    left:-45px;
+}
+.box{
+    left: 10px;
+    margin-top: 690px;
+    margin-right:10px;
+}
+.map{
+    left:71%;
+    top: 10%;
+    margin-top: -690px;
+    width: 440px;
+    height: 445px;
+}
+.subtitulofeed{
+    font-size: 22px;
+    margin-left: 30px;
+}
+.ig{
+    width: 220px;
+    height: 270px;
+}
+.feedlinha1{
+    margin-left:28px;
+}
+.feedlinha1 img:nth-child(4), .feedlinha1 img:last-child{
+    display: none;
+}
+.feedlinha2{
+    margin-left: 28px;
+}
+.feedlinha2 img:nth-child(4), .feedlinha2 img:last-child{
+    display: none;
+}
+/*---------------------------------CONHEÇA------------------------------------*/
+.titlebrasil, .titlehistoria,.titledestinos,.clima,.chegar,.h1imperdivel{
+    font-size:52px;
+}
+#fotobrasil, #fotohistoria, #fotoclima, #fotochegar{
+    height: 500px;
+}
+#opbrasil{
+    height:250px;
+    margin-top: -384px;
+}
+#ophistoria{
+    height: 505px;
+    margin-top:-505px;
+    overflow:scroll;
+}
+.txthistoria{
+    margin: 20px;
+}
+.cardestinos{
+    left:60px;
+}
+.cardestinos3, .cardestinos4, .cardestinos5,.cardestinos6 {
+    display:none;
+}
+/*-------------------------------SUA VIAGEM-----------------------------------*/
+#opclima{
+    height: 505px;
+    margin-top: -505px;
+    overflow: scroll;
+}
+.txtclima, .txtchegar{
+    margin: 20px;
+}
+.txtclima2{
+    margin-left: 20px;
+}
+.opchegar{
+    height: 505px;
+    margin-top: -505px;
+    overflow: scroll;
+}
+.containerimperdivel{
+    width: 767px;
+}
+.cardimperdivel{
+    left: 130px;
+    margin-top: -80px;
+}
+.cardimperdivel:nth-child(1){
+    display:none;
+}
+.cardimperdivel:last-child{
+    display:none;
+}
+/*--------------------------------PRODUTO-------------------------------------*/
+.titleproddesc{
+    text-align: center;
+}
+.carrosselproduto{
+    height: 440px;
+    width: 620px;
+    margin-left:80px;
+}
+.txtprodutodesc{
+    width: 620px;
+    left: 70px;
+    margin-top: 30px;
+}
+#titlerelacionados{
+    left: 10px;
+    margin-bottom: 50px;
+}
+
+/*--------------------------------EXPERIÊNCIAS--------------------------------*/
+
+#fotoescolha{
+   height: 525px;
+}
+.callexp{
+    margin-top: -495px;
+    margin-left: -325px;
+}
+#ttofertasexp, #ttviajantesexp{
+    font-size: 32px;
+    margin-top: -60px;
+    left: 30px;
+}
+.imagenssliderexp img{
+    height: 425px;
+}
+.imagenssliderexp li:nth-child(1) label {
+    left: 347px;
+}
+.imagenssliderexp li:nth-child(2) label {
+    left: 377px;
+}
+.imagenssliderexp li:nth-child(3) label {
+    left: 407px;
+}
+#ttaproveiteexp{
+    left: 145px;
+    top: -100px;
+}
+.aproveitecta{
+    margin-top: -100px;
+    margin-bottom: 80px;
+}
+#iconeaventaprov{
+    left: 230px;
+    top: 110px;
+}
+#ttaventaprov{
+    left: 230px;
+    top: 310px;
+}
+#iconecidaprov{
+    left: 220px;
+    top: 670px;
+}
+#ttcidaprov {
+    left: 250px;
+    top: 900px;
+}
+#iconcultaprov{
+    left: 240px;
+    top: 1260px;
+}
+#ttcultaprov{
+    left: 240px;
+    top: 1480px;
+}
+#iconnoturaprov{
+    left: 240px;
+    top: 1800px;
+}
+#ttnoturaprov{
+    left: 210px;
+    top: 2020px;
+}
+#fotoviajanteexp{
+    height: 600px;
+    margin-bottom: 140px;
+}
+.cardviajante{
+    top: -690px;
+    left: 40px;
+}
+.inscrevaexp {
+    left: 33px;
+    top: -640px;
+    margin-bottom: 160px;
+}
+#ttaventura{
+    left: 5px;
+}
+#ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
+    left: 5px;
+}
+.meioexp {
+    display: none;
+}
+.direitaexp{
+    left: 0.8%;
+}
+.backexpe{
+    left: -410px;
+}
+/*--------------------------------FOOTER--------------------------------------*/
+footer{
+    height: 60px;
+}
+#logofooter {
+    display:none;
+}
+.listafooter{
+    display: none;
+}
+.listafooter li {
+    display:none;
+}
+.sublista{
+    display:none;
+}
+.sublista a:visited{
+    display: none;
+}
+.social{
+    display: none;
+}
+#cta{
+    display: none;
+}
+.redessociais li{
+    display: none;
+}
+.redessociais li a {
+    display: none;
+}
+#copy{
+    margin-top: 19px;
+    margin-left: 320px;
+}
+}
+/*---------------------------------LARGE--------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width:991px){
+/*--------------------------------HEADER--------------------------------------*/
+nav{
+    height: 130px;
+}
+#logo {
+    width: 140px;
+    height: 122px;
+    margin-top: 8px;
+}
+.chamadas{
+    margin-left: 180px;
+}
+nav ul li{
+    padding-right: 80px;
+}
+#cadastro{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 720px;
+}
+#btn-login{
+    right: 20px;
+    margin-top:-130px;
+}
+#busca {
+    display: none;
+}
+#btn-busca {
+    display:none;
+}
+/*---------------------------------HOME---------------------------------------*/
+#textoslider{
+    font-size: 60px;
+    left: 70px;
+}
+.slider li:nth-child(1) label{
+    left: 425px;
+}
+.slider li:nth-child(2) label{
+    left: 475px;
+}
+.slider li:nth-child(3) label{
+    left: 525px;
+}
+.titulos{
+    font-size: 59px;
+}
+#fotoprincipal {
+    width:600px;
+    margin-left: 35px;
+}
+#iconemaior{
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.container{
+    margin-left: 670px;
+    margin-top: -545px;
+    flex-flow: column nowrap;
+}
+.miniaturas{
+    width:235px;
+    height: 215px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 55px;
+    left: 50px;
+    justify-content: space-between;
+}
+#iconecomida{
+    margin-top:-210px;
+    left: 750px;
+}
+#tituloicon2{
+    left:765px;
+    margin-top: -70px;
+}
+#iconenatureza{
+    left: 740px;
+    margin-top: -210px;
+}
+#tituloicon4{
+    left: 740px;
+    margin-top: -70px;
+}
+#iconecultura, #iconeaventura{
+    display: none;
+}
+#tituloicon1, #tituloicon3{
+    display:none;
+}
+.miniaturas:nth-child(3){
+    display:none;
+}
+.miniaturas:nth-child(1){
+    display: none;
+}
+.box{
+    margin-left: 120px;
+}
+.map{
+    margin-left: -40px;
+}
+.subtitulofeed{
+    margin-left:25px;
+}
+.ig{
+    width: 220px;
+    height: 270px;
+}
+.feedlinha1{
+    margin-left: 18px;
+}
+.feedlinha1 img:last-child{
+    display:none;
+}
+.feedlinha2{
+    margin-left: 18px;
+}
+.feedlinha2 img:last-child{
+    display:none;
+}
+/*-------------------------------CONHEÇA--------------------------------------*/
+.titlebrasil, .titlehistoria,.titledestinos, .clima,.chegar.h1imperdivel{
+    font-size: 59px;
+}
+#fotobrasil, #fotohistoria, #fotoclima, #fotochegar{
+    height: 600px;
+}
+#opbrasil{
+    margin-top: -384px;
+}
+.txtbrasil,.txthistoria{
+    margin: 30px 50px 30px 50px;
+}
+#ophistoria{
+    height: 605px;
+    margin-top: -605px;
+    overflow: scroll;
+}
+.cardestinos{
+    margin-left:-20px;
+}
+.cardestinos2 {
+    margin-left: -20px;
+}
+.cardestinos3{
+    margin-left: -20px;
+}
+.cardestinos4, .cardestinos5,.cardestinos6{
+    display: none;
+}
+/*------------------------------SUA VIAGEM------------------------------------*/
+#opclima{
+    height: 605px;
+    margin-top: -605px;
+    overflow: scroll;
+}
+.opchegar{
+    height: 605px;
+    margin-top: -605px;
+}
+.txtchegar {
+    margin-top:10px;
+}
+.containerimperdivel{
+    margin-left: 20px;
+}
+.cardimperdivel:last-child{
+    opacity: 0;
+}
+
+/*--------------------------------EXPERIÊNCIAS--------------------------------*/
+#fotoescolha{
+    height: 525px;
+}
+.callexp{
+    margin-top: -495px;
+    margin-left: -210px;
+}
+#ttofertasexp, #ttviajantesexp{
+    font-size: 32px;
+    margin-top: -60px;
+    left: 30px;
+}
+.imagenssliderexp img{
+    height: 425px;
+}
+.imagenssliderexp li:nth-child(1) label{
+    left: 449px;
+}
+.imagenssliderexp li:nth-child(2) label{
+    left: 489px;
+}
+.imagenssliderexp li:nth-child(3) label{
+    left: 529px;
+}
+#ttaproveiteexp{
+    left: 245px;
+    top: -100px;
+}
+.aproveitecta{
+    margin-top: -100px;
+    margin-bottom: 80px;
+    margin-left: 110px;
+}
+#iconecidaprov{
+    left: 220px;
+    top: 670px;
+}
+#ttcidaprov{
+    left: 250px;
+    top: 900px;
+}
+#iconcultaprov{
+    left: 240px;
+    top: 1260px;
+}
+#ttcultaprov{
+    left: 240px;
+    top: 1480px;
+}
+#iconnoturaprov{
+    left: 240px;
+    top: 1800px;
+}
+#ttnoturaprov{
+    left: 210px;
+    top: 2020px;
+}
+#fotoviajanteexp{
+    height: 600px;
+    margin-bottom: 140px;
+}
+.cardviajante{
+    top: -690px;
+    left: 40px;
+}
+.inscrevaexp{
+    left: 140px;
+    top: -640px;
+    margin-bottom: 160px;
+}
+#ttaventura{
+    left: 5px;
+}
+#ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
+    left: 5px;
+}
+.meioexp {
+    display: none;
+}
+.direitaexp{
+    left: 12%;
+}
+/*-------------------------------PRODUTO--------------------------------------*/
+.carrosselproduto{
+    height:300px;
+    width:480px;
+}
+.txtprodutodesc{
+    width: 400px;
+    margin-left: 40px;
+    top: 100px;
+}
+#titlerelacionados{
+    margin-top: 140px;
+}
+/*--------------------------------EXPERIÊNCIAS--------------------------------*/
+
+#fotoescolha{
+    height: 525px;
+ }
+ .callexp{
+     margin-top: -495px;
+     margin-left: -230px;
+ }
+ #ttofertasexp, #ttviajantesexp{
+     font-size: 32px;
+     margin-top: -60px;
+     left: 30px;
+ }
+ .imagenssliderexp img{
+     height: 425px;
+ }
+ .imagenssliderexp li:nth-child(1) label {
+     left: 347px;
+ }
+ .imagenssliderexp li:nth-child(2) label {
+     left: 377px;
+ }
+ .imagenssliderexp li:nth-child(3) label {
+     left: 407px;
+ }
+ #ttaproveiteexp{
+     left: 145px;
+     top: -100px;
+ }
+ .aproveitecta{
+     margin-top: -100px;
+     margin-bottom: 80px;
+ }
+ #iconeaventaprov{
+     left: 230px;
+     top: 110px;
+ }
+ #ttaventaprov{
+     left: 230px;
+     top: 310px;
+ }
+ #iconecidaprov{
+     left: 220px;
+     top: 670px;
+ }
+ #ttcidaprov {
+     left: 250px;
+     top: 900px;
+ }
+ #iconcultaprov{
+     left: 240px;
+     top: 1260px;
+ }
+ #ttcultaprov{
+     left: 240px;
+     top: 1480px;
+ }
+ #iconnoturaprov{
+     left: 240px;
+     top: 1800px;
+ }
+ #ttnoturaprov{
+     left: 210px;
+     top: 2020px;
+ }
+ #fotoviajanteexp{
+     height: 600px;
+     margin-bottom: 140px;
+ }
+ .cardviajante{
+     top: -690px;
+     left: 40px;
+ }
+ .inscrevaexp {
+     left: 120px;
+     top: -640px;
+     margin-bottom: 160px;
+ }
+ #ttaventura{
+     left: 5px;
+ }
+ #ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
+     left: 5px;
+ }
+ .meioexp {
+     display: none;
+ }
+ .direitaexp{
+     left: 10%;
+ }
+ .backexpe{
+     left: -410px;
+ }
+/*--------------------------------FOOTER--------------------------------------*/
+footer{
+    height: 125px;
+}
+#logofooter {
+    width: 120px;
+    position: absolute;
+    margin-top: 40px;
+}
+.listafooter {
+    font: 10px 'Roboto';
+    margin-left: 200px;
+    top: 10px
+}
+.listafooter {
+    padding-left: 0px;
+}
+.sublista{
+    display:none;
+}
+.social {
+    display: none;
+}
+#cta {
+    display: none;
+}
+redessociais li{
+    display: none;
+}
+#copy{
+    position: absolute;
+    margin-left: 435px;
+    margin-top:100px;
+}
+}
+/*------------------------------EXTRA-LARGE-----------------------------------*/
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+/*--------------------------------HEADER--------------------------------------*/
+nav ul li {
+    padding-right: 80px;
+}
+#btn-busca{
+    margin-left: 890px;
+}
+#busca{
+    margin-left: 1030px;
+}
+#btn-login{
+    margin-left: 1050px;
+}
+#cadastro{
+    margin-left: 1090px;
+}
+/*---------------------------------HOME---------------------------------------*/
+#textoslider{
+    font-size: 72px;
+    left: 85px;
+}
+.slider li:nth-child(1) label{
+    left:530px;
+}
+.slider li:nth-child(2) label{
+    left: 580px;
+}
+.slider li:nth-child(3) label{
+    left: 630px;
+}
+#fotoprincipal{
+    width:600px;
+}
+#iconemaior{
+    width: 180px;
+    height: 180px;
+    margin-top: 70px;
+}
+.container{
+    margin-left:620px;
+    margin-top: -530px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.miniaturas{
+    width: 235px;
+    height: 225px;
+    margin-top: 35px;
+    margin-left: 0px;
+}
+#iconecultura{
+    left: 700px;
+}
+#tituloicon1{
+    left: 710px;
+}
+#iconecomida{
+    left:720px;
+}
+#tituloicon2{
+    left:735px;
+}
+#iconeaventura,#tituloicon3, #iconenatureza, #tituloicon4{
+    left: 1020px;
+}
+.feedlinha1, .feedlinha2{
+    margin-left:60px;
+}
+.feedlinha1 img:last-child{
+    display:none
+}
+.feedlinha2 img:last-child{
+    display: none;
+}
+/*-------------------------------CONHEÇA--------------------------------------*/
+#ophistoria{
+    height: 705px;
+    margin-top:-705px;
+    overflow: scroll;
+}
+.txthistoria{
+    margin-bottom: 30px;
+}
+.cardestinos{
+    margin-left: 60px;
+}
+.cardestinos4{
+    display:none;
+}
+.cardestinos5{
+    margin-left: -150px;
+}
+/*-----------------------------SUA VIAGEM-------------------------------------*/
+.containerimperdivel{
+    margin-left: 70px;
+}
+
+.cardimperdivel:last-child{
+    display: none;
+}
+/*-------------------------------PRODUTO--------------------------------------*/
+.txtprodutodesc{
+    width: 480px;
+    margin-left: 40px;
+}
+/*--------------------------------EXPERIÊNCIAS--------------------------------*/
+
+#fotoescolha{
+    height: 650px;
+}
+.callexp{
+    margin-top: -595px;
+    margin-left: -100px;
+}
+#ttofertasexp{
+    font-size: 36px;
+    left: 30px;
+    padding-top: 30px;
+}
+.imagenssliderexp img{
+    height: 500px;
+}
+.imagenssliderexp li:nth-child(1) label{
+    left: 553px;
+}
+.imagenssliderexp li:nth-child(2) label{
+    left: 593px;
+}
+.imagenssliderexp li:nth-child(3) label{
+    left: 633px;
+}
+#ttviajantesexp{
+    font-size: 36px;
+    left: 30px;
+}
+#ttaproveiteexp{
+    left: 340px;
+    top: -50px;
+    font-size: 36px;
+}
+.aproveitecta{
+    margin-top: -70px;
+    margin-bottom: 80px;
+    margin-left: 230px;
+}
+#iconecidaprov{
+    left: 220px;
+    top: 670px;
+}
+#ttcidaprov{
+    left: 250px;
+    top: 900px;
+}
+#iconcultaprov{
+    left: 240px;
+    top: 1260px;
+}
+#ttcultaprov{
+    left: 240px;
+    top: 1460px;
+}
+#iconnoturaprov{
+    left: 240px;
+    top: 1800px;
+}
+#ttnoturaprov{
+    left: 210px;
+    top: 2020px;
+}
+#fotoviajanteexp{
+    height: 600px;
+    margin-bottom: 140px;
+}
+.cardviajante{
+    top: -690px;
+}
+.inscrevaexp{
+    left: 240px;
+    top: -640px;
+    margin-bottom: 160px;
+}
+#ttaventura, #ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
+    left: 5px;
+}
+.direitaexp{
+    left: 1.5%;
+}
+.backexpe{
+    left: -400px;
+}
+.backexpd{
+    left: -405px;
+}
+/*--------------------------------FOOTER--------------------------------------*/
+.social{
+    margin-left: 960px;
+}
+#copy{
+    margin-left: 540px;
+}
+}
+@media only screen and (min-width: 1360px) and (max-width:1366px){
+
+/*===============================HEADER=======================================*/
+#cadastro{
+    margin-left: 1250px;
+}
+#btn-login{
+    margin-left: 1220px;
+}
+#busca{
+    margin-left: 1200px;
+}
+#btn-busca{
+    margin-left:1050px;
+}
+/*==================================HOME======================================*/
+#textoslider{
+    left:120px;
+}
+.slider li:nth-child(1) label{
+    left: 615px;
+}
+.slider li:nth-child(2) label{
+    left: 665px;
+}
+.slider li:nth-child(3) label{
+    left: 715px;
+}
+#iconecultura{
+    left: 800px;
+}
+#tituloicon1{
+    left: 800px;
+}
+#iconecomida{
+    left: 810px;
+}
+#tituloicon2{
+    left: 825px;
+}
+#iconeaventura{
+    left: 1140px;
+}
+#tituloicon3{
+    left:1140px;
+}
+#iconenatureza{
+    left: 1140px;
+}
+#tituloicon4{
+    left: 1140px;
+}
+.container{
+    margin-left: 710px;
+}
+.miniaturas{
+   margin-left:10px;
+   margin-top: 10px;
+}
+.box {
+    right: 620px;
+}
+.map{
+    left: 70%;
+}
+.ig{
+    width: 238px;
+    height: 260px;
+}
+/*===============================SUA VIAGEM===================================*/
+.containerimperdivel .cardimperdivel{
+    margin-left: 40px;
+}
+/*=================================CONHEÇA====================================*/
+.cardestinos{
+    left: 10px;
+}
+/*==============================EXPERIÊNCIAS==================================*/
+.callexp{
+    left: 340px;
+}
+.imagenssliderexp li:nth-child(1) label{
+    left: 630px;
+}
+.imagenssliderexp li:nth-child(2) label{
+    left: 675px;
+}
+.imagenssliderexp li:nth-child(3) label {
+    left: 720px;
+}
+.aproveitecta{
+    left: 15px;
+}
+#ttaventura,#ttcidades,#ttgastronomia,#ttnatureza,#ttvidanoturna,#ttcultural{
+    left: 05px;
+}
+.inscrevaexp{
+    left: 320px;
+}
+.esquerdaexp{
+    left: 129%;
+}
+.backexpe{
+    left: -426px;
+}
+.direitaexp{
+    left: 5%;
+}
+.backexpd{
+    left: -435px;
+}
+.meioexp{
+    left:60%;
+    margin-right: 0px;
+}
+/*=================================PRODUTO====================================*/
+.titleproddesc{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 56px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*=================================FOOTER=====================================*/
+#copy{
+    margin-left:625px;
+}
+}
