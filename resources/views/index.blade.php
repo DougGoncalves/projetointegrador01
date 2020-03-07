@@ -260,7 +260,6 @@
         </g>
     </svg>
 </div>
-
 </section>
 <section id="igfeed">
         <h2 class="subtitulofeed"> Compartilhe conosco suas experiências. Utilize a #BlendTour no Instagram</h2>
@@ -279,4 +278,5 @@
             <img class="ig" id="feedlast2"src="./Assets/igFeed/igFeed8.png" alt="feed10">
         </div>
 </section>
+
 @endsection

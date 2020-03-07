@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./CSS/estilo.css">
+    <link rel="stylesheet" href="{{asset('../CSS/estilo.css')}}">
     <!-- CSS para pagina about -->
-    <link rel="stylesheet" href="./CSS/about.css">
+    <link rel="stylesheet" href="{{asset('../CSS/about.css')}}">
     <!-- CSS para pagina carrinho -->
-    <link rel="stylesheet" type="text/css" href="./CSS/carrinho.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('./CSS/carrinho.css')}}">
     <!-- CSS para pagina cadastro -->
-    <link rel="stylesheet" href="./CSS/cadastro.css">
-    <link rel="shortcut icon" href="./Assets/Icon/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('../CSS/cadastro.css')}}">
+<link rel="shortcut icon" href="{{asset('../Assets/Icon/fav.ico')}}" type="image/x-icon">
     <title>Blend Tour</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -28,7 +28,7 @@
     <header>
         <nav>
             <a href="/">
-            <img id="logo"src="./Galeria/logos/logoadesivo.png" alt="logo_blend">
+            <img id="logo"src="{{asset('../../Galeria/logos/logoadesivo.png')}}" alt="logo_blend">
             </a>
             <div>
             <ul class="chamadas">

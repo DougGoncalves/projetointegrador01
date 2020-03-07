@@ -1,7 +1,7 @@
 </main>
 <footer>
         <a href="/">
-        <img src="./Galeria/logos/logofooter.png" alt="logofooter" id="logofooter">
+        <img src="{{asset('../../Galeria/logos/logofooter.png')}}" alt="logofooter" id="logofooter">
         </a>
     <div>
         <ul class="listafooter">
@@ -69,27 +69,27 @@
         <ul class="redessociais">
            <li>
                <a href="https://facebook.com">
-               <img src="Assets/Icon/SocialMedia/facebook.svg" alt="facebook">
+               <img src="{{asset('../../Assets/Icon/SocialMedia/facebook.svg')}}" alt="facebook">
                </a>
           </li>
            <li>
                <a href="https://instagram.com">
-               <img src="Assets/Icon/SocialMedia/instagram.svg" alt="instagram">
+               <img src="{{asset('../../Assets/Icon/SocialMedia/instagram.svg')}}" alt="instagram">
             </a>
             </li>
            <li>
                <a href="https://pinterest.com">
-               <img src="Assets/Icon/SocialMedia/pinterest.svg" alt="pinterest">
+               <img src="{{asset('../../Assets/Icon/SocialMedia/pinterest.svg')}}" alt="pinterest">
             </a>
             </li>
            <li>
                <a href="https://twitter.com">
-               <img src="Assets/Icon/SocialMedia/twitter.svg" alt="twitter">
+               <img src="{{asset('../../Assets/Icon/SocialMedia/twitter.svg')}}" alt="twitter">
             </a>
             </li>
            <li>
                 <a href="http://youtube.com">
-                <img src="Assets/Icon/SocialMedia/youtube.svg" alt="youtube">
+                <img src="{{asset('../../Assets/Icon/SocialMedia/youtube.svg')}}" alt="youtube">
                 </a>
            </li>
         </ul>
