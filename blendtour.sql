@@ -130,7 +130,19 @@ CREATE TABLE `usuario` (
   `nome` varchar(145) DEFAULT NULL,
   `email` varchar(145) DEFAULT NULL,
   `senha` varchar(200) DEFAULT NULL,
-  PRIMARY KEY (`id_usuario`)
+  `cpf` varchar(11) DEFAULT NULL,
+  `dtnasc` date DEFAULT NULL,
+  `sexo` varchar(10) DEFAULT NULL,
+  `telefoneUm` varchar(11) DEFAULT NULL,
+  `telefoneDois` varchar(11) DEFAULT NULL,
+  `aventura` tinyint(1) DEFAULT NULL,
+  `cidades` tinyint(1) DEFAULT NULL,
+  `gastronomia` tinyint(1) DEFAULT NULL,
+  `historico` tinyint(1) DEFAULT NULL,
+  `natureza` tinyint(1) DEFAULT NULL,
+  `noturna` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id_usuario`),
+   UNIQUE (`email`, `cpf`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -140,7 +152,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'douglas','douglas@mail.com','123123'),(2,'diego','diego@mail.com','123123'),(3,'dirceu','dirceu@mail.com','123123'),(4,'mario','mario@mail.com','123123'),(5,'carina','carina@mail.com','123123'),(6,'wagner','wagner@mail.com','123123');
+INSERT INTO `usuario` VALUES (1,'douglas','douglas@mail.com','123123',null,null,null,null,null,null,null,null,null,null,null),(2,'diego','diego@mail.com','123123',null,null,null,null,null,null,null,null,null,null,null),(3,'dirceu','dirceu@mail.com','123123',null,null,null,null,null,null,null,null,null,null,null),(4,'mario','mario@mail.com','123123',null,null,null,null,null,null,null,null,null,null,null),(5,'carina','carina@mail.com','123123',null,null,null,null,null,null,null,null,null,null,null),(6,'wagner','wagner@mail.com','123123',null,null,null,null,null,null,null,null,null,null,null);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -154,25 +166,3 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2020-03-06 21:45:17
-
-
-/*Alteracao Na tebela de usuario para comportar todos campos
-CREATE TABLE `usuario` (
-  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(145) DEFAULT NULL,
-  `email` varchar(145) NOT NULL,
-  `senha` varchar(200) DEFAULT NULL,
-  `cpf` varchar(11) DEFAULT NULL,
-  `dtnasc` date DEFAULT NULL,
-  `sexo` varchar(10) DEFAULT NULL,
-  `telefoneUm` varchar(11) DEFAULT NULL,
-  `telefoneDois` varchar(11) DEFAULT NULL,
-  `aventura` tinyint(1) DEFAULT NULL,
-  `cidades` tinyint(1) DEFAULT NULL,
-  `gastronomia` tinyint(1) DEFAULT NULL,
-  `historico` tinyint(1) DEFAULT NULL,
-  `natureza` tinyint(1) DEFAULT NULL,
-  `noturna` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`id_usuario`),
-  UNIQUE (`email`, `cpf`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
