@@ -154,3 +154,25 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2020-03-06 21:45:17
+
+
+/*Alteracao Na tebela de usuario para comportar todos campos
+CREATE TABLE `usuario` (
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(145) DEFAULT NULL,
+  `email` varchar(145) NOT NULL,
+  `senha` varchar(200) DEFAULT NULL,
+  `cpf` varchar(11) DEFAULT NULL,
+  `dtnasc` date DEFAULT NULL,
+  `sexo` varchar(10) DEFAULT NULL,
+  `telefoneUm` varchar(11) DEFAULT NULL,
+  `telefoneDois` varchar(11) DEFAULT NULL,
+  `aventura` tinyint(1) DEFAULT NULL,
+  `cidades` tinyint(1) DEFAULT NULL,
+  `gastronomia` tinyint(1) DEFAULT NULL,
+  `historico` tinyint(1) DEFAULT NULL,
+  `natureza` tinyint(1) DEFAULT NULL,
+  `noturna` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id_usuario`),
+  UNIQUE (`email`, `cpf`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;

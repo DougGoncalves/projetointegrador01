@@ -46,4 +46,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::post('/register/insert', 'RegisterController@insert');
+Route::post('/cadastrointerno/{id}', 'CadastrointernoController@update');
+
 

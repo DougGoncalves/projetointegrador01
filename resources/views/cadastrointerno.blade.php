@@ -4,7 +4,9 @@
     <h1 class="titulo-cadastro text-center">Cadastre-se</h1>
     <section class="container-formulario">
         <div class="row-cadastro">
-            <form action="#" >
+            @if(@isset($usuario))
+            <form method="POST" action="/cadastrointerno/{{$usuario->id_usuario}}" enctype="multipart/form-data">
+            @csrf
                 <div class="form-row">
                     <div class="form-group col-md-8">
                         <label for="nome">Nome</label>
@@ -17,7 +19,7 @@
                     <div class="form-group col-md-8">
                         <label for="cpf">CPF</label>
                         <input type="text" class="form-control" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx"
-                            maxlength="11" required>
+                            maxlength="14" required>
                     </div>
 
                     <div class="form-group col-md-4"></div>
@@ -51,10 +53,11 @@
                             placeholder="(99)99999-9999" maxlength="11">
                     </div>
 
+                    
                     <div class="form-group col-md-8">
                         <label for="email">E-mail</label>
                         <input type="email" class="form-control" name="email" id="email"
-                            placeholder="email@email.com" required>
+                            value="{{$usuario->email}}" required>
                     </div>
 
                     <div class="form-group col-md-4"></div>
@@ -62,13 +65,13 @@
                     <div class="form-group col-md-4">
                         <label for="senha">Senha</label>
                         <input type="password" class="form-control" name="senha" id="senha"
-                            placeholder="***************">
+                            placeholder="***************" value="{{$usuario->senha}}">
                     </div>
 
                     <div class="form-group col-md-4">
                         <label for="conf-senha">Confirme a Senha</label>
                         <input type="password" class="form-control" name="conf-senha" id="conf-senha"
-                            placeholder="***************">
+                            placeholder="***************" value="{{$usuario->senha}}">
                     </div>
 
                     <hr id="line">
@@ -101,10 +104,11 @@
                         <label for="cvv">Código (CVV)</label>
                         <input type="cvv" class="form-control" name="cvv" id="cvv" placeholder="123" maxlength="3">
                     </div>
+            @endif
                 </div>
                 <div class="botoes" style="display: flex;">
                 <div class="enviar">
-                <button type="button" class="btn btn-primary btn-lg btn-enviar"><a href="/">Enviar</a></button>
+                <button class="btn btn-primary btn-lg btn-enviar">Enviar</button>
             </div>
             <div class="cancelar">
                 <button type="button" class="btn btn-primary btn-lg btn-cancelar"><a href="/">Cancelar</a></button>
