@@ -4,12 +4,14 @@
     <img src="./Galeria/imageDB/Cidades/praia por do sol.jpg" alt="foto_escolha" id="fotoescolha">
   <div class="callexp">
         <h1 id="ttescolhaexp">ESCOLHA SEU TIPO DE EXPERIÊNCIA:</h1>
-          <a href="#aventura"><input type="button" value="Aventura" id="btnaven"></a>
-          <a href="#cidades"><input type="button" value="Cidades" id="btncid"></a>
-          <a href="#gastronomia"><input type="button" value="Gastronomia" id="btngas"></a>
-          <a href="#cultural"><input type="button" value="Histórico Cultural" id="btncult"></a>
-          <a href="#natureza"><input type="button" value="Natureza" id="btnnat"></a>
-          <a href="#vida_noturna"><input type="button" value="Vida Noturna" id="btnvid"></a>
+
+            @if(isset($categorias))
+            @foreach($categorias as $categoria)
+
+                <a href="#{{$categoria->nome}}"><input type="button" value= "{{$categoria->nome }}" class="btn btn-primary" style=" margin-top: 120px; margin-left: 3px; margin-right: 2px;"></a>
+
+            @endforeach
+            @endif
   </div>
 </section>
 <section id="ofertasexp">
@@ -38,22 +40,22 @@
 <h1 id="ttaproveiteexp">Aproveite seu destino ao máximo</h1>
 <div class="aproveitecta">
     <img class="aprovfoto"src="./Galeria/imageDB/Aventura/rafting_aprov.jpg" alt="rafting" id="fotorafting">
-    <a href="#aventura">
+    <a href="#Aventura">
     <img id="iconeaventaprov" src="./Assets/Icon/adventure.png" alt="icone_aventura">
     <h2 id="ttaventaprov">AVENTURA</h2>
     </a>
     <img class="aprovfoto"src="./Galeria/imageDB/Cidades/curitiba_apro.jpg" alt="curitiba">
-    <a href="#cidades">
+    <a href="#Cidades">
     <img id="iconecidaprov"src="./Assets/Icon/cities.png" alt="icone_cidades">
     <h2 id="ttcidaprov">CIDADES</h2>
     </a>
     <img class="aprovfoto"src="./Galeria/imageDB/Historico Cultural/indios_apro.jpg" alt="aldeia">
-    <a href="#cultural">
+    <a href="#Histórico Cultural">
     <img id="iconcultaprov"src="./Assets/Icon/culture.png" alt="icone_cultura">
     <h2 id="ttcultaprov">CULTURAL</h2>
     </a>
     <img class="aprovfoto"src="./Galeria/imageDB/Vida Noturna/nightlife3_apro.jpg" alt="dj">
-    <a href="#vida_noturna">
+    <a href="#Vida Noturna">
     <img id="iconnoturaprov"src="./Assets/Icon/nightlife.png" alt="icon_nightlife">
     <h2 id="ttnoturaprov">VIDA NOTURNA</h2>
     </a>
@@ -85,7 +87,7 @@
     <input type="button" value="Enviar" id="inscrevabtn">
 </div>
 </section>
-<section id="aventura">
+<section id="Aventura">
 <h1 id="ttaventura">AVENTURA</h1>
 <div class="cardexp direitaexp">
         <div class="frontexp">
@@ -128,7 +130,7 @@
     </div>
 </div>
 </section>
-<section id="cidades">
+<section id="Cidades">
     <h1 id="ttcidades">CIDADES</h1>
     <div class="cardexp direitaexp">
             <div class="frontexp">
@@ -171,7 +173,7 @@
         </div>
     </div>
 </section>
-<section id="gastronomia">
+<section id="Gastronomia">
     <h1 id="ttgastronomia">GASTRONOMIA</h1>
     <div class="cardexp direitaexp">
             <div class="frontexp">
@@ -214,7 +216,7 @@
         </div>
     </div>
 </section>
-<section id="cultural">
+<section id="Histórico Cultural">
     <h1 id="ttcultural">HISTÓRICO CULTURAL</h1>
     <div class="cardexp direitaexp">
             <div class="frontexp">
@@ -257,7 +259,7 @@
         </div>
     </div>
 </section>
-<section id="natureza">
+<section id="Natureza">
     <h1 id="ttnatureza">NATUREZA</h1>
     <div class="cardexp direitaexp">
             <div class="frontexp">
@@ -300,7 +302,7 @@
         </div>
     </div>
 </section>
-<section id="vida_noturna">
+<section id="Vida Noturna">
     <h1 id="ttvidanoturna">VIDA NOTURNA</h1>
     <div class="cardexp direitaexp">
             <div class="frontexp">

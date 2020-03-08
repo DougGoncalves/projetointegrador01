@@ -39,7 +39,7 @@
             <input type="file" name="imagem" id="imagem">
         </div>
         <div class="form-group col-md-4">
-            <img src="{{$produto->imagem}}" alt="capa de {{$produto->nome}}" class="img-thumbnail">
+            <img src="{{$produto->imagem}}" alt="capa de {{$produto->nome}}" class="img-thumbnail" style="max-height: 480px; max-width: 340px">
         </div>
         <div class="form-group">
             <button class="btn btn-primary">Enviar</button>

@@ -26,9 +26,11 @@
           <button type="submit" class="btn btn-danger"> Excluir</button>
         </div>
       </form>
-      <div class="col-md-4">
+      <div class="col-mt-8">
         @if(isset($produto->imagem))
-        <img src="{{ $produto->imagem }}" class="img-thumbnail" alt="capa de {{ $produto->nome }}">
+        <div class="row">
+            <img src="{{ $produto->imagem }}" class="img-thumbnail" alt="capa de {{ $produto->nome }}" style="max-height: 480px; max-width: 340px">
+        </div>
         @endif
       </div>
     </div>
