@@ -46,4 +46,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/register/insert', 'RegisterController@insert');
 Route::post('/cadastrointerno/{id}', 'CadastrointernoController@update');
 
+Route::get('/admin/usuarios', 'UsuarioController@index');
+Route::get('/admin/usuario/create', 'UsuarioController@create');
+Route::post('/admin/usuario/insert', 'UsuarioController@insert');
+Route::get('/admin/usuario/{id}', 'UsuarioController@update');
+Route::post('/admin/usuario/{id}', 'UsuarioController@put');
 

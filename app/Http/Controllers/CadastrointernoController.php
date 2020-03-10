@@ -24,6 +24,7 @@ class CadastrointernoController extends Controller
         $usuario->cpf = $request->cpf;
         $usuario->dtnasc = $request->dtnasc;
         $usuario->sexo = $request->sexo;
+        $usuario->senha = $request->senha;
         $usuario->telefoneUm = $request->telefoneUm;
         $usuario->telefoneDois = $request->telefoneDois;
         
