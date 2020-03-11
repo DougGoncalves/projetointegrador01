@@ -74,4 +74,22 @@ class UsuarioController extends Controller
 
     }
 
+    public function delete($id_usuario) {
+
+        $usuario = Usuario::find($id_usuario);
+
+        return view('deletarUsuario', compact('usuario'));
+
+    }
+
+    public function remove($id_usuario) {
+
+        $usuario = Usuario::find($id_usuario);
+
+        $usuario->delete();
+
+        return redirect('/admin/usuarios');
+
+    }
+
 }

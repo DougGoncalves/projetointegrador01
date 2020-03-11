@@ -31,7 +31,7 @@
           </td>
           <td>
             <a href="/admin/usuario/{{$usuario->id_usuario}}" class="btn btn-secondary" style="text-decoration: none;">Editar</a>
-            <a href="/admin/usuario/{{$usuario->id_usuario}}" class="btn btn-danger" style="text-decoration: none;">Excluir</a>
+            <a href="/admin/usuario/excluir/{{$usuario->id_usuario}}" class="btn btn-danger" style="text-decoration: none;">Excluir</a>
           </td>
         </tr>
         @endforeach
