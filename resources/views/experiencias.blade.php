@@ -8,7 +8,7 @@
             @if(isset($categorias))
             @foreach($categorias as $categoria)
 
-                <a href="#{{$categoria->nome}}"><input type="button" value= "{{$categoria->nome }}" class="btn btn-primary" style=" margin-top: 120px; margin-left: 3px; margin-right: 2px;"></a>
+                <a href="#{{$categoria->nome}}"><input type="button" value= "{{$categoria->nome }}" class="btn btn-primary" style=" margin-top: 60px; margin-left: 50px; margin-right: 2px;" ></a>
 
             @endforeach
             @endif
@@ -89,260 +89,351 @@
 </section>
 <section id="Aventura">
 <h1 id="ttaventura">AVENTURA</h1>
+
+@if(isset($produtos))
+@foreach($produtos as $produto)
+
 <div class="cardexp direitaexp">
         <div class="frontexp">
-            <img src="./Galeria/imageDB/Aventura/expadv2.png" alt="rafting">
+            <img src="{{$produto->imagem}}" alt="imagem de {{$produto->nome}}">
         </div>
         <div class="backexp">
             <div class="backcontentexp direitaexp">
-                <h2 class="ttexpintern">Rafting</h2>
-                <span>Corredeiras, alta velocidade, adrenalina e aquele banho te esperam em Brotas-SP. Experimente esse circuito de rafting imperdível</span>
+            <h2 class="ttexpintern">{{$produto->nome}}</h2>
+            <span>{{$produto->descricao}}</span>
                 <div class="btnsaibaexp">
-                    <a href="/produto">Saiba Mais</a>
+                    <a href="/produtos/{{$produto->id_experiencia}}">Saiba Mais</a>
                 </div>
             </div>
         </div>
-<div class="cardexp esquerdaexp">
+
+@endforeach
+@endif
+
+@foreach($prod2 as $p2)
+
+    <div class="cardexp esquerdaexp">
         <div class="frontexp">
-            <img src="./Galeria/imageDB/Aventura/expadv1.png" alt="mountainbike">
+            <img src="{{$p2->imagem}}" alt=" imagem de {{$p2->nome}}">
         </div>
         <div class="backexpe">
             <div class="backcontentexp esquerdaexp">
-                <h2 class="ttexpintern">Mountain Bike</h2>
-                <span>Curta essa trilha off-road de Mountain Bike pelo Cerrado Brasileiro</span>
+                <h2 class="ttexpintern">{{$p2->nome}}</h2>
+                <span>{{$p2->descricao}}</span>
                 <div class="btnsaibaexp">
-                    <a href="/produto">Saiba Mais</a>
+                    <a href="/produtos/{{$p2->id_experiencia}}">Saiba Mais</a>
                 </div>
             </div>
         </div>
+
+@endforeach
+
+@foreach ($prod3 as $p3 )
+
 <div class="cardexp meioexp">
     <div class="frontexp">
-        <img src="./Galeria/imageDB/Aventura/expadv3.png" alt="paraglider">
+        <img src="{{$p3->imagem}}" alt="imagem de {{$p3->nome}}">
     </div>
     <div class="backexpd">
         <div class="backcontentexp meioexp">
-            <h2 class="ttexpintern">Paraglider</h2>
-            <span>Passeios de paraglider do alto da Pedra Grande, em Atibaia - São Paulo</span>
+            <h2 class="ttexpintern">{{$p3->nome}}</h2>
+            <span>{{$p3->descricao}}</span>
             <div class="btnsaibaexp">
-                <a href="/produto">Saiba Mais</a>
+                <a href="/produtos/{{$p3->id_experiencia}}">Saiba Mais</a>
             </div>
         </div>
     </div>
 </div>
+
+@endforeach
 </section>
 <section id="Cidades">
     <h1 id="ttcidades">CIDADES</h1>
+
+@foreach ($prod4 as $p4 )
+
     <div class="cardexp direitaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Cidades/expcid1.png" alt="rio_de_janeiro">
+                <img src="{{$p4->imagem}}" alt="imagem de {{$p4->nome}}">
             </div>
             <div class="backexp">
                 <div class="backcontentexp direitaexp">
-                    <h2 class="ttexpintern">Rio de Janeiro</h2>
-                    <span>Praias, samba, calor, venha conhecer todos os encantos da cidade maravilhosa e tudo o que ela tem a oferecer.</span>
+                    <h2 class="ttexpintern">{{$p4->nome}}</h2>
+                    <span>{{$p4->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p4->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
+@endforeach
+
+@foreach ($prod5 as $p5 )
     <div class="cardexp esquerdaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Cidades/expcid2.png" alt="recife">
+                <img src="{{$p5->imagem}}" alt="imagem de {{$p5->nome}}">
             </div>
             <div class="backexpe">
                 <div class="backcontentexp esquerdaexp">
-                    <h2 class="ttexpintern">Recife</h2>
-                    <span>Não perca essa oportunidade de se aventurar pelas praias do Nordeste brasileiro e conhecer a "Veneza brasileira" e todo seu charme, unindo a cultura sertaneja com a influência das invasões holandesas</span>
+                    <h2 class="ttexpintern">{{$p5->nome}}</h2>
+                    <span>{{$p5->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p5->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
+
+@endforeach
+
+@foreach ($prod6 as $p6)
+
     <div class="cardexp meioexp">
         <div class="frontexp">
-            <img src="./Galeria/imageDB/Cidades/expcid3.png" alt="florianopolis">
+            <img src="{{$p6->imagem}}" alt="imagem de {{$p6->nome}}">
         </div>
         <div class="backexpd">
             <div class="backcontentexp meioexp">
-                <h2 class="ttexpintern">Florianópolis</h2>
-                <span>Um dos destinos de mais alto luxo no Brasil te espera de braços abertos. Alugue um carro esporte e conheça a orla e as praias de Jurerê Internacional</span>
+                <h2 class="ttexpintern">{{$p6->nome}}</h2>
+                <span>{{$p6->descricao}}</span>
                 <div class="btnsaibaexp">
-                    <a href="/produto">Saiba Mais</a>
+                    <a href="/produtos/{{$p6->id_experiencia}}">Saiba Mais</a>
                 </div>
             </div>
         </div>
     </div>
+
+@endforeach
+
 </section>
 <section id="Gastronomia">
     <h1 id="ttgastronomia">GASTRONOMIA</h1>
+
+@foreach ($prod7 as $p7 )
+
     <div class="cardexp direitaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Gastronomia/expgast1.png" alt="acai">
+                <img src="{{$p7->imagem}}" alt="imagem de {{$p7->nome}}">
             </div>
             <div class="backexp">
                 <div class="backcontentexp direitaexp">
-                    <h2 class="ttexpintern">Açaí</h2>
-                    <span>Experimente e conheça todo o processo da fabricação do açaí, fruto nativo do Brasil e adorado por atletas do mundo inteiro</span>
+                    <h2 class="ttexpintern">{{$p7->nome}}</h2>
+                    <span>{{$p7->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p7->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
-    <div class="cardexp esquerdaexp">
+
+@endforeach
+
+@foreach ($prod8 as $p8 )
+
+     <div class="cardexp esquerdaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Gastronomia/expgast2.png" alt="brigadeiro">
+                <img src="{{$p8->imagem}}" alt="imagem de {{$p8->nome}}">
             </div>
             <div class="backexpe">
                 <div class="backcontentexp esquerdaexp">
-                    <h2 class="ttexpintern">Brigadeiro</h2>
-                    <span>Para aqueles loucos por doces, que tal experimentar a sobremesa preferida dos brasileiros, o brigadeiro!</span>
+                    <h2 class="ttexpintern">{{$p8->nome}}</h2>
+                    <span>{{$p8->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p8->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
+
+@endforeach
+
+@foreach ($prod9 as $p9)
+
     <div class="cardexp meioexp">
         <div class="frontexp">
-            <img src="./Galeria/imageDB/Gastronomia/expgast3.png" alt="castanhas">
+            <img src="{{$p9->imagem}}" alt="imagem de {{$p9->nome}}">
         </div>
         <div class="backexpd">
             <div class="backcontentexp meioexp">
-                <h2 class="ttexpintern">Castanhas</h2>
-                <span>Saboreie as "brazilian-nuts"ou, como são conhecidas por aqui, castanhas do Pará. Vá ao Mercado Ver o peso em Belém-PA e conheça outras delícias que eles tem  a oferecer.</span>
+                <h2 class="ttexpintern">{{$p9->nome}}</h2>
+                <span>{{$p9->descricao}}</span>
                 <div class="btnsaibaexp">
-                    <a href="/produto">Saiba Mais</a>
+                    <a href="/produtos/{{$p9->id_experiencia}}">Saiba Mais</a>
                 </div>
             </div>
         </div>
     </div>
+
+@endforeach
+
 </section>
 <section id="Histórico Cultural">
     <h1 id="ttcultural">HISTÓRICO CULTURAL</h1>
-    <div class="cardexp direitaexp">
+
+@foreach ($prod10 as $p10 )
+
+     <div class="cardexp direitaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Historico Cultural/expcult1.png" alt="Carnaval">
+                <img src="{{$p10->imagem}}" alt="imagem de {{$p10->nome}}">
             </div>
             <div class="backexp">
                 <div class="backcontentexp direitaexp">
-                    <h2 class="ttexpintern">Carnaval</h2>
-                    <span>Caia no samba na Marquês de Sapucaí e viva esta festa de perto, aproveitando cada momento com toda alegria e descontração que esse evento pode oferecer.</span>
+                    <h2 class="ttexpintern">{{$p10->nome}}</h2>
+                    <span>{{$p10->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p10->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
+
+@endforeach
+
+@foreach ($prod11 as $p11 )
     <div class="cardexp esquerdaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Historico Cultural/expcult2.png" alt="festa_junina">
+                <img src="{{$p11->imagem}}" alt="imagem de {{$p11->nome}}">
             </div>
             <div class="backexpe">
                 <div class="backcontentexp esquerdaexp">
-                    <h2 class="ttexpintern">Festa Junina</h2>
-                    <span>Se divirta com brincadeiras, música típicas e muita comida boa, nessa que é uma das festas mais populares do Brasil.</span>
+                    <h2 class="ttexpintern">{{$p11->nome}}</h2>
+                    <span>{{$p11->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p11->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
-    <div class="cardexp meioexp">
+@endforeach
+
+@foreach ($prod12 as $p12)
+
+     <div class="cardexp meioexp">
         <div class="frontexp">
-            <img src="./Galeria/imageDB/Historico Cultural/expcult3.png" alt="museus">
+            <img src="{{$p12->imagem}}" alt="imagem de {{$p12->nome}}" style="width=340px;">
         </div>
         <div class="backexpd">
             <div class="backcontentexp meioexp">
-                <h2 class="ttexpintern">Museus</h2>
-                <span>Conheça um pouco de nossa história  através dos diversos museus espalhados por todo o país. </span>
+                <h2 class="ttexpintern">{{$p12->nome}}</h2>
+                <span>{{$p12->descricao}} </span>
                 <div class="btnsaibaexp">
-                    <a href="/produto">Saiba Mais</a>
+                    <a href="/produtos/{{$p12->id_experiencia}}">Saiba Mais</a>
                 </div>
             </div>
         </div>
     </div>
+
+@endforeach
+
 </section>
 <section id="Natureza">
     <h1 id="ttnatureza">NATUREZA</h1>
+
+@foreach ($prod13 as $p13 )
+
     <div class="cardexp direitaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Natureza/expnat1.png" alt="fozdoiguacu">
+                <img src="{{$p13->imagem}}" alt="imagem de {{$p13->nome}}">
             </div>
             <div class="backexp">
                 <div class="backcontentexp direitaexp">
-                    <h2 class="ttexpintern">Foz do Iguaçú</h2>
-                    <span>Conheça as famosas Cataratas do Iguaçú, na tríplice fronteira entre Brasil, Argentina e Paraguai.</span>
+                    <h2 class="ttexpintern">{{$p13->nome}}</h2>
+                    <span>{{$p13->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p13->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
-    <div class="cardexp esquerdaexp">
+
+@endforeach
+
+@foreach ($prod14 as $p14 )
+
+     <div class="cardexp esquerdaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Natureza/expnat2.png" alt="floresta">
+                <img src="{{$p14->imagem}}" alt="imagem de {{$p14->nome}}">
             </div>
             <div class="backexpe">
                 <div class="backcontentexp esquerdaexp">
-                    <h2 class="ttexpintern">Floresta Amazônica</h2>
-                    <span>Um dos maiores biomas do mundo está aqui, que tal fugir do comum e conhecer espécies de animais e plantas que não podem ser encontrados em nenhum outro lugar do planeta.</span>
+                    <h2 class="ttexpintern">{{$p14->nome}}</h2>
+                    <span>{{$p14->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p14->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
+
+@endforeach
+
+@foreach ($prod15 as $p15)
+
     <div class="cardexp meioexp">
         <div class="frontexp">
-            <img src="./Galeria/imageDB/Natureza/expnat3.png" alt="cachoeira">
+            <img src="{{$p15->imagem}}" alt="imagem de {{$p15->nome}}">
         </div>
         <div class="backexpd">
             <div class="backcontentexp meioexp">
-                <h2 class="ttexpintern">Cachoeiras</h2>
-                <span>São diversas espalhadas por todo o país, com grande variação nos volumes de água. Tome um banho revigorante e renove suas energias.</span>
+                <h2 class="ttexpintern">{{$p15->nome}}</h2>
+                <span>{{$p15->descricao}}</span>
                 <div class="btnsaibaexp">
-                    <a href="/produto">Saiba Mais</a>
+                    <a href="/produtos/{{$p15->id_experiencia}}">Saiba Mais</a>
                 </div>
             </div>
         </div>
     </div>
+
+@endforeach
+
 </section>
 <section id="Vida Noturna">
     <h1 id="ttvidanoturna">VIDA NOTURNA</h1>
+
+@foreach ($prod16 as $p16 )
+
     <div class="cardexp direitaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Vida Noturna/expnot1.png" alt="bares">
+                <img src="{{$p16->imagem}}" alt="imagem de {{$p16->nome}}">
             </div>
             <div class="backexp">
                 <div class="backcontentexp direitaexp">
-                    <h2 class="ttexpintern">Bares</h2>
-                    <span>Um lugar pra fazer aqueles "esquenta", pra paquerar, pra se divertir com os amigos, não importa a ocasião você vai se divertir.</span>
+                    <h2 class="ttexpintern">{{$p16->nome}}</h2>
+                    <span>{{$p16->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p16->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
-    <div class="cardexp esquerdaexp">
+
+@endforeach
+
+@foreach ($prod17 as $p17 )
+
+        <div class="cardexp esquerdaexp">
             <div class="frontexp">
-                <img src="./Galeria/imageDB/Vida Noturna/expnot2.png" alt="balada">
+                <img src="{{$p17->imagem}}" alt="imagem de {{$p17->nome}}">
             </div>
             <div class="backexpe">
                 <div class="backcontentexp esquerdaexp">
-                    <h2 class="ttexpintern">Baladas</h2>
-                    <span>Não importa o ritmo que você curte, não irão faltar opções para se esbaldar na noite</span>
+                    <h2 class="ttexpintern">{{$p17->nome}}</h2>
+                    <span>{{$p17->descricao}}</span>
                     <div class="btnsaibaexp">
-                        <a href="/produto">Saiba Mais</a>
+                        <a href="/produtos/{{$p17->id_experiencia}}">Saiba Mais</a>
                     </div>
                 </div>
             </div>
-    <div class="cardexp meioexp">
+
+@endforeach
+
+@foreach ($prod18 as $p18 )
+ <div class="cardexp meioexp">
         <div class="frontexp">
-            <img src="./Galeria/imageDB/Vida Noturna/expnot3.png" alt="sp_noite">
+            <img src="{{$p18->imagem}}"" alt="imagem de {{$p18->nome}}">
         </div>
         <div class="backexpd">
             <div class="backcontentexp meioexp">
-                <h2 class="ttexpintern">Comida</h2>
-                <span>Com uma variedade de restaurantes inigualável, São Paulo, uma das maiores capitais gastronômicas do planeta vai te levar numa viagem por todos os sentidos.</span>
+                <h2 class="ttexpintern">{{$p18->nome}}</h2>
+                <span>{{$p18->descricao}}</span>
                 <div class="btnsaibaexp">
-                    <a href="/produto">Saiba Mais</a>
+                    <a href="/produtos/{{$p18->id_experiencia}}">Saiba Mais</a>
                 </div>
             </div>
         </div>
     </div>
+@endforeach
+
 </section>
 @endsection

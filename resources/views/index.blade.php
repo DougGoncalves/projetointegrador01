@@ -28,29 +28,29 @@
     <div>
                     <h1 class="titulos">O QUE FAZER ?</h1>
         <img id="fotoprincipal"src="./Galeria/imageDB/Cidades/salvador.png" alt="cidade_salvador">
-        <a href="/experiencias#cidades">
+        <a href="/experiencias#Cidades">
         <img id="iconemaior"src="./Assets/Icon/cities.png" alt="icone_cidade">
         <h2 id="titulomaior">CIDADES</h2>
         </a>
     </div>
     <div class="container">
         <img class="miniaturas"src="./Galeria/imageDB/Historico Cultural/museu_niteroi.png" alt="museu_niteroi">
-        <a href="/experiencias#cultural">
+        <a href="/experiencias#Histórico Cultural">
         <img id="iconecultura"src="./Assets/Icon/culture.png" alt="icone_cultura">
         <h2 id="tituloicon1">CULTURAL</h2>
         </a>
         <img class="miniaturas" src="./Galeria/imageDB/Aventura/biketrail.png" alt="trilha_bike">
-        <a href="/experiencias#aventura">
+        <a href="/experiencias#Aventura">
         <img id="iconeaventura"src="./Assets/Icon/adventure.png" alt="icone_aventura">
         </a>
         <h2 id="tituloicon3">AVENTURA</h2>
         <img class="miniaturas" src="./Galeria/imageDB/Gastronomia/acai.png" alt="bowl_acai">
-        <a href="/experiencias#gastronomia">
+        <a href="/experiencias#Gastronomia">
         <img id="iconecomida"src="./Assets/Icon/food.png" alt="icone_comida">
         <h2 id="tituloicon2">COMIDA</h2>
         </a>
         <img class="miniaturas" src="./Galeria/imageDB/Natureza/floresta.png" alt="floresta">
-        <a href="/experiencias#natureza">
+        <a href="/experiencias#Natureza">
         <img id="iconenatureza"src="./Assets/Icon/nature.png" alt="icone_natureza">
         <h2 id="tituloicon4">NATUREZA</h2>
         </a>

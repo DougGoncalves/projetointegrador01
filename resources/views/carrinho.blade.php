@@ -6,13 +6,14 @@
         <div class="cart-body">
             <div class="cart-item">
 
+
                 <div class="cart-row">
                     <div class="cart-row-cell pic">
                         <a href="#">-</a>
-                        <img src="./Galeria/imageDB/Aventura/asadelta.jpg" alt="">
+                        <img src="{{$produto->imagem}}" alt="">
                     </div>
                     <div class="cart-row-cell desc">
-                        <h5> Asa Delta</h5>
+                        <h5>{{$produto->nome}}</h5>
                         <p> 14/12/2019 14:00</p>
                     </div>
                     <div class="cart-row-cell quant">
@@ -23,10 +24,12 @@
                         </ul>
                     </div>
                     <div class="cart-row-cell amount">
-                        <p>R$200,00</p>
+                        <p>R${{ $produto->preco }}</p>
                     </div>
                 </div>
-                <div class="cart-row">
+
+
+                {{-- <div class="cart-row">
                     <div class="cart-row-cell pic">
                         <a href="#">-</a>
                         <img src="./Galeria/imageDB/Cidades/bondinho.jpg" alt="">
@@ -65,7 +68,7 @@
                     <div class="cart-row-cell amount">
                         <p>R$130,00</p>
                     </div>
-                </div>
+                </div> --}}
                 <div class="totals">
                     <p class="total-label">Subtotal</p>
                     <p class="total-amount">R$470,00</p>

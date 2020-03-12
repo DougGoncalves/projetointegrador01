@@ -57,7 +57,7 @@
                 <div class="contentimperivel">
                     <h3>Asa Delta</h3><br>
                     <p>Planar entre o céu azul e o mar transparente, faz da paisagem do Rio uma experiência emocionante.</p>
-                    <a href="/experiencias#aventura">Saiba Mais</a>
+                    <a href="/experiencias#Aventura">Saiba Mais</a>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
                     <div class="contentimperivel">
                         <h3>Teatro Municipal São Paulo</h3><br>
                         <p>Conheça um pouco da história e cultura da maior metrópole da América Latina</p>
-                        <a href="/experiencias#cultural">Saiba Mais</a>
+                        <a href="/experiencias#Histórico Cultural">Saiba Mais</a>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                         <div class="contentimperivel">
                             <h3>Feijoada</h3><br>
                             <p>Que tal experimentar este prato que tem a cara do Brasil e é apreciado por milhões de pessoas no páis inteiro ?</p>
-                            <a href="/experiencias#gastronomia">Saiba Mais</a>
+                            <a href="/experiencias#Gastronomia">Saiba Mais</a>
                         </div>
                     </div>
                 </div>

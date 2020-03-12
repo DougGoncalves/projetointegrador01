@@ -16,6 +16,7 @@ use illuminate\Support\Facades\Route;
 
 Route::get('/', 'IndexController@index');
 
+
 Route::get('/about', 'AboutController@index');
 
 Route::get('/suaviagem', 'SuaviagemController@index');
@@ -23,9 +24,10 @@ Route::get('/suaviagem', 'SuaviagemController@index');
 Route::get('/conheca','ConhecaController@index');
 
 Route::get('/experiencias', 'ExperienciasController@index');
-// Route::get('/experiencias/categoria/{id}', 'ExperienciasController@show');
+Route::get('/produtos/{id}', 'ExperienciasController@show'); //passa o id do produto para a página interna do produto
 
 Route::get('/produto', 'ProdutoController@index');
+Route::get('/carrinho/{id}', 'ProdutoController@addToCart'); //envia as informações do pedido para o carrinho
 
 Route::get('/admin/produto', 'ProdutoController@admin');
 Route::get('/admin/produto/create', 'ProdutoController@create' );

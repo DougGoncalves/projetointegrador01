@@ -46,7 +46,7 @@
             <img src="./Galeria/imageDB/Aventura/aventura.jpg" alt="aventura" id="foto1destinos">
         </div>
         <div class="detalhesdestinos">
-            <a href="/experiencias#aventura" style="color:white;text-decoration: none">
+            <a href="/experiencias#Aventura" style="color:white;text-decoration: none">
             <h2 class="cardcalldestinos">AVENTURA</h2>
             </a>
             <p class="descdestinos">Que tal aquela dose de adrenalina ? Asa-Delta, Rafting, Mountain-Bike você escolhe, mas a emoção é por nossa conta</p>
@@ -58,7 +58,7 @@
                     <img src="./Galeria/imageDB/Cidades/avenida-paulista-black-and-white-brazil-72479.jpg" alt="cidades" id="foto2destinos">
                 </div>
                 <div class="detalhesdestinos">
-                    <a href="/experiencias#cidades" style="color:white;text-decoration: none">
+                    <a href="/experiencias#Cidades" style="color:white;text-decoration: none">
                     <h2 class="cardcalldestinos">CIDADES</h2>
                     </a>
                     <p class="descdestinos">Conheça as cidades como um local: visite lugares pouco explorados e encontre "jóias" desconhecidas em grandes centros. Oportunidade verdadeira de conhecer a cultura e costumes de um lugar </p>
@@ -70,7 +70,7 @@
                     <img src="./Galeria/imageDB/Gastronomia/mercadao_saopaulo.jpg" alt="gastronomia" id="foto3destinos">
                 </div>
                 <div class="detalhesdestinos">
-                    <a href="/experiencias#gastronomia" style="color:white;text-decoration: none">
+                    <a href="/experiencias#Gastronomia" style="color:white;text-decoration: none">
                     <h2 class="cardcalldestinos">GASTRONOMIA</h2>
                     </a>
                     <p class="descdestinos"> Anos de fluxo migratório e colonização deixaram nossa culinária local com sabores únicos. Misturas que não são encontradas em nenhum outro lugar do mundo. Saboreei frutas exóticas, pratos típicos e bebidas que aguçam os sentidos.</p>
@@ -82,7 +82,7 @@
                     <img src="./Galeria/imageDB/Historico Cultural/museu_ipiranga.jpg" alt="historicocultural" id="foto4destinos">
                 </div>
                 <div class="detalhesdestinos">
-                    <a href="/experiencias#cultural" style="color:white;text-decoration: none">
+                    <a href="/experiencias#Histórico Cultural" style="color:white;text-decoration: none">
                     <h2 class="cardcalldestinos">CULTURAL</h2>
                     </a>
                     <p  class="descdestinos">Conheça um Brasil pouco explorado e riquíssimo em cultura, formada pelos diversos povos que por aqui passaram ou se estabeleceram. Um grande mix de culturas negra, européia, asiática e indígena.</p>
@@ -94,7 +94,7 @@
                     <img src="./Galeria/imageDB/Natureza/aerial-shot-bird-s-eye-view-brazil-1650669.jpg" alt="natureza" id="foto5destinos">
                 </div>
                 <div class="detalhesdestinos">
-                    <a href="/experiencias#natureza" style="color:white;text-decoration: none">
+                    <a href="/experiencias#Natureza" style="color:white;text-decoration: none">
                     <h2 class="cardcalldestinos">NATUREZA</h2>
                     </a>
                     <p class="descdestinos"> Um dos maiores ecossistemas do mundo, com uma enorme variedade de fauna e flora, pode te proporcionar experiências únicas e diversas. Florestas tropicais, campos, cerrado, sertão. Várias experiências em um único lugar</p>
@@ -106,7 +106,7 @@
                     <img src="./Galeria/imageDB/Vida Noturna/nightlife.jpg" alt="nightlife" id="foto6destinos">
                 </div>
                 <div class="detalhesdestinos">
-                    <a href="/experiencias#vida_noturna" style="color:white;text-decoration: none">
+                    <a href="/experiencias#Vida Noturna" style="color:white;text-decoration: none">
                     <h2 class="cardcalldestinos">VIDA NOTURNA</h2>
                     </a>
                     <p class="descdestinos">Se jogue na noite e descubra como os locais se divertem!</p>
