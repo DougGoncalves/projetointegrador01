@@ -176,7 +176,7 @@ nav ul li a {
     width: 150px;
     height:150px;
     position: absolute;
-    left: 830px;
+    left: 820px;
     margin-top:30px;
 }
 #tituloicon1{
@@ -185,14 +185,14 @@ nav ul li a {
     font-weight: bold;
     color: #FFF;
     position: absolute;
-    left: 830px;
+    left: 820px;
     margin-top:180px;
 }
 #iconecomida{
     width: 130px;
     height:130px;
     position: absolute;
-    left: 840px;
+    left: 820px;
     margin-top:50px;
 }
 #tituloicon2{
@@ -201,14 +201,14 @@ nav ul li a {
     font-weight: bold;
     color: #FFF;
     position: absolute;
-    left: 855px;
+    left: 835px;
     margin-top:190px;
 }
 #iconeaventura{
     width: 150px;
     height:150px;
     position: absolute;
-    left: 1170px;
+    left: 1150px;
     margin-top:30px;
 }
 #tituloicon3{
@@ -217,14 +217,14 @@ nav ul li a {
     font-weight: bold;
     color: #FFF;
     position: absolute;
-    left: 1170px;
+    left: 1150px;
     margin-top:180px;
 }
 #iconenatureza{
     width: 150px;
     height:150px;
     position: absolute;
-    left: 1170px;
+    left: 1150px;
     margin-top:50px;
 }
 #tituloicon4{
@@ -233,7 +233,7 @@ nav ul li a {
     font-weight: bold;
     color: #FFF;
     position: absolute;
-    left: 1170px;
+    left: 1150px;
     margin-top:190px;
 }
 .container {

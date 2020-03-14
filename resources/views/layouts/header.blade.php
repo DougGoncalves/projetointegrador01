@@ -40,12 +40,12 @@
             </div>
             <a href="/register" id="cadastro">Cadastre-se</a>
             <div>
-            <form>
+            <form >
             <input type="search" name="busca" id="busca" placeholder="Busca..."><br>
-            <button id="btn-busca"type="submit">Buscar</button>
+                <button id="btn-busca"type="submit">Buscar</button>
             </form>
             <a href="/login">
-            <input type="submit" id="btn-login" value="Login">
+                <input type="submit" id="btn-login" value="Login">
             </a>
             </div>
             <div class="menu-toggle">

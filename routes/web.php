@@ -29,13 +29,13 @@ Route::get('/produtos/{id}', 'ExperienciasController@show'); //passa o id do pro
 Route::get('/produto', 'ProdutoController@index');
 Route::get('/carrinho/{id}', 'ProdutoController@addToCart'); //envia as informações do pedido para o carrinho
 
-Route::get('/admin/produto', 'ProdutoController@admin');
-Route::get('/admin/produto/create', 'ProdutoController@create' );
-Route::post('/admin/produto/insert', 'ProdutoController@insert');
-Route::get('admin/produtos/{id}', 'ProdutoController@update');
-Route::post('admin/produtos/{id}', 'ProdutoController@put');
-Route::get('admin/produtos/excluir/{id}', 'ProdutoController@delete');
-Route::post('admin/produtos/excluir/{id}', 'ProdutoController@remove');
+Route::get('/admin/produto', 'ProdutoController@admin'); //CRUD Produtos
+Route::get('/admin/produto/create', 'ProdutoController@create' );//CRUD Produtos
+Route::post('/admin/produto/insert', 'ProdutoController@insert');//CRUD Produtos
+Route::get('admin/produtos/{id}', 'ProdutoController@update');//CRUD Produtos
+Route::post('admin/produtos/{id}', 'ProdutoController@put');//CRUD Produtos
+Route::get('admin/produtos/excluir/{id}', 'ProdutoController@delete');//CRUD Produtos
+Route::post('admin/produtos/excluir/{id}', 'ProdutoController@remove');//CRUD Produtos
 
 Route::get('/carrinho', 'CarrinhoController@index');
 
