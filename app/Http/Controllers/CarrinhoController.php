@@ -10,4 +10,5 @@ class CarrinhoController extends Controller
     {
         return view('carrinho');
     }
+
 }

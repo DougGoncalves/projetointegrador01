@@ -2,7 +2,9 @@
 @section('conteudo')
 <h1 class="titulo">Carrinho de Compras</h1>
 <section class="container-carrinho">
+
     <div class="cart-container">
+
         <div class="cart-body">
             <div class="cart-item">
 
@@ -14,7 +16,7 @@
                     </div>
                     <div class="cart-row-cell desc">
                         <h5>{{$produto->nome}}</h5>
-                        <p> 14/12/2019 14:00</p>
+                        {{-- <p> 14/12/2019 14:00</p> --}}
                     </div>
                     <div class="cart-row-cell quant">
                         <ul>
@@ -24,7 +26,7 @@
                         </ul>
                     </div>
                     <div class="cart-row-cell amount">
-                        <p>R${{ $produto->preco }}</p>
+                        <p>R${{ number_format($produto->preco, 2, ',', '.') }}</p>
                     </div>
                 </div>
 
@@ -48,8 +50,8 @@
                     <div class="cart-row-cell amount">
                         <p>R$140,00</p>
                     </div>
-                </div>
-                <div class="cart-row">
+                </div> --}}
+                {{-- <div class="cart-row">
                     <div class="cart-row-cell pic">
                         <a href="#">-</a>
                         <img src="./Galeria/imageDB/Natureza/praiario.jpg" alt="">
@@ -81,9 +83,11 @@
                     <p class="total-label">Total</p>
                     <p class="total-amount">R$517,00</p>
                 </div>
+
                 <div class="finalizar-compra">
                     <button>Finalizar Compra</button>
                 </div>
+                <a href="/experiencias" style="text-decoration: none;"><< Continuar Comprando </a>
             </div>
         </div>
     </div>

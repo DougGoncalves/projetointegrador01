@@ -27,7 +27,6 @@ Route::get('/experiencias', 'ExperienciasController@index');
 Route::get('/produtos/{id}', 'ExperienciasController@show'); //passa o id do produto para a página interna do produto
 
 Route::get('/produto', 'ProdutoController@index');
-Route::get('/carrinho/{id}', 'ProdutoController@addToCart'); //envia as informações do pedido para o carrinho
 
 Route::get('/admin/produto', 'ProdutoController@admin'); //CRUD Produtos
 Route::get('/admin/produto/create', 'ProdutoController@create' );//CRUD Produtos
@@ -38,12 +37,11 @@ Route::get('admin/produtos/excluir/{id}', 'ProdutoController@delete');//CRUD Pro
 Route::post('admin/produtos/excluir/{id}', 'ProdutoController@remove');//CRUD Produtos
 
 Route::get('/carrinho', 'CarrinhoController@index');
+Route::get('/carrinho/{id}', 'ProdutoController@addToCart'); //envia as informações do pedido para o carrinho
 
 Route::get('/cadastrointerno', 'CadastrointernoController@index');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/register/insert', 'RegisterController@insert');
 Route::post('/cadastrointerno/{id}', 'CadastrointernoController@update');
