@@ -14,6 +14,14 @@ class RegisterController extends Controller
         $usuario = new Usuario();
 
         $usuario->email = $request->email;
+
+
+        if ($request->senha != $request->confirmaSenha) {
+
+            return view('auth.register', compact('usuario'));
+            
+        }
+
         $usuario->senha = Hash::make($request->senha);
 
         if ($request->todos)
