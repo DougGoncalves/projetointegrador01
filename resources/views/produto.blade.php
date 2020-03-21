@@ -15,9 +15,9 @@
                 {{$produto->descricao}}
             </p>
             <p style="margin-top: 30px; display:flexbox; float:right;">Categoria: {{$categoria}}</p>
-            <p style="margin-top: 60px; font-size:1.9em; font-weight:bold; display:flex; justify-content: flex-end; ">R$ {{ number_format($produto->preco, 2, ',', '.')}} </p>
+            <p style="margin-top: 60px; font-size:2.5em; font-weight:bold; display:flex; justify-content: flex-end; ">R$ {{ number_format($produto->preco, 2, ',', '.')}} </p>
         </article>
-        <a href="/carrinho/{{$produto->id_experiencia}}"><input id="btn-comprar-produto"type="submit" value="Comprar"></a>
+        <a href="/addcarrinho/{{$produto->id_experiencia}}"><input id="btn-comprar-produto"type="submit" value="Comprar"></a>
     </div>
 </section>
     @endif

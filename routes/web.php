@@ -14,19 +14,16 @@ use illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'IndexController@index');
+Route::get('/', 'IndexController@index')->name('home');
 
+Route::get('/about', 'AboutController@index')->name('about');
 
-Route::get('/about', 'AboutController@index');
+Route::get('/suaviagem', 'SuaviagemController@index')->name('suaviagem');
 
-Route::get('/suaviagem', 'SuaviagemController@index');
+Route::get('/conheca','ConhecaController@index')->name('conheca');
 
-Route::get('/conheca','ConhecaController@index');
-
-Route::get('/experiencias', 'ExperienciasController@index');
-Route::get('/produtos/{id}', 'ExperienciasController@show'); //passa o id do produto para a página interna do produto
-
-Route::get('/produto', 'ProdutoController@index');
+Route::get('/experiencias', 'ExperienciasController@index')->name('experiencias');
+Route::get('/produtos/{id}', 'ExperienciasController@show'); //vai para página interna do produto, listando por id
 
 Route::get('/admin/produto', 'ProdutoController@admin'); //CRUD Produtos
 Route::get('/admin/produto/create', 'ProdutoController@create' );//CRUD Produtos
@@ -36,8 +33,10 @@ Route::post('admin/produtos/{id}', 'ProdutoController@put');//CRUD Produtos
 Route::get('admin/produtos/excluir/{id}', 'ProdutoController@delete');//CRUD Produtos
 Route::post('admin/produtos/excluir/{id}', 'ProdutoController@remove');//CRUD Produtos
 
-Route::get('/carrinho', 'CarrinhoController@index');
-Route::get('/carrinho/{id}', 'ProdutoController@addToCart'); //envia as informações do pedido para o carrinho
+Route::get('/carrinho', 'CarrinhoController@index')->name('carrinho');
+Route::get('/addcarrinho/{id}', 'CarrinhoController@addToCart')->name('add.carrinho');//envia as informações do produto para o carrinho
+Route::get('/removecarrinho/{id}', 'CarrinhoController@decrement')->name('decrement.carrinho'); //diminui quantidade de items adicionados ao carrinho
+Route::get('/deletecarrinho/{id}', 'CarrinhoController@remove')->name('remove.carrinho');
 
 Route::get('/cadastrointerno', 'CadastrointernoController@index');
 
@@ -54,3 +53,7 @@ Route::post('/admin/usuario/{id}', 'UsuarioController@put');
 Route::get('/admin/usuario/excluir/{id}', 'UsuarioController@delete');
 Route::post('/admin/usuario/excluir/{id}', 'UsuarioController@remove');
 
+Route::get('paypal', 'PayPalController@paypal')->name('paypal');
+Route::get('return-paypal', 'PayPalController@returnPayPal')->name('return.paypal');
+
+Route::get('pagseguro', 'PagSeguroController@pagseguro')->name('pagseguro');

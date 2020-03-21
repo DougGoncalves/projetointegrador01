@@ -39,7 +39,6 @@ class ExperienciasController extends Controller
     {
         $produto = Produto::find($id);
         $categ = Produto::find($id)->fk_categoria;
-        $edit = Produto::find($id)->fk_editora;
         $categoria = Categoria::find($categ)->nome;
 
         return view('produto', compact('produto', 'categoria'));

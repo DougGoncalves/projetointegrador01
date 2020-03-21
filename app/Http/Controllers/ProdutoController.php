@@ -109,10 +109,5 @@ class ProdutoController extends Controller
         return redirect('admin/produto');
     }
 
-    public function addToCart($id)
-    {
-        $produto = Produto::find($id);
-
-        return view('carrinho', compact('produto'));
-    }
+    
 }
