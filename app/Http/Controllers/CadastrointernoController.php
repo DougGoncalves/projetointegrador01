@@ -15,6 +15,13 @@ class CadastrointernoController extends Controller
     public function update(Request $request, $id_usuario) {
         
         $usuario = Usuario::find($id_usuario);
+
+        if ($request->senha != $request->confirmaSenha) {
+
+            $confirmaSenha = true;
+            return view('cadastrointerno', compact('confirmaSenha', 'usuario'));
+            
+        }
         
         $usuario->nome = $request->nome;
         $request->cpf = trim($request->cpf);

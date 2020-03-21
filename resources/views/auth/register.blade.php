@@ -13,8 +13,13 @@
                     <fieldset id="cad-simples">
                         <div class="form-group">
                             <label for="email" {{ __('E-Mail Address') }}>E-mail</label>
+                            @if(isset($usuario))
+                            <input type="email" class="form-control" id="email" placeholder="email@email.com"
+                            @error('email') is-invalid @enderror" name="email" value="{{ $usuario->email }}" required autocomplete="email">
+                            @else
                             <input type="email" class="form-control" id="email" placeholder="email@email.com"
                             @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                            @endif
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -22,19 +27,18 @@
                             @enderror
 
                         </div>
-
                         <div class="form-group">
                             <label for="senha" {{ __('Password') }}>Senha</label>
                             <input type="password" class="form-control" id="senha" placeholder="***************"@error('password') is-invalid @enderror" name="senha" required autocomplete="new-password">
-                            @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
+                            @if(isset($usuario))
+                            <div class="alert alert-danger" role="alert">
+                                As senhas não coincidem!
+                            </div>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label for="password-confirm" {{ __('Confirm Password') }}>Confirme sua senha</label>
-                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="***************">
+                            <input id="password-confirm" type="password" class="form-control" name="confirmaSenha" required autocomplete="new-password" placeholder="***************">
                         </div>
                     </fieldset>
                 </div>

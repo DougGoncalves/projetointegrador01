@@ -61,49 +61,26 @@
                     </div>
 
                     <div class="form-group col-md-4"></div>
-
+                    
                     <div class="form-group col-md-4">
                         <label for="senha">Senha</label>
+
                         <input type="password" class="form-control" name="senha" id="senha"
                             placeholder="***************" value="{{$usuario->senha}}">
                     </div>
 
                     <div class="form-group col-md-4">
                         <label for="conf-senha">Confirme a Senha</label>
-                        <input type="password" class="form-control" name="conf-senha" id="conf-senha"
+                        <input type="password" class="form-control" name="confirmaSenha" id="conf-senha"
                             placeholder="***************" value="{{$usuario->senha}}">
                     </div>
+                    @if(isset($confirmaSenha))
+                        <div class="alert alert-danger form-control" role="alert">
+                                As senhas não coincidem!
+                        </div>
+                    @endif
 
                     <hr id="line">
-
-                    <div class="titulo-cartao my-3 col-12">
-                        <h3>Dados do Cartão</h3>
-                    </div>
-
-                    <div class="form-group col-md-6">
-                        <label for="titularcard">Titular</label>
-                        <input type="text" class="form-control" name="titularcard" id="titularcard"
-                            placeholder="Nome impresso no cartão">
-                    </div>
-
-                    <div class="form-group col-md-6"></div>
-
-                    <div class="form-group col-md-4">
-                        <label for="cartao">Número do cartão</label>
-                        <input type="text" class="form-control" name="cartao" id="cartao"
-                            placeholder="5555-5555-5555-5555" maxlength="19">
-                    </div>
-
-                    <div class="form-group col-md-3">
-                        <label for="validade">Validade</label>
-                        <input type="validade" class="form-control" name="validade" id="validade"
-                            placeholder="MM/AA" maxlength="5">
-                    </div>
-
-                    <div class="form-group col-md-3">
-                        <label for="cvv">Código (CVV)</label>
-                        <input type="cvv" class="form-control" name="cvv" id="cvv" placeholder="123" maxlength="3">
-                    </div>
             @endif
                 </div>
                 <div class="botoes" style="display: flex;">
@@ -111,7 +88,7 @@
                 <button class="btn btn-primary btn-lg btn-enviar">Enviar</button>
             </div>
             <div class="cancelar">
-                <button type="button" class="btn btn-primary btn-lg btn-cancelar"><a href="/">Cancelar</a></button>
+                <button class="btn btn-primary btn-lg btn-cancelar">Cancelar</a></button>
             </div>
         </div>
             </form>
