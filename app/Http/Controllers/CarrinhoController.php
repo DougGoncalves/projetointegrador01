@@ -11,7 +11,7 @@ class CarrinhoController extends Controller
 
     public function index()
     {
-        $cart = Session::get('cart');
+        $cart = Session::has('cart') ? Session::get('cart') : new Cart;
         $total = $cart->total();
         $subtotal = $cart->subtotal();
         $produtos = $cart->getItems();

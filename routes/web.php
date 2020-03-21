@@ -36,7 +36,7 @@ Route::post('admin/produtos/excluir/{id}', 'ProdutoController@remove');//CRUD Pr
 Route::get('/carrinho', 'CarrinhoController@index')->name('carrinho');
 Route::get('/addcarrinho/{id}', 'CarrinhoController@addToCart')->name('add.carrinho');//envia as informações do produto para o carrinho
 Route::get('/removecarrinho/{id}', 'CarrinhoController@decrement')->name('decrement.carrinho'); //diminui quantidade de items adicionados ao carrinho
-Route::get('/deletecarrinho/{id}', 'CarrinhoController@remove')->name('remove.carrinho');
+Route::get('/deletecarrinho/{id}', 'CarrinhoController@remove')->name('remove.carrinho');// remove item por completo do carrinho
 
 Route::get('/cadastrointerno', 'CadastrointernoController@index');
 
