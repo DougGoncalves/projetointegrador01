@@ -53,7 +53,7 @@ Route::post('/admin/usuario/{id}', 'UsuarioController@put');
 Route::get('/admin/usuario/excluir/{id}', 'UsuarioController@delete');
 Route::post('/admin/usuario/excluir/{id}', 'UsuarioController@remove');
 
-Route::get('paypal', 'PayPalController@paypal')->name('paypal');
+Route::get('/paypal', 'PayPalController@paypal')->name('paypal');
 Route::get('return-paypal', 'PayPalController@returnPayPal')->name('return.paypal');
 
 Route::get('pagseguro', 'PagSeguroController@pagseguro')->name('pagseguro');

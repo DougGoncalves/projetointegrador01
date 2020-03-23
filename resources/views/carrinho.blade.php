@@ -30,8 +30,8 @@
 
                 @empty
 
-                    <div class="cart-row-cell desc">
-                        <h5>Seu carrinho está vazio!</h5>
+                    <div class="cart-row-cell desc " style=" text-align:center;">
+                        <h2>Seu carrinho está vazio!</h2>
                     </div>
 
                 @endforelse
@@ -49,9 +49,14 @@
                 <p class="total-amount">R$ {{ number_format($total, 2, ',', '.') }}</p>
                 </div>
 
+                @if ( Session::has('cart') && Session::get('cart')->totalItems() >=1 )
+
                 <div class="finalizar-compra">
-                    <button>Finalizar Compra</button>
+                    <button><a  style="text-decoration: none; color:#fff;" href="{{ route('paypal') }}" >Finalizar Compra</a></button>
                 </div>
+
+                @endif
+
                 <a href="/experiencias" style="text-decoration: none; color:#000;"><< Continuar Comprando </a>
             </div>
         </div>
