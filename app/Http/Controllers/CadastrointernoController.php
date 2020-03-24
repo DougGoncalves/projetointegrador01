@@ -34,6 +34,19 @@ class CadastrointernoController extends Controller
         $usuario->senha = $request->senha;
         $usuario->telefoneUm = $request->telefoneUm;
         $usuario->telefoneDois = $request->telefoneDois;
+
+        $arquivo = $request->file('imagem');
+        if (!empty($arquivo)) {
+            // salvando
+            $nomePasta = 'uploads';
+            $arquivo->storePublicly($nomePasta); //nome temporário do arquivo
+            $caminhoAbsoluto = public_path() . "/storage/$nomePasta";
+            $nomeArquivo = $arquivo->getClientOriginalName(); //faz a hash para nome do arquivos
+            $caminhoRelativo = "/storage/$nomePasta/$nomeArquivo";
+            // movendo
+            $arquivo->move($caminhoAbsoluto, $nomeArquivo);
+            $usuario->imagem = $caminhoRelativo;
+        }
         
         $usuario->save();
 

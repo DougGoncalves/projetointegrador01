@@ -43,7 +43,7 @@
                     <div class="form-group col-md-4">
                         <label for="telefoneUm">Telefone para contato</label>
                         <input type="text" class="form-control" name="telefoneUm" id="telefoneUm"
-                        value="{{ $usuario->telefoneUm}} maxlength="11" required>
+                        value="{{ $usuario->telefoneUm}}" maxlength="11" required>
                     </div>
 
                     <div class="form-group col-md-4">
@@ -76,12 +76,19 @@
 
                     <hr id="line">
                 </div>
+                <div class="form-group pt-5">
+            <label for="imagem"> Imagem </label><br>
+            <input type="file" name="imagem" id="imagem">
+        </div>
+        <div class="form-group col-md-4">
+            <img src="{{$usuario->imagem}}" alt="capa de {{$usuario->nome}}" class="img-thumbnail" style="max-height: 480px; max-width: 340px; width: auto; height: auto">
+        </div>
                 <div class="botoes" style="display: flex;">
                 <div class="enviar">
                 <button class="btn btn-primary btn-lg btn-enviar">Enviar</button>
             </div>
             <div class="cancelar">
-                <button type="button" class="btn btn-primary btn-lg btn-cancelar"><a href="/">Cancelar</a></button>
+                <button type="button" class="btn btn-primary btn-lg btn-cancelar" formnovalidate><a href="/" style="text-decoration: none; color:white">Cancelar</a></button>
             </div>
             
         </div>

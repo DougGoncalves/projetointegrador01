@@ -82,13 +82,17 @@
 
                     <hr id="line">
             @endif
+                    <div class="form-group pt-5">
+                        <label for="imagem" style="display:block"> Imagem </label>
+                        <input  name="imagem" type="file">
+                    </div>
                 </div>
                 <div class="botoes" style="display: flex;">
                 <div class="enviar">
                 <button class="btn btn-primary btn-lg btn-enviar">Enviar</button>
             </div>
             <div class="cancelar">
-                <button class="btn btn-primary btn-lg btn-cancelar">Cancelar</a></button>
+                <button class="btn btn-primary btn-lg btn-cancelar" formnovalidate><a href="/" style="text-decoration: none; color: white">Cancelar</a></button>
             </div>
         </div>
             </form>
