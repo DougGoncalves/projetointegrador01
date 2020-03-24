@@ -45,15 +45,18 @@ Auth::routes();
 Route::post('/register/insert', 'RegisterController@insert');
 Route::post('/cadastrointerno/{id}', 'CadastrointernoController@update');
 
-Route::get('/admin/usuarios', 'UsuarioController@index');
-Route::get('/admin/usuario/create', 'UsuarioController@create');
-Route::post('/admin/usuario/insert', 'UsuarioController@insert');
-Route::get('/admin/usuario/{id}', 'UsuarioController@update');
-Route::post('/admin/usuario/{id}', 'UsuarioController@put');
-Route::get('/admin/usuario/excluir/{id}', 'UsuarioController@delete');
-Route::post('/admin/usuario/excluir/{id}', 'UsuarioController@remove');
+Route::get('/admin/usuarios', 'UsuarioController@index'); //CRUD Usuários
+Route::get('/admin/usuario/create', 'UsuarioController@create'); //CRUD Usuários
+Route::post('/admin/usuario/insert', 'UsuarioController@insert'); //CRUD Usuários
+Route::get('/admin/usuario/{id}', 'UsuarioController@update');//CRUD Usuários
+Route::post('/admin/usuario/{id}', 'UsuarioController@put');//CRUD Usuários
+Route::get('/admin/usuario/excluir/{id}', 'UsuarioController@delete');//CRUD Usuários
+Route::post('/admin/usuario/excluir/{id}', 'UsuarioController@remove');//CRUD Usuários
 
-Route::get('/paypal', 'PayPalController@paypal')->name('paypal');
-Route::get('return-paypal', 'PayPalController@returnPayPal')->name('return.paypal');
+Route::get('/paypal', 'PayPalController@paypal')->name('paypal');//envia pagamento para paypal
+Route::get('return-paypal', 'PayPalController@returnPayPal')->name('return.paypal');//retorna status de pagamento do paypal para o banco
 
-Route::get('pagseguro', 'PagSeguroController@pagseguro')->name('pagseguro');
+Route::get('/admin/pedidos', 'PedidoController@index'); //CRUD Pedidos
+Route::get('/admin/pedido/{id}', 'PedidoController@details');//CRUD Pedidos
+Route::get('/admin/pedido/excluir/{id}', 'PedidoController@delete');//CRUD Pedidos
+Route::post('/admin/pedido/excluir/{id}', 'PedidoController@remove');//CRUD Pedidos

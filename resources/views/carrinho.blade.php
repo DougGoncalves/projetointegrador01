@@ -1,6 +1,15 @@
 @extends('layouts.master_layout')
 @section('conteudo')
 <h1 class="titulo">Carrinho de Compras</h1>
+<!--Caso exista algum erro ou cancelamento no pedido exibe mensagem de alerta-->
+@if (session('message'))
+
+<div class="alert alert-warning">
+    {{session('message')}}
+</div>
+
+@endif
+
 <section class="container-carrinho">
     <div class="cart-container">
         <div class="cart-body">

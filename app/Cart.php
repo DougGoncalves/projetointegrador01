@@ -99,4 +99,10 @@ class Cart extends Model
     {
         return count($this->items);
     }
+
+    public function emptyItems()
+    {
+        if (Session::has('cart'))
+            Session::forget('cart');
+    }
 }

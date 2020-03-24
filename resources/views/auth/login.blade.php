@@ -58,7 +58,7 @@
                             </section>
                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                            <label class="form-check-label" for="remember">
+                            <label class="form-check-label" for="remember" style="color:#fff;">
                                 {{ __('Remember Me') }}
                             </label>
                         </form>
@@ -81,7 +81,7 @@
 
     </section>
 
-<form>
+{{-- <form>
     <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -108,7 +108,7 @@
     </div>
   </div>
 
-</form>
+</form> --}}
 
 
 

@@ -15,6 +15,7 @@ use PayPal\Rest\ApiContext;
 use PayPal\Auth\OAuthTokenCredential;
 use App\Cart;
 use App\Pedido;
+use PayPal\Api\PaymentExecution;
 
 class PayPal extends Model
 {
@@ -48,20 +49,23 @@ class PayPal extends Model
 
             $paymentId = $payment->getId();
 
-            Pedido::create([
-                'fk_usuario' => 1, //ALTERAR PARA ROTA DE USUARIO LOGADO, DEPOIS DE ESTABELECIDA
-                'total'      => $this->cart->total(),
-                'status'     => 'started',
-                'payment_id' => $paymentId,
+            $approvalUrl = $payment->getApprovalLink();
+
+            return [
+                'status' => true,
+                'url_paypal' => $approvalUrl,
                 'identify'   => $this->identify,
-            ]);
-        } catch (Exception $ex) {
-            exit(1);
+                'payment_id' => $paymentId,
+            ];
+
+        } catch (Exception $e) {
+            return [
+                'status' => false,
+                'message' => $e->getMessage(),
+            ];
         }
 
-        $approvalUrl = $payment->getApprovalLink();
 
-        return $approvalUrl;
     }
 
     public function payer()
@@ -143,7 +147,16 @@ class PayPal extends Model
     {
         $payment = Payment::get($paymentId, $this->apiContext);
 
-        dd($payment);
+        if ( $payment->getState() != 'approved') {
+            $execution = new PaymentExecution();
+            $execution->setPayerId($payerId);
+
+            $result = $payment->execute($execution, $this->apiContext);
+
+            return $result->getState();
+        }
+
+        return $payment->getState();
     }
 
 }
