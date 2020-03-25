@@ -56,7 +56,13 @@ Route::post('/admin/usuario/excluir/{id}', 'UsuarioController@remove');//CRUD Us
 Route::get('/paypal', 'PayPalController@paypal')->name('paypal');//envia pagamento para paypal
 Route::get('return-paypal', 'PayPalController@returnPayPal')->name('return.paypal');//retorna status de pagamento do paypal para o banco
 
+//CRUD Pedidos
 Route::get('/admin/pedidos', 'PedidoController@index'); //CRUD Pedidos
 Route::get('/admin/pedido/{id}', 'PedidoController@details');//CRUD Pedidos
 Route::get('/admin/pedido/excluir/{id}', 'PedidoController@delete');//CRUD Pedidos
 Route::post('/admin/pedido/excluir/{id}', 'PedidoController@remove');//CRUD Pedidos
+
+// Login
+Route::post('/login', 'LoginController@checkLogin');
+
+

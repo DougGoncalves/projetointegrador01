@@ -37,9 +37,15 @@
                 <li><a href="/conheca">Conheça</a></li>
                 <li><a href="/suaviagem">Sua Viagem</a></li>
             </ul>
-            </div>
-            <a href="/register" id="cadastro">Cadastre-se</a>
-            <div>
+            @if (!isset( $_SESSION["usuario"] ))
+                </div>
+                <a href="/register" id="cadastro">Cadastre-se</a>
+                <div>
+            @else
+                </div>
+                <a id="cadastro">Olá {{ $_SESSION["usuario"] }}</a>
+                <div>
+            @endif
             <form >
             <input type="search" name="busca" id="busca" placeholder="Busca..."><br>
                 <button id="btn-busca"type="submit">Buscar</button>
