@@ -25,6 +25,8 @@ Route::get('/conheca','ConhecaController@index')->name('conheca');
 Route::get('/experiencias', 'ExperienciasController@index')->name('experiencias');
 Route::get('/produtos/{id}', 'ExperienciasController@show'); //vai para página interna do produto, listando por id
 
+Route::any('/pesquisa', 'ExperienciasController@search');
+
 Route::get('/admin/produto', 'ProdutoController@admin'); //CRUD Produtos
 Route::get('/admin/produto/create', 'ProdutoController@create' );//CRUD Produtos
 Route::post('/admin/produto/insert', 'ProdutoController@insert');//CRUD Produtos
