@@ -21,10 +21,10 @@ class LoginController extends Controller
              if (password_verify($request->password, $senha)) {
                 return view ('index', compact('usuario'));
 
-            } 
+            }
         } else {
             $message = "usuário inválido";
-            return view ('/index');
+            return view ('index');
         }
 
     }
