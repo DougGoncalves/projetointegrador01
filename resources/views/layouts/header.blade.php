@@ -43,6 +43,12 @@
                 <li><a href="/conheca">Conheça</a></li>
                 <li><a href="/suaviagem">Sua Viagem</a></li>
             </ul>
+
+            <?php
+                // reabre sessão
+                session_start(); 
+            ?>
+
             @if (!isset( $_SESSION["usuario"] ))
                 </div>
                 <a href="/register" id="cadastro">Cadastre-se</a>
