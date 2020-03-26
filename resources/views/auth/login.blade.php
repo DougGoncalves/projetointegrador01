@@ -56,6 +56,13 @@
                             <section class="form-group">
                                 <input type="submit" value="{{ __('Entrar') }}" id="btn-TelaLogin">
                             </section>
+                            <script class="alert alert-success">
+                                    var msg = '{{Session::get('alert')}}';
+                                    var exist = '{{Session::has('alert')}}';
+                                    if(exist){
+                                        alert(msg);
+                                    }
+                            </script>
                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                             <label class="form-check-label" for="remember" style="color:#fff;">
