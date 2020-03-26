@@ -45,8 +45,10 @@
             </ul>
 
             <?php
+                // reabre sessão
                 session_start(); 
             ?>
+
             @if (!isset( $_SESSION["usuario"] ))
                 </div>
                 <a href="/register" id="cadastro">Cadastre-se</a>
