@@ -3,7 +3,7 @@
 <h1 class="titulo-cadastro">Pedidos</h1>
 <div class="container-formulario">
     <div class="row">
-        <table class="table table-responsive" style="margin-top:20px;">
+        <table class="table table-responsive" style="margin-top:20px; ">
             <thead style="font-size: 1.5em; font-weight:bold">
                 <tr>
                     <td>Pedido</td>

@@ -42,8 +42,8 @@
 
                     <div class="form-group col-md-4">
                         <label for="telefoneUm">Telefone para contato</label>
-                        <input type="text" class="form-control" name="telefoneUm" id="telefoneUm"
-                        value="{{ $usuario->telefoneUm}} maxlength="11" >
+                        <input type="text" class="form-control" name="telefoneUm" id="telefoneUm" maxlength="11"
+                        value="{{ $usuario->telefoneUm}}" >
                     </div>
 
                     <div class="form-group col-md-4">
@@ -74,14 +74,13 @@
                     </div>
                     @endif
 
-                    <hr id="line">
                 </div>
                 <div class="botoes" style="display: flex;">
                 <div class="enviar">
-                <button class="btn btn-danger btn-lg btn-enviar mr-5">Excluir</button>
+                <button class="btn btn-danger btn-lg btn-enviar mr-5" style="margin-right:10px;">Excluir</button>
             </div>
             <div class="cancelar mr-5">
-                <button type="button" class="btn btn-primary btn-lg btn-cancelar"><a href="/" style="text-decoration:none;color: #fff;">Cancelar</a></button>
+                <button type="button" class="btn btn-primary btn-lg btn-cancelar"><a href="/admin/usuarios" style="text-decoration:none;color: #fff;">Cancelar</a></button>
             </div>
 
         </div>

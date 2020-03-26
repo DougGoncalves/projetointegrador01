@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{asset('../CSS/cadastroInterno.css')}}">
     <!-- CSS para pagina pesquisa -->
     <link rel="stylesheet" href="{{asset('../CSS/pesquisa.css')}}">
-    
+
 
 <link rel="shortcut icon" href="{{asset('../Assets/Icon/fav.ico')}}" type="image/x-icon">
     <title>Blend Tour</title>
@@ -46,7 +46,7 @@
 
             <?php
                 // reabre sessão
-                session_start(); 
+                session_start();
             ?>
 
             @if (!isset( $_SESSION["usuario"] ))
@@ -55,16 +55,22 @@
                 <div>
             @else
                 </div>
-                <a id="cadastro">Olá {{ $_SESSION["usuario"] }}</a>
+                <a id="cadastro">Olá, {{ $_SESSION["usuario"] }}!</a>
                 <div>
             @endif
             <form action="/pesquisa" method="GET">
             <input type="search" name="busca" id="busca" placeholder="Busca..." required><br>
                 <button id="btn-busca"type="submit">Buscar</button>
             </form>
+            @if (!isset( $_SESSION["usuario"] ))
             <a href="/login">
                 <input type="submit" id="btn-login" value="Login">
             </a>
+            @else
+            <a href="/carrinho">
+                <input type="submit" id="btn-login" value="Carrinho">
+            </a>
+            @endif
             </div>
             <div class="menu-toggle">
                 <div class="hamburger"></div>

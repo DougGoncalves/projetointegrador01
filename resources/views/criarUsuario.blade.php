@@ -51,7 +51,7 @@
                             placeholder="(99)99999-9999" maxlength="11">
                     </div>
 
-                    
+
                     <div class="form-group col-md-8">
                         <label for="email">E-mail</label>
                         <input type="email" class="form-control" name="email" id="email"
@@ -72,14 +72,13 @@
                             placeholder="***************">
                     </div>
 
-                    <hr id="line">
                 </div>
                 <div class="botoes" style="display: flex;">
                 <div class="enviar">
-                <button class="btn btn-primary btn-lg btn-enviar">Enviar</button>
+                <button class="btn btn-primary btn-lg btn-enviar" style="margin-right: 10px;">Enviar</button>
             </div>
             <div class="cancelar">
-                <button type="button" class="btn btn-primary btn-lg btn-cancelar"><a href="/">Cancelar</a></button>
+                <button type="button" class="btn btn-primary btn-lg btn-cancelar"><a href="/admin/usuarios" style="text-decoration:none; color:#fff">Cancelar</a></button>
             </div>
         </div>
             </form>

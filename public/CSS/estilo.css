@@ -350,7 +350,7 @@ nav ul li a {
 }
 .box .content p {
     margin: 10px 0 0 0 ;
-    padding-rigth: 10px;
+    /* padding-rigth: 10px; */
     opacity: 0;
     line-height: 1.2em;
     transition: 0.5s;
@@ -1170,41 +1170,14 @@ input#checkdestinos:checked ~ .detalhesdestinos{
 .carrosselproduto{
     height:400px;
     width: 580px;
-    margin:50px 20px 50px 50px;
+    margin:50px 50px 50px 50px;
     position: relative;
     overflow: hidden;
 }
 .fotoproduto{
     position: absolute;
-    /* opacity: 0; */
-    /* animation-name: animacaoprod;
-    animation-duration: 10s;
-    animation-iteration-count:infinite; */
 }
-/* @keyframes animacaoprod{
-    25%{
-        opacity: 1;
-        transform: scale(1.1,1.1);
-    }
-    50%{
-        opacity: 0.5;
-    }
-}
-.fotoproduto:nth-child(1){
 
-}
-.fotoproduto:nth-child(2){
-    animation-delay: 1s;
-} */
-/* .fotoproduto:nth-child(3){
-    animation-delay: 10s;
-}
-.fotoproduto:nth-child(4){
-    animation-delay: 15s;
-}
-.fotoproduto:nth-child(5){
-    animation-delay: 20s;
-} */
 .txtprodutodesc{
     width:645px;
     height: 400px;
@@ -1513,6 +1486,7 @@ footer {
 }
 #fotobrasil,#fotohistoria, #fotoclima, #fotochegar{
     height: 400px;
+    width: 375px;
 }
 #opbrasil{
     height: 250px;
@@ -1528,12 +1502,7 @@ footer {
     margin: 10px 10px 10px 10px;
 }
 .containerdestinos{
-    margin: 0 0 0 -20px;
-}
-.cardestinos{
-    width: 300px;
-    height:400px;
-    left:10%;
+    margin: auto;
 }
 .cardestinos2,.cardestinos3,.cardestinos4,.cardestinos5,.cardestinos6{
     display:none;
@@ -1584,9 +1553,9 @@ footer {
     font-size: 32px;
 }
 .carrosselproduto{
-    margin-left: 0px;
+    margin-left: 20px;
     height:300px;
-    width:380px;
+    width:340px;
 }
 .txtprodutodesc{
    text-align: justify;
@@ -1656,7 +1625,7 @@ margin-left: 32px;
 #ttofertasexp, #ttviajantesexp{
     font-size: 32px;
     margin-top: -80px;
-    left: 45px;
+    left: 0px;
 }
 .imagenssliderexp img{
     height: 250px;
@@ -1754,8 +1723,9 @@ margin-left: 32px;
     font-size: 18px;
 }
 #inscrevamailexp{
-    width: 300px;
+    max-width: 300px;;
     left: 25px;
+    margin-right: 0px;
 }
 #inscrevabtn {
     margin-left: 140px;
@@ -2079,9 +2049,8 @@ margin-left: 32px;
     margin-left: 10px;
 }
 .carrosselproduto{
-    height:300px;
-    width:480px;
-    margin-right: 0px;
+    width:300px;
+    margin-left: 142px;
 }
 .txtprodutodesc{
    text-align: justify;
@@ -2505,9 +2474,8 @@ nav ul li a {
     text-align: center;
 }
 .carrosselproduto{
-    height: 440px;
-    width: 620px;
-    margin-left:80px;
+    width: 300px;
+    margin-left: 225px;
 }
 .txtprodutodesc{
     width: 620px;
@@ -2712,6 +2680,7 @@ nav ul li{
     margin-left: 670px;
     margin-top: -545px;
     flex-flow: column nowrap;
+    width: 250px;
 }
 .miniaturas{
     width:235px;
@@ -2757,20 +2726,20 @@ nav ul li{
     margin-left: -40px;
 }
 .subtitulofeed{
-    margin-left:25px;
+    margin-left:60px;
 }
 .ig{
     width: 220px;
     height: 270px;
 }
 .feedlinha1{
-    margin-left: 18px;
+    margin-left: 48px;
 }
 .feedlinha1 img:last-child{
     display:none;
 }
 .feedlinha2{
-    margin-left: 18px;
+    margin-left: 48px;
 }
 .feedlinha2 img:last-child{
     display:none;
@@ -2819,10 +2788,10 @@ nav ul li{
     margin-top:10px;
 }
 .containerimperdivel{
-    margin-left: 20px;
+    margin-left: -30px;
 }
 .cardimperdivel:last-child{
-    opacity: 0;
+    display:none;
 }
 
 /*--------------------------------EXPERIÊNCIAS--------------------------------*/
@@ -3095,6 +3064,7 @@ nav ul li {
     margin-top: -530px;
     display: flex;
     justify-content: space-evenly;
+    width:575px;
 }
 .miniaturas{
     width: 235px;
@@ -3109,16 +3079,16 @@ nav ul li {
     left: 710px;
 }
 #iconecomida{
-    left:720px;
+    left:690px;
 }
 #tituloicon2{
-    left:735px;
+    left:710px;
 }
 #iconeaventura,#tituloicon3, #iconenatureza, #tituloicon4{
-    left: 1020px;
+    left: 970px;
 }
 .feedlinha1, .feedlinha2{
-    margin-left:60px;
+    margin-left:95px;
 }
 .feedlinha1 img:last-child{
     display:none
@@ -3253,8 +3223,8 @@ nav ul li {
     margin-left: 540px;
 }
 }
+/*================================Display Wide Screen =========================*/
 @media only screen and (min-width: 1360px) and (max-width:1366px){
-
 /*===============================HEADER=======================================*/
 #cadastro{
     margin-left: 1220px;

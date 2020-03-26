@@ -6,7 +6,7 @@
             <a href="/admin/produto/create" class="btn btn-dark" style="text-decoration:none;">Novo produto</a>
         </div>
         <div class="row">
-            <table class="table table-responsive" style="margin-top:20px;">
+            <table class="table table-responsive" style="margin-top:20px; ">
                 <thead style="font-size: 1.5em; font-weight:bold">
                     <tr>
                         <td>Id</td>

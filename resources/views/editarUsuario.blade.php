@@ -52,7 +52,7 @@
                         value="{{ $usuario->telefoneDois }}" maxlength="11">
                     </div>
 
-                    
+
                     <div class="form-group col-md-8">
                         <label for="email">E-mail</label>
                         <input type="email" class="form-control" name="email" id="email"
@@ -85,12 +85,12 @@
         </div>
                 <div class="botoes" style="display: flex;">
                 <div class="enviar">
-                <button class="btn btn-primary btn-lg btn-enviar">Enviar</button>
+                <button class="btn btn-primary btn-lg btn-enviar" style="margin-right: 10px;">Enviar</button>
             </div>
             <div class="cancelar">
-                <button type="button" class="btn btn-primary btn-lg btn-cancelar" formnovalidate><a href="/" style="text-decoration: none; color:white">Cancelar</a></button>
+                <button type="button" class="btn btn-primary btn-lg btn-cancelar" formnovalidate><a href="/admin/usuarios" style="text-decoration: none; color:white">Cancelar</a></button>
             </div>
-            
+
         </div>
             </form>
         </div>
