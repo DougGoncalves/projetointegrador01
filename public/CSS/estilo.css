@@ -3257,16 +3257,16 @@ nav ul li {
 
 /*===============================HEADER=======================================*/
 #cadastro{
-    margin-left: 1250px;
-}
-#btn-login{
     margin-left: 1220px;
 }
+#btn-login{
+    margin-left: 1190px;
+}
 #busca{
-    margin-left: 1200px;
+    margin-left: 1170px;
 }
 #btn-busca{
-    margin-left:1050px;
+    margin-left:1020px;
 }
 /*==================================HOME======================================*/
 #textoslider{
@@ -3322,7 +3322,7 @@ nav ul li {
     width: 238px;
     height: 260px;
 }
-/*===============================SUA VIAGEM===================================*/
+/*============================SUA VIAGEM===================================*/
 .containerimperdivel .cardimperdivel{
     margin-left: 40px;
 }
