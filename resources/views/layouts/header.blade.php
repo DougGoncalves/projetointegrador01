@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="{{asset('./CSS/carrinho.css')}}">
     <!-- CSS para pagina cadastro -->
     <link rel="stylesheet" href="{{asset('../CSS/cadastro.css')}}">
+    <!-- CSS para pagina cadastro Interno -->
+    <link rel="stylesheet" href="{{asset('../CSS/cadastroInterno.css')}}">
+    <!-- CSS para pagina pesquisa -->
+    <link rel="stylesheet" href="{{asset('../CSS/pesquisa.css')}}">
+    
+
 <link rel="shortcut icon" href="{{asset('../Assets/Icon/fav.ico')}}" type="image/x-icon">
     <title>Blend Tour</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -50,8 +56,8 @@
                 <a id="cadastro">Olá {{ $_SESSION["usuario"] }}</a>
                 <div>
             @endif
-            <form >
-            <input type="search" name="busca" id="busca" placeholder="Busca..."><br>
+            <form action="/pesquisa" method="GET">
+            <input type="search" name="busca" id="busca" placeholder="Busca..." required><br>
                 <button id="btn-busca"type="submit">Buscar</button>
             </form>
             <a href="/login">

@@ -50,4 +50,15 @@ class ExperienciasController extends Controller
 
         return view('produtos', compact('produtos', 'nomeCategoria'));
     }
+
+    public function search(Request $request)
+    {
+        $buscar = Produto::where('id_experiencia', 'LIKE', '%'.$request->busca.'%')
+                       ->orWhere('nome', 'like', '%'.$request->busca.'%')
+                       ->orWhere('descricao', 'LIKE', '%'.$request->busca.'%')
+                       ->orWhere('local', 'LIKE', '%'.$request->busca.'%')
+                       ->orWhere('imagem', 'LIKE', '%'.$request->busca.'%')->get();
+
+        return view('pesquisa', ['buscar'=>$buscar, 'busca'=>$request->busca]);
+    }
 }

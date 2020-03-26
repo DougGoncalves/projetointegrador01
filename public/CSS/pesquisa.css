@@ -1,0 +1,121 @@
+.btn{
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.container-search {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-search {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-search {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-search {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-search {
+    max-width: 1140px;
+  }
+}
+
+.container-search-fluid, .container-search-sm, .container-search-md, .container-search-lg, .container-search-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-search, .container-search-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-search, .container-search-sm, .container-search-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-search, .container-search-sm, .container-search-md, .container-search-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-search, .container-search-sm, .container-search-md, .container-search-lg, .container-search-xl {
+    max-width: 1140px;
+  }
+}
+
+
+@media print {
+  .container-search {
+    min-width: 992px !important;
+  }
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+
+
+
