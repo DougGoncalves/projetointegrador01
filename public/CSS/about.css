@@ -77,7 +77,7 @@ body {
 
 .cardPessoa figure {
     /* A ideia é usar vetor PHP para atribuir as imagens e texto */
-    background-image: url("../Assets/Pessoas/pessoa1.jpg");
+    /* background-image: url("../Assets/Pessoas/pessoa1.jpg"); */
     width: 150px;
     height: 150px;
     background-position: 50% 50%;
