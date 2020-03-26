@@ -14,60 +14,19 @@
         </div>
         <h1 id="eqpHeading">Equipe</h1>
         <section id="equipe" class="equipeBlendTour">
+            @if(isset($equipe))
+            @foreach($equipe as $pessoa)
             <div class="cardPessoa">
-                <figure>
+                <figure style="background-image: url('{{$pessoa->imagem}}')">
                 </figure>
                 <article>
-                    <h4>Carina Costa</h4>
+                    <h4>{{$pessoa->nome}}</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis sit iusto
                         perspiciatis.</p>
                 </article>
             </div>
-            <div class="cardPessoa">
-                <figure>
-                </figure>
-                <article>
-                    <h4>Diego Ramos</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis sit iusto
-                        perspiciatis.</p>
-                </article>
-            </div>
-            <div class="cardPessoa">
-                <figure>
-                </figure>
-                <article>
-                    <h4>Dirceu Santana</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis sit iusto
-                        perspiciatis.</p>
-                </article>
-            </div>
-            <div class="cardPessoa">
-                <figure>
-                </figure>
-                <article>
-                    <h4>Douglas Gonçalves</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis sit iusto
-                        perspiciatis.</p>
-                </article>
-            </div>
-            <div class="cardPessoa">
-                <figure>
-                </figure>
-                <article>
-                    <h4>Mario Angelozzi</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis sit
-                        iusto perspiciatis.</p>
-                </article>
-            </div>
-            <div class="cardPessoa">
-                <figure>
-                </figure>
-                <article>
-                    <h4>Wagner Carvalho</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis sit
-                        iusto perspiciatis.</p>
-                </article>
-            </div>
+            @endforeach
+            @endif
         </section>
     </section>
 </div>

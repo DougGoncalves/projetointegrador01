@@ -1,6 +1,7 @@
 /node_modules
 /public/hot
 /public/storage
+!/public/storage/uploads/capa*
 /storage/*.key
 /vendor
 .env
