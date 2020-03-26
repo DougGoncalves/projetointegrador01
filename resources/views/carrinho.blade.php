@@ -1,10 +1,10 @@
 @extends('layouts.master_layout')
 @section('conteudo')
 <h1 class="titulo">Carrinho de Compras</h1>
-<!--Caso exista algum erro ou cancelamento no pedido exibe mensagem de alerta-->
+<!-- Exibe mensagem de alerta de confirmação de pedido-->
 @if (session('message'))
 
-<div class="alert alert-warning">
+<div class="alert alert-sucess">
     {{session('message')}}
 </div>
 
@@ -45,6 +45,8 @@
 
                 @endforelse
 
+                @if ( Session::has('cart') && Session::get('cart')->totalItems() >=1 )
+
                 <div class="totals">
                     <p class="total-label">Subtotal</p>
                     <p class="total-amount">R$ {{ number_format($subtotal, 2, ',', '.') }} </p>
@@ -58,7 +60,7 @@
                 <p class="total-amount">R$ {{ number_format($total, 2, ',', '.') }}</p>
                 </div>
 
-                @if ( Session::has('cart') && Session::get('cart')->totalItems() >=1 )
+
 
                 <div class="finalizar-compra">
                     <button><a  style="text-decoration: none; color:#fff;" href="{{ route('paypal') }}" >Finalizar Compra</a></button>

@@ -59,7 +59,7 @@ class PayPalController extends Controller
             $cart->emptyItems();
             Session::forget('payment_id');
 
-            return redirect()->route('home');
+            return redirect()->route('carrinho')->with('message', 'Compra efetuada com sucesso!');
 
         } else {
             return redirect()->route('carrinho')->with('message', 'Pedido Não Aprovado');
