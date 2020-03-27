@@ -729,99 +729,17 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     left: 360px;
     margin-bottom: 200px;
 }
-#btnaven {
-    font-family:'Roboto';
-    font-size: 22px;
-    list-style:none;
-    font-weight: bold;
-    color:#fff;
-    position: relative;
-    padding: 5px 10px 5px 10px;
-    background-color: #2a6fe8;
-    border: none;
-    border-radius: 10px;
-    margin-right: 25px;
-    margin-left:150px;
-    margin-top: 120px;
-}
-#btncid {
-    font-family:'Roboto';
-    font-size: 22px;
-    list-style:none;
-    font-weight: bold;
-    color:#fff;
-    position: relative;
-    padding: 5px 10px 5px 10px;
-    background-color: #2a6fe8;
-    border: none;
-    border-radius: 10px;
-    margin-right: 25px;
-    margin-top: 120px;
-
-}
-#btngas{
-    font-family:'Roboto';
-    font-size: 22px;
-    list-style:none;
-    font-weight: bold;
-    color:#fff;
-    position: relative;
-    padding: 5px 10px 5px 10px;
-    background-color: #2a6fe8;
-    border: none;
-    border-radius: 10px;
-    margin-right: 25px;
-    margin-top: 120px;
-}
-#btncult{
-    font-family:'Roboto';
-    font-size: 22px;
-    list-style:none;
-    font-weight: bold;
-    color:#fff;
-    position: relative;
-    padding: 5px 10px 5px 10px;
-    background-color: #2a6fe8;
-    border: none;
-    border-radius: 10px;
-    margin-right: 25px;
-    margin-top: 25px;
-    margin-left: 90px;
-}
-#btnnat {
-    font-family:'Roboto';
-    font-size: 22px;
-    list-style:none;
-    font-weight: bold;
-    color:#fff;
-    position: relative;
-    padding: 5px 10px 5px 10px;
-    background-color: #2a6fe8;
-    border: none;
-    border-radius: 10px;
-    margin-right: 25px;
-    margin-top: 25px;
-}
-#btnvid {
-    font-family:'Roboto';
-    font-size: 22px;
-    list-style:none;
-    font-weight: bold;
-    color:#fff;
-    position: relative;
-    padding: 5px 10px 5px 10px;
-    background-color: #2a6fe8;
-    border: none;
-    border-radius: 10px;
-    margin-right: 25px;
-    margin-top: 25px;
+#btnexper{
+    margin-top:150px;
+    margin-left: 4px;
 }
 /*=================Composição EXPERIENCIAS - Seção Ofertas====================*/
 #ttofertasexp, #ttaproveiteexp, #ttviajantesexp{
     font-family: 'Roboto';
     position: relative;
     font-size: 32px;
-    left: 40px;
+    left: 0px;
+    padding-left: 40px;
     margin-bottom: 50px;
 }
 .carrosselexp {
@@ -882,7 +800,8 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     display: flex;
     flex-flow: row wrap;
     position: relative;
-    left: 50px;
+    left: 0px;
+    padding-left: 50px;
 }
 .aprovfoto {
     margin-right: 35px;
@@ -896,12 +815,12 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     width: 200px;
     height: 200px;
     position: absolute;
-    left:230px;
+    left:270px;
     top: 100px;
 }
 #ttaventaprov {
     position: absolute;
-    left:230px;
+    left:270px;
     top: 300px;
     font-family: 'Roboto';
     font-size: 36px;
@@ -913,12 +832,12 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     height: 200px;
     position: absolute;
     top: 100px;
-    left:880px;
+    left:940px;
 }
 #ttcidaprov{
     position: absolute;
     top: 320px;
-    left:900px;
+    left:960px;
     font-family: 'Roboto';
     font-size: 36px;
     font-weight:bold;
@@ -928,7 +847,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     width: 200px;
     height: 200px;
     position: absolute;
-    left:230px;
+    left:270px;
     bottom: 250px;
 }
 #ttcultaprov{
@@ -937,7 +856,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     font-size: 36px;
     font-weight:bold;
     color: #fff;
-    left:230px;
+    left:270px;
     bottom: 200px;
 }
 #iconnoturaprov{
@@ -945,7 +864,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     height: 200px;
     position: absolute;
     bottom: 250px;
-    left:880px;
+    left:940px;
 }
 #ttnoturaprov{
     position: absolute;
@@ -954,7 +873,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     font-weight:bold;
     color: #fff;
     bottom: 190px;
-    left:860px;
+    left:920px;
 }
 /*=================Composição EXPERIENCIAS - Seção Depoimentos================*/
 #fotoviajanteexp {
@@ -968,7 +887,8 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     opacity: 0.8;
     position: relative;
     top: -900px;
-    left:60px;
+    left:0px;
+    margin-left: 60px;
     margin-bottom: 20px;
 }
 #testmpic1, #testmpic2, #testmpic3 {
@@ -1002,7 +922,8 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     border-radius: 10px;
     position: relative;
     align-items: center;
-    left: 400px;
+    left: 0px;
+    margin-left: 400px;
     top: -780px;
     margin-bottom: 50px;
 }
@@ -1041,7 +962,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     background-color: #2a6fe8;
     border: none;
     border-radius: 10px;
-    margin-left: 320px;
+    margin-left: 290px;
     margin-top: 50px;
 }
 
@@ -1050,7 +971,8 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     font-family: 'Roboto';
     position: relative;
     font-size: 43px;
-    left: 40px;
+    left: 0px;
+    margin-left: 40px;
     text-align: center;
     margin-top: -750px;
     margin-bottom: 50px
@@ -1150,7 +1072,8 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     font-family: 'Roboto';
     position: relative;
     font-size: 43px;
-    left: 40px;
+    left: 0px;
+    margin-left: 40px;
     text-align: center;
     margin-bottom: 50px;
     margin-top:50px;
@@ -1590,42 +1513,24 @@ footer {
     height: 300px;
     margin-top: -400px;
     margin-left: -348px;
+    margin-right: 20px;
 }
 #ttescolhaexp {
     font-size: 18px;
 }
-#btnaven{
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 70px;
-}
-#btncid{
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 210px;
-}
-#btngas{
-    position: absolute;
-    margin-left: 100px;
-}
-#btncult{
-    position: absolute;
-    margin-top: 170px;
-    margin-left: 75px;
-}
-#btnnat{
-margin-top: 220px;
-margin-left: 32px;
-}
-#btnvid{
-    position: absolute;
-    margin-top: 220px;
+#btnexper{
+    margin-top: 55px;
+    margin-left: 20px;
 }
 /* títulos */
-#ttofertasexp, #ttviajantesexp{
+#ttofertasexp{
     font-size: 32px;
     margin-top: -80px;
     left: 0px;
+}
+#ttviajantesexp{
+    font-size: 32px;
+    margin: -80px 20px 50px -10px;
 }
 .imagenssliderexp img{
     height: 250px;
@@ -1640,13 +1545,15 @@ margin-left: 32px;
     left: 220px;
 }
 #ttaproveiteexp{
-  left: 10px;
+  left: 0px;
   top: -270px;
+  margin-left: -10px;
 }
 .aproveitecta{
     flex-flow: column nowrap;
     margin-top: -270px;
-    left: 12px;
+    left: 0px;
+    margin-left: -35px;
     margin-bottom: 100px;
 }
 .aprovfoto {
@@ -1654,50 +1561,46 @@ margin-left: 32px;
     height: 270px;
 }
 #iconeaventaprov{
-    left: 80px;
+    left: 130px;
     top: 10px;
 }
 #ttaventaprov{
-    left: 80px;
+    left: 130px;
     top: 210px;
 }
 #iconecidaprov{
-    left: 75px;
+    left: 125px;
     top: 320px;
 }
 #ttcidaprov {
-    left: 105px;
+    left: 155px;
     top: 530px;
 }
 #iconcultaprov{
-    left: 80px;
+    left: 130px;
     top: 620px;
 }
 #ttcultaprov{
-    left: 90px;
+    left: 140px;
     top: 820px;
 }
 #iconnoturaprov{
-    left: 80px;
+    left: 130px;
     top: 940px;
 }
 #ttnoturaprov{
-    left: 45px;
+    left: 95px;
     top: 1145px;
-}
-#ttviajantesexp{
-    margin-right: 40px;
-    left: 25px;
 }
 #fotoviajanteexp{
     height: 400px;
     margin-bottom: 140px;
 }
 .cardviajante{
-    max-width: 350px;
+    max-width: 375px;
     height: 115px;
-    left: 13px;
     top: -535px;
+    margin-left: 0px;
 }
 #testmpic1, #testmpic2, #testmpic3 {
     width: 75px;
@@ -1715,7 +1618,8 @@ margin-left: 32px;
 .inscrevaexp {
     width: 350px;
     height: 200px;
-    left: 13px;
+    left: 0px;
+    margin-left: 12px;
     top: -520px;
     margin-bottom: 280px;
 }
@@ -1733,6 +1637,7 @@ margin-left: 32px;
 }
 #ttaventura{
     left: 0px;
+    margin-left: -10px;
 }
 .meioexp {
     display: none;
@@ -1748,6 +1653,7 @@ margin-left: 32px;
 }
 #ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
     left: 0px;
+    margin-left: -10px;
 }
 /*-----------------------------------FOOTER-----------------------------------*/
     footer{
@@ -2072,40 +1978,15 @@ margin-left: 32px;
     margin-top: -435px;
     margin-left: -323px;
 }
-#btnaven{
-    position: absolute;
-    margin-left: 50px;
+#btnexper{
     margin-top: 70px;
-}
-#btncid{
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 180px;
-}
-#btngas {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 300px;
-}
-#btncult{
-    position: absolute;
-    margin-top: 130px;
-    margin-left: 90px;
-}
-#btnnat{
-    position: absolute;
-    margin-top: 130px;
-    margin-left: 305px;
-}
-#btnvid{
-    position: absolute;
-    margin-top: 190px;
-    margin-left: 175px;
+    margin-left: 40px;
 }
 #ttofertasexp, #ttviajantesexp{
     font-size: 32px;
     margin-top: -100px;
-    left: 30px;
+    left: 0px;
+    padding-left: 30px;
 }
 .imagenssliderexp img{
     height: 386px;
@@ -2120,45 +2001,47 @@ margin-left: 32px;
     left: 315px;
 }
 #ttaproveiteexp{
-    left: 55px;
+    left: 0px;
     top: -140px;
+    padding-left: 30px;
 }
 .aproveitecta{
     flex-flow: column nowrap;
-    left: 5px;
+    left: 0px;
     margin-top: -140px;
+    margin-left: -40px;
     margin-bottom: 100px;
 }
 #iconeaventaprov{
-    left: 190px;
+    left: 240px;
     top: 110px;
 }
 #ttaventaprov{
-    left: 190px;
+    left: 240px;
     top: 310px;
 }
 #iconecidaprov{
-    left: 180px;
+    left: 230px;
     top: 670px;
 }
 #ttcidaprov {
-    left: 200px;
+    left: 250px;
     top: 900px;
 }
 #iconcultaprov{
-    left: 190px;
+    left: 240px;
     top: 1260px;
 }
 #ttcultaprov{
-    left: 190px;
+    left: 240px;
     top: 1480px;
 }
 #iconnoturaprov{
-    left: 190px;
+    left: 240px;
     top: 1800px;
 }
 #ttnoturaprov{
-    left: 160px;
+    left: 210px;
     top: 2020px;
 }
 #fotoviajanteexp{
@@ -2167,18 +2050,22 @@ margin-left: 32px;
 }
 .cardviajante{
     top: -640px;
-    left: 40px;
+    left: 0px;
+    margin-left: 0px;
+    max-width: 576px;
 }
 .inscrevaexp {
     width: 550px;
     height: 250px;
-    left: 13px;
+    left: 0px;
     top: -620px;
     margin-bottom: 280px;
+    margin-left: 13px;
 }
 #inscrevamailexp{
     width: 500px;
     left: 25px;
+    margin-right: 0px;
 }
 #inscrevabtn {
     margin-left: 235px;
@@ -2186,11 +2073,13 @@ margin-left: 32px;
 }
 #ttaventura{
     top: -80px;
-    left: 5px;
+    left: 0px;
     margin-bottom: -30px;
+    margin-left: -10px;
 }
 #ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
-    left: 5px;
+    left: 0px;
+    margin-left: -10px;
 }
 .meioexp {
     display: none;
@@ -2499,7 +2388,8 @@ nav ul li a {
 #ttofertasexp, #ttviajantesexp{
     font-size: 32px;
     margin-top: -60px;
-    left: 30px;
+    left: 0px;
+    padding-left: 30px;
 }
 .imagenssliderexp img{
     height: 425px;
@@ -2514,43 +2404,46 @@ nav ul li a {
     left: 407px;
 }
 #ttaproveiteexp{
-    left: 145px;
+    left: 0px;
     top: -100px;
+    padding-left: 30px;
 }
 .aproveitecta{
     margin-top: -100px;
     margin-bottom: 80px;
+    left: 0px;
+    padding-left: 55px;
 }
 #iconeaventaprov{
-    left: 230px;
+    left: 280px;
     top: 110px;
 }
 #ttaventaprov{
-    left: 230px;
+    left: 280px;
     top: 310px;
 }
 #iconecidaprov{
-    left: 220px;
+    left: 270px;
     top: 670px;
 }
 #ttcidaprov {
-    left: 250px;
+    left: 300px;
     top: 900px;
 }
 #iconcultaprov{
-    left: 240px;
+    left: 290px;
     top: 1260px;
 }
 #ttcultaprov{
-    left: 240px;
+    left: 290px;
     top: 1480px;
 }
 #iconnoturaprov{
-    left: 240px;
+    left: 280px;
     top: 1800px;
 }
 #ttnoturaprov{
-    left: 210px;
+    left: 250px;
     top: 2020px;
 }
 #fotoviajanteexp{
@@ -2558,13 +2451,20 @@ nav ul li a {
     margin-bottom: 140px;
 }
 .cardviajante{
-    top: -690px;
-    left: 40px;
+    top: -650px;
+    margin-left: 40px;
+    left: 0px;
+    max-width: 500px;
 }
 .inscrevaexp {
-    left: 33px;
+    left: 0px;
     top: -640px;
     margin-bottom: 160px;
+    margin-left: 33px;
+}
+#inscrevamailexp{
+    left: 60px;
+    max-width: 550px;
 }
 #ttaventura{
     left: 5px;
@@ -2576,10 +2476,10 @@ nav ul li a {
     display: none;
 }
 .direitaexp{
-    left: 0.8%;
+    left: 6px;
 }
 .backexpe{
-    left: -410px;
+    left: -400px;
 }
 /*--------------------------------FOOTER--------------------------------------*/
 footer{
@@ -2799,13 +2699,11 @@ nav ul li{
     height: 525px;
 }
 .callexp{
-    margin-top: -495px;
-    margin-left: -210px;
+    max-width: 100%;
 }
-#ttofertasexp, #ttviajantesexp{
-    font-size: 32px;
-    margin-top: -60px;
-    left: 30px;
+#ttofertasexp{
+    left: -40px;
+
 }
 .imagenssliderexp img{
     height: 425px;
@@ -2820,62 +2718,46 @@ nav ul li{
     left: 529px;
 }
 #ttaproveiteexp{
-    left: 245px;
-    top: -100px;
+
 }
 .aproveitecta{
-    margin-top: -100px;
-    margin-bottom: 80px;
-    margin-left: 110px;
+    left: 0px;
+    padding-left: 160px;
+}
+#iconeaventaprov{
+   margin-left: 170px;
+}
+#ttaventaprov{
+    margin-left: 170px;
 }
 #iconecidaprov{
-    left: 220px;
-    top: 670px;
+    margin-left: 170px;
 }
 #ttcidaprov{
-    left: 250px;
-    top: 900px;
+    margin-left: 170px;
 }
 #iconcultaprov{
-    left: 240px;
-    top: 1260px;
+    margin-left: 170px;
 }
 #ttcultaprov{
-    left: 240px;
-    top: 1480px;
+    margin-left: 170px;
 }
 #iconnoturaprov{
-    left: 240px;
-    top: 1800px;
+    margin-left: 170px;
 }
 #ttnoturaprov{
-    left: 210px;
-    top: 2020px;
+    margin-left: 170px;
 }
-#fotoviajanteexp{
-    height: 600px;
-    margin-bottom: 140px;
+#ttviajantesexp{
+    padding-left: 50px;
 }
 .cardviajante{
-    top: -690px;
-    left: 40px;
+    left: 0;
+    margin: 0 0 20px 0px;
 }
+
 .inscrevaexp{
-    left: 140px;
-    top: -640px;
-    margin-bottom: 160px;
-}
-#ttaventura{
-    left: 5px;
-}
-#ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
-    left: 5px;
-}
-.meioexp {
-    display: none;
-}
-.direitaexp{
-    left: 12%;
+    margin: 0 0 0 0;
 }
 /*-------------------------------PRODUTO--------------------------------------*/
 .carrosselproduto{
@@ -3138,7 +3020,7 @@ nav ul li {
 }
 #ttofertasexp{
     font-size: 36px;
-    left: 30px;
+    left: 0px;
     padding-top: 30px;
 }
 .imagenssliderexp img{
@@ -3155,40 +3037,48 @@ nav ul li {
 }
 #ttviajantesexp{
     font-size: 36px;
-    left: 30px;
+    left: 0px;
 }
 #ttaproveiteexp{
-    left: 340px;
+    left: 0px;
     top: -50px;
     font-size: 36px;
+    padding-left: 340px;
 }
 .aproveitecta{
     margin-top: -70px;
     margin-bottom: 80px;
-    margin-left: 230px;
+    left: 0px;
+    padding-left: 280px;
+}
+#iconeaventaprov{
+    left: 510px;
+}
+#ttaventaprov{
+    left: 510px;
 }
 #iconecidaprov{
-    left: 220px;
+    left: 500px;
     top: 670px;
 }
 #ttcidaprov{
-    left: 250px;
+    left: 520px;
     top: 900px;
 }
 #iconcultaprov{
-    left: 240px;
+    left: 520px;
     top: 1260px;
 }
 #ttcultaprov{
-    left: 240px;
+    left: 520px;
     top: 1460px;
 }
 #iconnoturaprov{
-    left: 240px;
+    left: 520px;
     top: 1800px;
 }
 #ttnoturaprov{
-    left: 210px;
+    left: 500px;
     top: 2020px;
 }
 #fotoviajanteexp{
@@ -3199,12 +3089,13 @@ nav ul li {
     top: -690px;
 }
 .inscrevaexp{
-    left: 240px;
+    left: 0px;
+    margin-left: 240px;
     top: -640px;
     margin-bottom: 160px;
 }
 #ttaventura, #ttcidades, #ttgastronomia, #ttnatureza, #ttvidanoturna, #ttcultural{
-    left: 5px;
+    margin-left: -2px;
 }
 .direitaexp{
     left: 1.5%;
@@ -3301,6 +3192,10 @@ nav ul li {
     left: 10px;
 }
 /*==============================EXPERIÊNCIAS==================================*/
+#ttofertasexp, #ttaproveiteexp, #ttviajantesexp{
+    left: 0px;
+    padding-left: 30px;
+}
 .callexp{
     left: 340px;
 }
@@ -3319,8 +3214,13 @@ nav ul li {
 #ttaventura,#ttcidades,#ttgastronomia,#ttnatureza,#ttvidanoturna,#ttcultural{
     left: 05px;
 }
+.cardviajante{
+    left: 0px;
+    margin-left: 30px;
+}
 .inscrevaexp{
-    left: 320px;
+    left: 0px;
+    margin-left:320px
 }
 .esquerdaexp{
     left: 129%;

@@ -7,8 +7,8 @@
 
             @if(isset($categorias))
             @foreach($categorias as $categoria)
-            
-                <a href="#{{$categoria->nome}}"><input type="button" value= "{{$categoria->nome }}" class="btn btn-primary" style="margin-top: 150px; margin-left:4px;" ></a>
+
+                <a href="#{{$categoria->nome}}"><input type="button" id="btnexper" value= "{{$categoria->nome }}" class="btn btn-primary"  ></a>
 
             @endforeach
             @endif
