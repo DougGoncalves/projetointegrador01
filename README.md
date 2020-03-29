@@ -1,5 +1,5 @@
 <h1 align="center">
-     <img alt="BlendTour" title="#delicinha" src="./Galeria/logos/logoadesivo.png" width="250px" />
+     <img alt="BlendTour" title="#delicinha" src="public/Galeria/logos/logoadesivo.png" width="250px" />
 </h1>
 
  <p align="center">
@@ -9,8 +9,8 @@
  </p>
 
  <p align="center">
-   <img alt="Frontend" src="./Galeria/logos/frontend_desktop.png" width="580px">
-   <img alt="Mobile" src="./Galeria/logos/mobile_frontend.png" height="600px" width="300px">
+    <img alt="Mobile" src="public/Galeria/logos/mobile_frontend.png" height="600px" width="300px">
+    <img alt="Frontend" src="public/Galeria/logos/frontend_desktop.png" width="580px">
  </p>
 
  ## :rocket: Tecnologias
