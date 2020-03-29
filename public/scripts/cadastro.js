@@ -3,10 +3,10 @@ window.onload = function() {
     document.getElementById("todos").onclick = function() {
         var form = document.getElementById("myForm"); //formulário
         //percorre todos os checkboxes e seta se está ou não checado, conforme o valor do check mandatório
-        var checks = form.getElementsByTagName("input");
+        var checks = form.getElementsByClassName("form-check-input");
         for(var i=0; i<checks.length; i++) {
             var chk = checks[i];
-            if(chk.name == "check[]")
+            if(chk.className == "form-check-input")
                 chk.checked = this.checked;
         }
     }   

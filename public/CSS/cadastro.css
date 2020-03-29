@@ -3,11 +3,11 @@
   box-sizing: border-box;
 }
 
-/* body{
+body{
   background-image: url(../Galeria/imageDB/Cidades/floripa.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
 .titulo-cadastro {
 font: Bold 65px Roboto;

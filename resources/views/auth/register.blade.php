@@ -98,4 +98,5 @@
         </form>
     </div>
 </section>
+<script src="scripts/cadastro.js"></script>
 @endsection
