@@ -85,6 +85,7 @@ nav ul li a {
     font-family: 'Roboto';
     font-weight: bold;
     color: #fff;
+    text-shadow: 2px 2px #000;
     position: absolute;
     left:160px;
     margin-top:40px;
@@ -96,48 +97,9 @@ nav ul li a {
     position: relative;
     display: block;
 }
-.slider li {
-    list-style:none;
-    position: absolute;
-}
-.slider li img {
-    margin: auto;
-    width: 100%;
+.mySlides {
+    display: none;
     height: 630px;
-    vertical-align: top;
-    transition: 1s;
-}
-.slider input {
-    display:none;
-}
-.slider label {
-    background-color: #FFF;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 6px;
-    opacity: 0.7;
-    position: absolute;
-    width: 40px;
-    z-index: 10;
-}
-.slider li:nth-child(1) label {
-    left: 650px;
-}
-.slider li:nth-child(2) label {
-    left: 700px;
-}
-.slider li:nth-child(3) label {
-    left: 750px;
-}
-.slider img {
-    opacity: 0;
-    visibility: hidden;
-}
-.slider li input:checked ~ img {
-    opacity: 1;
-    visibility:visible;
-    z-index: 10;
 }
 /*=============================== Composição seção o que fazer ? HOME=========*/
 .titulos{
@@ -168,6 +130,7 @@ nav ul li a {
     font-family: 'Roboto';
     font-weight: bold;
     color:#fff;
+    text-shadow: 2px 2px #000;
     position: absolute;
     left:270px;
     margin-top: -230px;
@@ -187,6 +150,7 @@ nav ul li a {
     position: absolute;
     left: 820px;
     margin-top:180px;
+    text-shadow: 2px 2px #000;
 }
 #iconecomida{
     width: 130px;
@@ -203,6 +167,7 @@ nav ul li a {
     position: absolute;
     left: 835px;
     margin-top:190px;
+    text-shadow: 2px 2px #000;
 }
 #iconeaventura{
     width: 150px;
@@ -219,6 +184,7 @@ nav ul li a {
     position: absolute;
     left: 1150px;
     margin-top:180px;
+    text-shadow: 2px 2px #000;
 }
 #iconenatureza{
     width: 150px;
@@ -235,6 +201,7 @@ nav ul li a {
     position: absolute;
     left: 1150px;
     margin-top:190px;
+    text-shadow: 2px 2px #000;
 }
 .container {
     max-width: 650px;
@@ -745,55 +712,56 @@ input#checkdestinos:checked ~ .detalhesdestinos{
 .carrosselexp {
     margin-bottom: -120px;
 }
-.imagenssliderexp {
+/* .imagenssliderexp {
     display: block;
     height: 700px;
     width: 100%;
     margin: auto;
     position: relative;
-}
-.imagenssliderexp  li{
-   list-style: none;
-   position: absolute;
-}
-.imagenssliderexp  img{
-    height: 100%;
-    width: 100%;
+} */
+.slideshow-container {
+    max-width: 100%;
+    height: 700px;
+    position: relative;
     margin: auto;
-    vertical-align: top;
 }
-.imagenssliderexp input {
-    display:none;
-}
-.imagenssliderexp label {
-    background-color: #fff;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
+.text {
+    background-color: rgba(0,0,0,.5);
+    height: 70px;
+    color: #fff;
+    font-size: 40px;
+    padding: 8px 12px;
     position: absolute;
-    width: 10px;
-    z-index: 10;
+    margin-top: -90px;
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
     border-radius: 50%;
+    display: none;
+    transition: background-color 0.6s ease;
+    margin-top: -70px;
 }
-.imagenssliderexp li:nth-child(1) label {
-    left: 650px;
+.active {
+    background-color: #717171;
 }
-.imagenssliderexp li:nth-child(2) label {
-    left: 700px;
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
-.imagenssliderexp li:nth-child(3) label {
-    left: 750px;
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
-.imagenssliderexp img {
-    opacity: 0;
-    visibility: hidden;
-}
-.imagenssliderexp li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
-    color: #333;
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 /*=================Composição EXPERIENCIAS - Seção Aproveite==================*/
 .aproveitecta {
@@ -826,6 +794,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     font-size: 36px;
     font-weight:bold;
     color: #fff;
+    text-shadow: 2px 2px #000;
 }
 #iconecidaprov{
     width: 200px;
@@ -842,6 +811,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     font-size: 36px;
     font-weight:bold;
     color: #fff;
+    text-shadow: 2px 2px #000;
 }
 #iconcultaprov {
     width: 200px;
@@ -858,6 +828,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     color: #fff;
     left:270px;
     bottom: 200px;
+    text-shadow: 2px 2px #000;
 }
 #iconnoturaprov{
     width: 200px;
@@ -874,6 +845,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     color: #fff;
     bottom: 190px;
     left:920px;
+     text-shadow: 2px 2px #000;
 }
 /*=================Composição EXPERIENCIAS - Seção Depoimentos================*/
 #fotoviajanteexp {
@@ -1137,7 +1109,24 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     margin-left: 60px;
     margin-bottom: -90px;
 }
+#feed{
+    position: relative;
+    list-style:none
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
 
+  #feed li{
+    display: inline-block;
+    width: 250px;
+    height:300px;
+    padding:8px;
+
+  }
+  #feed li img{
+    max-width:100%;
+    max-height:100%;
+  }
 /*===========================Composição do Footer=============================*/
 footer {
     height: 256px;
@@ -1301,14 +1290,8 @@ footer {
     font-size:24px;
     left: 15px;
 }
-.slider li:nth-child(1) label{
-    left: 115px;
-}
-.slider li:nth-child(2) label{
-    left: 165px;
-}
-.slider li:nth-child(3) label{
-    left: 215px;
+.mySlides{
+    height: 500px;
 }
 .titulos{
     font-size: 45px;
@@ -1532,17 +1515,11 @@ footer {
     font-size: 32px;
     margin: -80px 20px 50px -10px;
 }
-.imagenssliderexp img{
+.mySlides img{
     height: 250px;
 }
-.imagenssliderexp li:nth-child(1) label {
-    left: 150px;
-}
-.imagenssliderexp li:nth-child(2) label {
-    left: 185px;
-}
-.imagenssliderexp li:nth-child(3) label {
-    left: 220px;
+.text{
+    font-size: 20px;
 }
 #ttaproveiteexp{
   left: 0px;
@@ -1789,15 +1766,6 @@ footer {
         font-size:38px;
         left: 20px;
     }
-    .slider li:nth-child(1) label{
-        left: 210px;
-    }
-    .slider li:nth-child(2) label{
-        left: 265px;
-    }
-    .slider li:nth-child(3) label{
-        left: 320px;
-    }
     .titulos{
         font-size: 45px;
     }
@@ -1988,17 +1956,11 @@ footer {
     left: 0px;
     padding-left: 30px;
 }
-.imagenssliderexp img{
+.mySlides img{
     height: 386px;
 }
-.imagenssliderexp li:nth-child(1) label {
-    left: 251px;
-}
-.imagenssliderexp li:nth-child(2) label {
-    left: 283px;
-}
-.imagenssliderexp li:nth-child(3) label {
-    left: 315px;
+.text{
+    font-size: 24px;
 }
 #ttaproveiteexp{
     left: 0px;
@@ -2233,15 +2195,6 @@ nav ul li a {
     font-size:46px;
     left:60px;
 }
-.slider li:nth-child(1) label{
-    left: 310px;
-}
-.slider li:nth-child(2) label{
-    left: 360px;
-}
-.slider li:nth-child(3) label{
-    left:410px;
-}
 .titulos{
     font-size: 52px;
 }
@@ -2391,17 +2344,11 @@ nav ul li a {
     left: 0px;
     padding-left: 30px;
 }
-.imagenssliderexp img{
+.mySlides img{
     height: 425px;
 }
-.imagenssliderexp li:nth-child(1) label {
-    left: 347px;
-}
-.imagenssliderexp li:nth-child(2) label {
-    left: 377px;
-}
-.imagenssliderexp li:nth-child(3) label {
-    left: 407px;
+.text{
+    font-size: 28px;
 }
 #ttaproveiteexp{
     left: 0px;
@@ -2554,15 +2501,6 @@ nav ul li{
     font-size: 60px;
     left: 70px;
 }
-.slider li:nth-child(1) label{
-    left: 425px;
-}
-.slider li:nth-child(2) label{
-    left: 475px;
-}
-.slider li:nth-child(3) label{
-    left: 525px;
-}
 .titulos{
     font-size: 59px;
 }
@@ -2705,20 +2643,11 @@ nav ul li{
     left: -40px;
 
 }
-.imagenssliderexp img{
+.mySlides img{
     height: 425px;
 }
-.imagenssliderexp li:nth-child(1) label{
-    left: 449px;
-}
-.imagenssliderexp li:nth-child(2) label{
-    left: 489px;
-}
-.imagenssliderexp li:nth-child(3) label{
-    left: 529px;
-}
-#ttaproveiteexp{
-
+.text{
+    font-size: 32px;
 }
 .aproveitecta{
     left: 0px;
@@ -2924,15 +2853,6 @@ nav ul li {
     font-size: 72px;
     left: 85px;
 }
-.slider li:nth-child(1) label{
-    left:530px;
-}
-.slider li:nth-child(2) label{
-    left: 580px;
-}
-.slider li:nth-child(3) label{
-    left: 630px;
-}
 #fotoprincipal{
     width:600px;
 }
@@ -3023,17 +2943,11 @@ nav ul li {
     left: 0px;
     padding-top: 30px;
 }
-.imagenssliderexp img{
+.mySlides img{
     height: 500px;
 }
-.imagenssliderexp li:nth-child(1) label{
-    left: 553px;
-}
-.imagenssliderexp li:nth-child(2) label{
-    left: 593px;
-}
-.imagenssliderexp li:nth-child(3) label{
-    left: 633px;
+.text{
+    font-size: 36px;
 }
 #ttviajantesexp{
     font-size: 36px;
@@ -3133,15 +3047,6 @@ nav ul li {
 #textoslider{
     left:120px;
 }
-.slider li:nth-child(1) label{
-    left: 615px;
-}
-.slider li:nth-child(2) label{
-    left: 665px;
-}
-.slider li:nth-child(3) label{
-    left: 715px;
-}
 #iconecultura{
     left: 800px;
 }
@@ -3199,17 +3104,9 @@ nav ul li {
 .callexp{
     left: 340px;
 }
-.imagenssliderexp li:nth-child(1) label{
-    left: 630px;
-}
-.imagenssliderexp li:nth-child(2) label{
-    left: 675px;
-}
-.imagenssliderexp li:nth-child(3) label {
-    left: 720px;
-}
 .aproveitecta{
-    left: 15px;
+    left: 0px;
+    margin-left: -45px;
 }
 #ttaventura,#ttcidades,#ttgastronomia,#ttnatureza,#ttvidanoturna,#ttcultural{
     left: 05px;
@@ -3254,3 +3151,11 @@ nav ul li {
     margin-left:625px;
 }
 }
+@media only screen and (min-width: 1367px) and (max-width: 1387px) {
+    .aproveitecta{
+        left: 0px;
+        margin-left: -35px;
+    }
+}
+
+

@@ -3,25 +3,11 @@
 <section id="carousel">
     <div class="contsliderhome">
         <h1 id="textoslider">VIVA.CONHEÇA.EXPERIMENTE</h1>
-        <ul class=slider>
-            <li>
-                <input type="radio" id="slide1" name="slide" checked>
-                <label for="slide1"></label>
-                <img src="./Galeria/imageDB/Cidades/riodejaneiro.png" alt="cidade_rio_de_janeiro">
-            </li>
-            <li>
-                <input type="radio" id="slide2" name="slide" >
-                <label for="slide2"></label>
-                <img src="./Galeria/imageDB/Aventura/rio-1729546.png" alt="aventura">
-
-            </li>
-            <li>
-                <input type="radio" id="slide3" name="slide">
-                <label for="slide3"></label>
-                <img src="./Galeria/imageDB/Gastronomia/almond-almonds-brazil-nut-1295572.png" alt="castanhas">
-
-            </li>
-        </ul>
+        <div class="slider">
+            <img class="mySlides" src="./Galeria/imageDB/Cidades/riodejaneiro.png" style="width:100%" alt="cidade_rio_de_janeiro">
+            <img class="mySlides" src="./Galeria/imageDB/Aventura/rio-1729546.png" style="width:100%" alt="aventura">
+            <img class="mySlides" src="./Galeria/imageDB/Gastronomia/almond-almonds-brazil-nut-1295572.png" style="width:100%" alt="castanhas">
+        </div>
     </div>
 </section>
 <section id="todo">
@@ -277,6 +263,8 @@
             <img class="ig"src="./Assets/igFeed/igFeed11.png" alt="feed8">
             <img class="ig" id="feedlast2"src="./Assets/igFeed/igFeed8.png" alt="feed10">
         </div>
+
+<script src="scripts/sliderHome.js"></script>
 </section>
 
 @endsection
