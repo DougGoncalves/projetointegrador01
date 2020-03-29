@@ -17,23 +17,25 @@
 <section id="ofertasexp">
     <h1 id="ttofertasexp">Ofertas Imperdíveis</h1>
     <div class="carrosselexp">
-        <ul class="imagenssliderexp">
-            <li>
-                    <input type="radio" id="slide1exp" name="slide" checked>
-                    <label for="slide1exp"></label>
-                <img src="./Galeria/imageDB/Aventura/zipline_slider.jpg" alt="tirolesa">
-            </li>
-            <li>
-                    <input type="radio" id="slide2exp" name="slide" >
-                    <label for="slide2exp"></label>
-                <img src="./Galeria/imageDB/Gastronomia/moqueca_slider.jpg" alt="moqueca">
-            </li>
-            <li>
-                    <input type="radio" id="slide3exp" name="slide">
-                    <label for="slide3exp"></label>
-                <img src="./Galeria/imageDB/Natureza/foz_slider.jpg" alt="foz_do_iguacu">
-            </li>
-        </ul>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./Galeria/imageDB/Aventura/zipline_slider.jpg" style="width:100%" alt="tirolesa">
+                <div class="text"><a href="/produtos/3" style="text-decoration: none;color: inherit;">Preços Promocionais para Passeios de Paraglider</a> </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./Galeria/imageDB/Gastronomia/moqueca_slider.jpg" style="width:100%" alt="moqueca" href="">
+                <div class="text"><a href="/produtos/14" style="text-decoration: none;color: inherit;">Culinária Típica do Nordeste, Experimente!</a></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./Galeria/imageDB/Natureza/foz_slider.jpg" style="width:100%" alt="foz_do_iguacu" href="">
+                <div class="text"><a href="/produtos/26" style="text-decoration: none;color: inherit;">Foz do Iguaçú, conheça a tríplice fronteira</a></div>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </div>
 </section>
 <section id="aproveiteexp">
@@ -435,5 +437,6 @@
     </div>
 @endforeach
 
+<script src="scripts/sliderExperiencias.js"></script>
 </section>
 @endsection

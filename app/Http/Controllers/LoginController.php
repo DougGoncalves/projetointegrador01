@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Usuario;
 use LengthException;
+use GuzzleHttp\Client;
 
 class LoginController extends Controller
 {
@@ -32,5 +33,5 @@ class LoginController extends Controller
             }
         }
 
-    }
+}
 
