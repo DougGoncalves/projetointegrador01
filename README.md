@@ -9,7 +9,7 @@
  </p>
 
  <p align="center">
-    <img alt="Mobile" src="public/Galeria/logos/mobile_frontend.png" height="600px" width="300px">
+    <img alt="Mobile" src="public/Galeria/logos/mobile_frontend.png" height="600px">
     <img alt="Frontend" src="public/Galeria/logos/frontend_desktop.png" width="580px">
  </p>
 
