@@ -9,8 +9,8 @@
  </p>
 
  <p align="center">
-    <img alt="Mobile" src="public/Galeria/logos/mobile_frontend.png" height="600px">
     <img alt="Frontend" src="public/Galeria/logos/frontend_desktop.png" width="580px">
+    <img alt="Mobile" src="public/Galeria/logos/mobile_frontend.png" height="600px">
  </p>
 
  ## :rocket: Tecnologias
@@ -26,9 +26,9 @@
 
  ## 💻 Projeto
 
- Projeto integrador referente ao curso de Full Stack da Digital House, elaborado utilizando todas as tecnologias que foram aprendidas no decorrer do curso. Para este projeto foi elaborado um e-commerce de 'experiências' turística, onde o cliente escolhe o que gostaria de fazer, baseado em algumas das categorias pré-estabelecidas.
+ Projeto integrador referente ao curso de Web Full Stack da [Digital House](https://www.digitalhouse.com/br), elaborado utilizando todas as tecnologias que foram aprendidas no decorrer do curso. Para este projeto foi elaborado um e-commerce de 'experiências' turísticas, onde o cliente escolhe o que gostaria de fazer, baseado em algumas das categorias pré-estabelecidas.
 
- Se quiser ver o projeto, em versão live, você pode acessá-lo nesse [link]().
+ Se quiser ver o projeto, em versão live, você pode acessá-lo nesse [link](). --EM BREVE
 
  ## :memo: Licença
 
