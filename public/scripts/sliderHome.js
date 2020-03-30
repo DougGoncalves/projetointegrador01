@@ -14,3 +14,6 @@ function carousel() {
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 4500); // Muda as imagens do carrossel a cada 4,5 segundos
 }
+
+
+
