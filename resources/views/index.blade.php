@@ -249,7 +249,7 @@
 </section>
 <section id="igfeed">
         <h2 class="subtitulofeed"> Compartilhe conosco suas experiências. Utilize a #BlendTour no Instagram</h2>
-        <div class="feedlinha1">
+        {{-- <div class="feedlinha1">
             <img class="ig"src="./Assets/igFeed/igFeed1.png" alt="feed1">
             <img class="ig"src="./Assets/igFeed/igFeed2.png" alt="feed2">
             <img class="ig"src="./Assets/igFeed/igFeed3.png" alt="feed3">
@@ -262,9 +262,12 @@
             <img class="ig"src="./Assets/igFeed/igFeed9.png" alt="feed7">
             <img class="ig"src="./Assets/igFeed/igFeed11.png" alt="feed8">
             <img class="ig" id="feedlast2"src="./Assets/igFeed/igFeed8.png" alt="feed10">
-        </div>
+        </div> --}}
+        <ul id="feed"></ul>
+
 
 <script src="scripts/sliderHome.js"></script>
+<script src="scripts/instagram.js"></script>
 </section>
 
 @endsection

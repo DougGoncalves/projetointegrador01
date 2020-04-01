@@ -1,5 +1,3 @@
-console.log('tá acontencendo');
-
 var slideIndex = 0;
 showSlides();
 
