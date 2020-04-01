@@ -30,7 +30,7 @@
         });
     </script>
 </head>
-<body>
+<body onkeydown="closedModal(event)">
     <header>
         <nav>
             <a href="/">

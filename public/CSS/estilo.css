@@ -3193,16 +3193,16 @@ nav ul li {
     justify-content: center;
     align-items: center;   
     font-family: 'Roboto', Verdana, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .modal{
     color: #ffffff;
-    width: 50%;
-    min-width: 400px;
+    width: 45%;
     padding: 40px;
     border: 4px solid white;
-    background: transparent linear-gradient(85deg, #8A2EFF 0%, #4A2AEB 38%, #3B4EFF 100%);
+    background:  #A0A8B8;
     box-shadow: 0px 0px 20px rgba(0,0,0,1);
     position: relative;
     border-radius: 10px;
@@ -3224,18 +3224,19 @@ nav ul li {
 .input{
 	padding:0 5px;
     height:40px;
-    margin-bottom: 20px;
-    width: 100%;
-    border-radius: 5px;
+    margin-bottom: 50px;
+    width: 90%;
+    border-radius: 10px;
     border: none;
+    font-size: 20px;
 }
 
 .button{
 	padding:0 5px;
     height:40px;
-    margin-bottom: 20px;
-    width: 100%;
-    border-radius: 5px;
-    background: #A0A8B8;
+    width: 25%;
+    border-radius: 10px;
+    background: #2a6fe8;
     border: none;
+    color: #ffffff;
 }

@@ -1,13 +1,22 @@
-//Abre o Modal após 5 segundos
-function abreModal(){
+//Abre o Modal após 10 segundos
+function openModal(){
     document.getElementById('modal-newsletter').style.display = "flex";
 }
-setTimeout(abreModal, 5000);
+setTimeout(openModal, 10000);
 
+//Fecha o Modal pressionando a tecla Esc
+function closedModal(event){
+    if(event.keyCode == 27){
+        document.getElementById('modal-newsletter').style.display = "none";
+    }
+}
 
-//Fechamento da Modal via botão X
+//Fecha o Modal via botão X
 var fecharModal = document.getElementById("fechar");
 
 fecharModal.addEventListener('click', function() {
 document.getElementById('modal-newsletter').style.display = "none";
 });
+
+
+
