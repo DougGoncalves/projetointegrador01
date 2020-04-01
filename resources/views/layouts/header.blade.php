@@ -12,7 +12,7 @@
     <!-- CSS para pagina cadastro -->
     <link rel="stylesheet" href="{{asset('../CSS/cadastro.css')}}">
     <!-- CSS para pagina cadastro Interno -->
-    <link rel="stylesheet" href="{{asset('../CSS/cadastro_interno.css')}}">
+    <link rel="stylesheet" href="{{asset('../CSS/cadastroInterno.css')}}">
     <!-- CSS para pagina pesquisa -->
     <link rel="stylesheet" href="{{asset('../CSS/pesquisa.css')}}">
 

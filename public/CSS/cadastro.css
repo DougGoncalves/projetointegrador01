@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-body{
+.cadastro{
   background-image: url(../Galeria/imageDB/Cidades/floripa.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -3991,4 +3991,42 @@ button.bg-primary:focus {
 
 .text-decoration-none {
   text-decoration: none !important;
+}
+
+.valida-entrada {
+  font-style: italic;
+  text-align: left;
+  list-style: disc;
+  list-style-position: inside;
+  margin: 10px;
+  color: rgb(110,110,110);
+}
+
+
+
+.valida-entrada li.invalido {
+  color: #f74c3c;
+}
+
+.valida-entrada li.valido {
+  color: #2fcf71;
+}
+
+.valida-entrada li.valido:after {
+  display: inline-block;
+  content: "\2713";
+  padding-left: 10px;
+}
+
+input:not([type="checkbox"]) + .valida-entrada {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-out;
+}
+
+input:not([type="checkbox"]):hover + .valida-entrada,
+input:not([type="checkbox"]):focus + .valida-entrada,
+input:not([type="checkbox"]):active + .valida-entrada {
+  max-height: 1000px;
+  transition: max-height 1s ease-in;
 }
