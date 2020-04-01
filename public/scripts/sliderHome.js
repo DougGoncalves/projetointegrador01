@@ -1,5 +1,3 @@
-console.log('arquivo externo funcionando!');
-
 var myIndex = 0;
 carousel();
 

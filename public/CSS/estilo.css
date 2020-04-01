@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 *{
     margin: 0;
@@ -377,6 +377,22 @@ nav ul li a {
 .feedlinha2 {
     margin-bottom:100px;
     margin-left:40px;
+}
+#feed{
+    position: relative;
+    list-style:none
+    margin-bottom: 20px;
+}
+
+#feed li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#feed li img{
+    width: 250px;
+    height:300px;
+    padding:8px;
 }
 /*=======================Seção Clima - SUA VIAGEM ============================*/
 .clima, .chegar, .h1imperdivel, .titlebrasil, .titlehistoria, .titledestinos{
@@ -1109,24 +1125,7 @@ input#checkdestinos:checked ~ .detalhesdestinos{
     margin-left: 60px;
     margin-bottom: -90px;
 }
-#feed{
-    position: relative;
-    list-style:none
-    margin-left: 100px;
-    margin-bottom: 20px;
-}
 
-  #feed li{
-    display: inline-block;
-    width: 250px;
-    height:300px;
-    padding:8px;
-
-  }
-  #feed li img{
-    max-width:100%;
-    max-height:100%;
-  }
 /*===========================Composição do Footer=============================*/
 footer {
     height: 256px;
@@ -1385,6 +1384,9 @@ footer {
 }
 .feedlinha2{
     display: none;
+}
+#feed li{
+    margin-left: 65px;
 }
 /*-----------------------------------CONHEÇA----------------------------------*/
 .titlebrasil,.titlehistoria,.titledestinos,.clima,.chegar,.h1imperdivel{
@@ -1858,6 +1860,9 @@ footer {
     .feedlinha2 img:last-child{
         display:none;
     }
+    #feed li{
+        margin-left: 25px;
+    }
 /*-----------------------------------CONHEÇA----------------------------------*/
 .titlebrasil,.titlehistoria,.titledestinos,.clima,.chegar,.h1imperdivel{
     font-size: 45px;
@@ -2238,7 +2243,7 @@ nav ul li a {
 }
 .subtitulofeed{
     font-size: 22px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 .ig{
     width: 220px;
@@ -2256,6 +2261,10 @@ nav ul li a {
 .feedlinha2 img:nth-child(4), .feedlinha2 img:last-child{
     display: none;
 }
+#feed li{
+    margin-left: 90px;
+}
+
 /*---------------------------------CONHEÇA------------------------------------*/
 .titlebrasil, .titlehistoria,.titledestinos,.clima,.chegar,.h1imperdivel{
     font-size:52px;
@@ -2582,6 +2591,9 @@ nav ul li{
 .feedlinha2 img:last-child{
     display:none;
 }
+#feed li {
+    margin-left: 60px;
+}
 /*-------------------------------CONHEÇA--------------------------------------*/
 .titlebrasil, .titlehistoria,.titledestinos, .clima,.chegar.h1imperdivel{
     font-size: 59px;
@@ -2684,9 +2696,9 @@ nav ul li{
     left: 0;
     margin: 0 0 20px 0px;
 }
-
 .inscrevaexp{
     margin: 0 0 0 0;
+
 }
 /*-------------------------------PRODUTO--------------------------------------*/
 .carrosselproduto{
@@ -2898,6 +2910,9 @@ nav ul li {
 .feedlinha2 img:last-child{
     display: none;
 }
+#feed li{
+    margin-left: 40px;
+}
 /*-------------------------------CONHEÇA--------------------------------------*/
 #ophistoria{
     height: 705px;
@@ -3048,31 +3063,31 @@ nav ul li {
     left:120px;
 }
 #iconecultura{
-    left: 800px;
+    left: 790px;
 }
 #tituloicon1{
-    left: 800px;
+    left: 790px;
 }
 #iconecomida{
-    left: 810px;
+    left: 800px;
 }
 #tituloicon2{
-    left: 825px;
+    left: 815px;
 }
 #iconeaventura{
-    left: 1140px;
+    left: 1130px;
 }
 #tituloicon3{
-    left:1140px;
+    left:1130px;
 }
 #iconenatureza{
-    left: 1140px;
+    left: 1130px;
 }
 #tituloicon4{
-    left: 1140px;
+    left: 1130px;
 }
 .container{
-    margin-left: 710px;
+    margin-left: 700px;
 }
 .miniaturas{
    margin-left:10px;
@@ -3085,6 +3100,13 @@ nav ul li {
     left: 70%;
 }
 .ig{
+    width: 238px;
+    height: 260px;
+}
+#feed li{
+    margin-left: 28px;
+}
+#feed li img {
     width: 238px;
     height: 260px;
 }
@@ -3158,4 +3180,63 @@ nav ul li {
     }
 }
 
+/*=================================MODAL=====================================*/
+.container-modal{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;   
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
 
+.modal{
+    color: #ffffff;
+    width: 45%;
+    padding: 40px;
+    border: 4px solid white;
+    background:  #A0A8B8;
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+    position: relative;
+    border-radius: 10px;
+}
+
+.fechar{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: red;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+}
+
+.input{
+	padding:0 5px;
+    height:40px;
+    margin-bottom: 50px;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+.button{
+	padding:0 5px;
+    height:40px;
+    width: 25%;
+    border-radius: 10px;
+    background: #2a6fe8;
+    border: none;
+    color: #ffffff;
+}

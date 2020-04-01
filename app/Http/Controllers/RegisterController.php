@@ -16,7 +16,7 @@ class RegisterController extends Controller
         $usuario->email = $request->email;
 
 
-        if ($request->senha != $request->confirmaSenha) {
+        if ($request->senha != $request->confirmasenha) {
 
             return view('auth.register', compact('usuario'));
             
