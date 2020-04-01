@@ -31,10 +31,8 @@ class LoginController extends Controller
 
                 $_SESSION["usuario"] = $usuario[0]->nome;
                 if ($request->remember == true) {
-                    $_SESSION["time"] = time()+7210; // 2 horas de sessão                    
+                    $_SESSION["time"] = time()+7200; // 2 horas de sessão                    
                 } else {
-                    echo "FALSE";
-                    exit;
                     $_SESSION["time"] = time()+1800; // 30 minutos de sessão
                 }
                
