@@ -70,7 +70,4 @@ Route::post('/admin/pedido/excluir/{id}', 'PedidoController@remove');
 
 // Login
 Route::post('/login', 'LoginController@checkLogin');
-
-
-
-
+Route::post('/login/sendingEmail', 'LoginController@sendingEmail');
