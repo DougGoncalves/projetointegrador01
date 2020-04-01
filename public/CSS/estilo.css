@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 *{
     margin: 0;
@@ -3180,4 +3180,62 @@ nav ul li {
     }
 }
 
+/*=================================MODAL=====================================*/
+.container-modal{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;   
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+}
 
+.modal{
+    color: #ffffff;
+    width: 50%;
+    min-width: 400px;
+    padding: 40px;
+    border: 4px solid white;
+    background: transparent linear-gradient(85deg, #8A2EFF 0%, #4A2AEB 38%, #3B4EFF 100%);
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+    position: relative;
+    border-radius: 10px;
+}
+
+.fechar{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: red;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+}
+
+.input{
+	padding:0 5px;
+    height:40px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+.button{
+	padding:0 5px;
+    height:40px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background: #A0A8B8;
+    border: none;
+}
