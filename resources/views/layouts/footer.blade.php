@@ -1,4 +1,4 @@
-</main>
+﻿</main>
 <footer>
         <a href="/">
         <img src="{{asset('../../Galeria/logos/logofooter.png')}}" alt="logofooter" id="logofooter">
@@ -96,5 +96,21 @@
     </div>
     <p id="copy" >Copyright &copy; Blend Tour</p>
 </footer>
+
+<!-- Modal -->
+<div id="modal-newsletter" class="container-modal">
+    <div class="modal">
+    <button id="fechar" class="fechar">X</button>
+        <div class="conteudo-modal" style="text-align: center;">
+            <h3 style="margin-bottom:20px">Inscreva-se para receber as melhores ofertas</h3>
+            <input type="email" name="email" class="input" placeholder="Digite seu e-mail" autofocus>
+            <input type="button" value="Enviar" class="button">
+        </div>
+    </div>
+</div>
+<!-- Fim Modal -->
+
+<script src="scripts/modal.js"></script>
+
 </body>
 </html>
