@@ -56,6 +56,11 @@
                             <section class="form-group">
                                 <input type="submit" value="{{ __('Entrar') }}" id="btn-TelaLogin">
                             </section>
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                            <label class="form-check-label" for="remember" style="color:#fff;">
+                                {{ __('Mantenha-me Conectado') }}
+                            </label>
                             <script class="alert alert-success">
                                     var msg = '{{Session::get('alert')}}';
                                     var exist = '{{Session::has('alert')}}';
@@ -63,11 +68,6 @@
                                         alert(msg);
                                     }
                             </script>
-                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                            <label class="form-check-label" for="remember" style="color:#fff;">
-                                {{ __('Remember Me') }}
-                            </label>
                         </form>
                     </section>
                     <section class="card-footer">
@@ -75,11 +75,8 @@
                             <a href="/register">Não sou membro</a>
                         </section>
                         <section class="d-flex justify-content-center">
-                            @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Esqueceu sua senha?') }}
-                                    </a>
-                            @endif
+                            <a data-toggle="modal" href="#modalLoginForm">Esqueci minha senha</a>
+                            <!-- <a href="#FAQ-modal">Fale Conosco</a> -->
                         </section>
                     </section>
                 </main>
@@ -88,7 +85,10 @@
 
     </section>
 
-{{-- <form>
+     
+
+<form method="POST" action="/login/sendingEmail">
+    @csrf
     <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -103,19 +103,28 @@
             <div class="md-form mb-5">
                 <i class="fas fa-envelope prefix grey-text"></i>
                 <label>Seu e-mail</label>
-                <input type="email" id="defaultForm-email" class="form-control validate" name="email">
-                <small>Esta função está desabilitada no momento</small>
+                <input type="email" id="defaultForm-email" class="form-control validate" name="sendemail"
+                @error('email') is-invalid @enderror" name="sendemail" value="{{ old('email') }}" required autocomplete="sendemail" autofocus>
                 <label for="defaultForm-email" data-error="errado" data-success="certo"></label>
+
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+
+
             </div>
         </div>
-        <div class="modal-footer d-flex justify-content-center">
-            <button id="btn-TelaLogin">Entrar</button>
+        <div class="modal-footer d-flex justify-content-center form-group">
+            <!-- <button id="btn-TelaLogin">Entrar</button> -->
+            <input type="submit" value="{{ __('Entrar') }}" id="btn-TelaLogin">
         </div>
     </div>
     </div>
   </div>
-
-</form> --}}
+ 
+</form>
 
 
 

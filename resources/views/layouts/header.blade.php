@@ -47,9 +47,20 @@
             <?php
                 // reabre sessão
                 session_start();
+
+                if (isset($_SESSION["time"]))
+                {
+                    if ($_SESSION["time"]<time())
+                    {
+                        session_destroy();
+                    }
+                } else {
+                    session_destroy();
+                }
+
             ?>
 
-            @if (!isset( $_SESSION["usuario"] ))
+            @if (!isset( $_SESSION["usuario"] ) )
                 </div>
                 <a href="/register" id="cadastro">Cadastre-se</a>
                 <div>
