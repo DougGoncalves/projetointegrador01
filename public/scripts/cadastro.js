@@ -17,6 +17,8 @@ var getSenha = document.querySelector('input#senha');
 var getConfirmaSenha = document.querySelector('input#password-confirm');
 var getNome = document.querySelector('input#nome');
 var getCpf = document.querySelector('input#cpf');
+var getFoneUm = document.querySelector('input#telefoneUm');
+var getFoneDois = document.querySelector('input#telefoneDois');
 
 
 function validaNome() {
@@ -120,3 +122,30 @@ function confirmaSenha() {
 });
 };
 
+function validaFoneUm() {
+	document.addEventListener('keyup', function(evento) {
+		fonecheck = document.querySelector('li.telefonecheck');
+		
+		if (!getFoneUm.value.match(/([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])/g)) {
+			fonecheck.classList.add('invalido');
+			fonecheck.classList.remove('valido');
+		} else {
+			fonecheck.classList.add('valido');
+			fonecheck.classList.remove('invalido');
+		}
+	});
+};
+
+function validaFoneDois() {
+	document.addEventListener('keyup', function(evento) {
+		fonecheck = document.querySelector('li.telefonecheckdois');
+		
+		if (!getFoneDois.value.match(/([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])/g)) {
+			fonecheck.classList.add('invalido');
+			fonecheck.classList.remove('valido');
+		} else {
+			fonecheck.classList.add('valido');
+			fonecheck.classList.remove('invalido');
+		}
+	});
+};

@@ -5,7 +5,7 @@
     <section class="container-formulario">
         <div class="row-cadastro">
             @if(@isset($usuario))
-            <form method="POST" action="/cadastrointerno/{{$usuario->id_usuario}}" enctype="multipart/form-data">
+            <form method="POST" action="/cadastrointerno/{{ $usuario->id_usuario }}" enctype="multipart/form-data">
             @csrf
                 <div class="form-row">
                     <div class="form-group col-md-8">
@@ -32,7 +32,7 @@
 
                     <div class="form-group col-md-4">
                         <label for="dtnasc">Data de Nascimento</label>
-                        <input type="date" class="form-control" name="dtnasc" id="dtnasc" required>
+                        <input type="date" min="1900-01-01" max="2099-01-01" class="form-control" name="dtnasc" id="dtnasc" required>
                     </div>
 
                     <div class="form-group col-md-4">
@@ -49,14 +49,20 @@
 
                     <div class="form-group col-md-4">
                         <label for="telefoneUm">Telefone para contato</label>
-                        <input type="text" class="form-control" name="telefoneUm" id="telefoneUm"
-                            placeholder="(99)99999-9999" maxlength="11" required>
+                        <input type="text" class="form-control fone" name="telefoneUm" id="telefoneUm"
+                            placeholder="(99)99999-9999" maxlength="11" required onkeyup="validaFoneUm()">
+                        <ul class="valida-entrada">
+                            <li class="telefonecheck">Somente Números</li>
+                        </ul>
                     </div>
 
                     <div class="form-group col-md-4">
                         <label for="telefoneDois">Telefone para contato</label>
-                        <input type="text" class="form-control" name="telefoneDois" id="telefoneDois"
-                            placeholder="(99)99999-9999" maxlength="11">
+                        <input type="text" class="form-control fone" name="telefoneDois" id="telefoneDois"
+                            placeholder="(99)99999-9999" maxlength="11" onkeyup="validaFoneDois()">
+                        <ul class="valida-entrada">
+                            <li class="telefonecheckdois">Somente Números</li>
+                        </ul>
                     </div>
 
                     
