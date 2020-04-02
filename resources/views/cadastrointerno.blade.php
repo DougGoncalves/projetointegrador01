@@ -10,8 +10,11 @@
                 <div class="form-row">
                     <div class="form-group col-md-8">
                         <label for="nome">Nome</label>
-                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Completo"
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Completo" onkeyup="validaNome()"
                             required autofocus>
+                        <ul class="valida-entrada">
+                            <li class="namecheck">Insira seu nome completo</li>
+                        </ul>
                     </div>
 
                     <div class="form-group col-md-4"></div>
@@ -19,7 +22,10 @@
                     <div class="form-group col-md-8">
                         <label for="cpf">CPF</label>
                         <input type="text" class="form-control" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx"
-                            maxlength="14" required>
+                            maxlength="14" required onkeyup="validaCpf()">
+                        <ul class="valida-entrada">
+                            <li class="cpfcheck">Insira um CPF Válido</li>
+                        </ul>
                     </div>
 
                     <div class="form-group col-md-4"></div>
@@ -57,7 +63,10 @@
                     <div class="form-group col-md-8">
                         <label for="email">E-mail</label>
                         <input type="email" class="form-control" name="email" id="email"
-                            value="{{$usuario->email}}" required>
+                            value="{{$usuario->email}}" onkeyup="validaEmail()" required>
+                        <ul class="valida-entrada">
+                            <li class="mailcheck">Insira um e-mail válido</li>
+                        </ul>
                     </div>
 
                     <div class="form-group col-md-4"></div>
@@ -66,15 +75,25 @@
                         <label for="senha">Senha</label>
 
                         <input type="password" class="form-control" name="senha" id="senha"
-                            placeholder="***************" value="{{$usuario->senha}}">
+                            placeholder="***************" value="{{$usuario->senha}}" onkeyup="validaSenha()">
+                            <ul class="valida-entrada cadastrointerno">
+                                <li class="passchksize" style="font-size: 0.80em">Conter ao menos 8 caracteres</li>
+                                <li class="passchknumero" style="font-size: 0.80em">Conter ao menos 1 numero</li>
+                                <li class="passchklmin" style="font-size: 0.80em">Conter ao menos 1 letra minuscula</li>
+                                <li class="passchklmai" style="font-size: 0.80em">Conter ao menos 1 letra maiuscula</li>
+					            <li class="passespecial" style="font-size: 0.80em">Conter um caracter especial (ex. @ ! #)</li>
+				            </ul>
                     </div>
 
                     <div class="form-group col-md-4">
                         <label for="conf-senha">Confirme a Senha</label>
-                        <input type="password" class="form-control" name="confirmaSenha" id="conf-senha"
-                            placeholder="***************" value="{{$usuario->senha}}">
+                        <input type="password" class="form-control" name="confirmasenha" id="password-confirm"
+                            placeholder="***************" value="{{$usuario->senha}}" onkeyup="confirmaSenha()">
+                            <ul class="valida-entrada cadastrointerno">
+                                <li class="passconfirm" style="font-size: 0.80em">As senhas não conferem</li>
+				            </ul>
                     </div>
-                    @if(isset($confirmaSenha))
+                    @if(isset($confirmasenha))
                         <div class="alert alert-danger form-control" role="alert">
                                 As senhas não coincidem!
                         </div>
@@ -99,4 +118,5 @@
         </div>
     </section>
 </div>
+<script src="{{ asset('scripts/cadastro.js') }}"></script>
 @endsection

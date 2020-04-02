@@ -110,7 +110,7 @@
 </div>
 <!-- Fim Modal -->
 
-<script src="scripts/modal.js"></script>
+<script src="{{ asset('scripts/modal.js') }}"></script>
 
 </body>
 </html>
