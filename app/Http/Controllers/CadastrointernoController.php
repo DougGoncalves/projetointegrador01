@@ -16,10 +16,10 @@ class CadastrointernoController extends Controller
         
         $usuario = Usuario::find($id_usuario);
 
-        if ($request->senha != $request->confirmaSenha) {
+        if ($request->senha != $request->confirmasenha) {
 
-            $confirmaSenha = true;
-            return view('cadastrointerno', compact('confirmaSenha', 'usuario'));
+            $confirmasenha = true;
+            return view('cadastrointerno', compact('confirmasenha', 'usuario'));
             
         }
         
@@ -47,6 +47,8 @@ class CadastrointernoController extends Controller
             $arquivo->move($caminhoAbsoluto, $nomeArquivo);
             $usuario->imagem = $caminhoRelativo;
         }
+
+        var_dump($usuario);
         
         $usuario->save();
 

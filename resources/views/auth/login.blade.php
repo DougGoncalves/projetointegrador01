@@ -72,7 +72,7 @@
                     </section>
                     <section class="card-footer">
                         <section class="d-flex justify-content-center links">
-                            <a href="/register">Não sou membro</a>
+                            <a href="/register">Ainda não sou membro</a>
                         </section>
                         <section class="d-flex justify-content-center">
                             <a data-toggle="modal" href="#modalLoginForm">Esqueci minha senha</a>
@@ -85,7 +85,7 @@
 
     </section>
 
-     
+
 
 <form method="POST" action="/login/sendingEmail">
     @csrf
@@ -123,7 +123,7 @@
     </div>
     </div>
   </div>
- 
+
 </form>
 
 

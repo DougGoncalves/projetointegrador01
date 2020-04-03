@@ -15,6 +15,39 @@ window.onload = function() {
 var getEmail = document.querySelector('input#email');
 var getSenha = document.querySelector('input#senha');
 var getConfirmaSenha = document.querySelector('input#password-confirm');
+var getNome = document.querySelector('input#nome');
+var getCpf = document.querySelector('input#cpf');
+var getFoneUm = document.querySelector('input#telefoneUm');
+var getFoneDois = document.querySelector('input#telefoneDois');
+
+
+function validaNome() {
+	document.addEventListener('keyup', function(evento) {
+		nomecheck = document.querySelector('li.namecheck');
+		
+		if (!getNome.value.match(/[A-Za-z]+\ [A-Za-z]+/g)) {
+			nomecheck.classList.add('invalido');
+			nomecheck.classList.remove('valido');
+		} else {
+			nomecheck.classList.add('valido');
+			nomecheck.classList.remove('invalido');
+		}
+	});
+};
+
+function validaCpf() {
+	document.addEventListener('keyup', function(evento) {
+		cpfcheck = document.querySelector('li.cpfcheck');
+		
+		if (!getCpf.value.match(/([0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[-][0-9]{2})/g)) {
+			cpfcheck.classList.add('invalido');
+			cpfcheck.classList.remove('valido');
+		} else {
+			cpfcheck.classList.add('valido');
+			cpfcheck.classList.remove('invalido');
+		}
+	});
+};
 
 function validaEmail() {
 		document.addEventListener('keyup', function(evento) {
@@ -89,3 +122,30 @@ function confirmaSenha() {
 });
 };
 
+function validaFoneUm() {
+	document.addEventListener('keyup', function(evento) {
+		fonecheck = document.querySelector('li.telefonecheck');
+		
+		if (!getFoneUm.value.match(/([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])/g)) {
+			fonecheck.classList.add('invalido');
+			fonecheck.classList.remove('valido');
+		} else {
+			fonecheck.classList.add('valido');
+			fonecheck.classList.remove('invalido');
+		}
+	});
+};
+
+function validaFoneDois() {
+	document.addEventListener('keyup', function(evento) {
+		fonecheck = document.querySelector('li.telefonecheckdois');
+		
+		if (!getFoneDois.value.match(/([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])/g)) {
+			fonecheck.classList.add('invalido');
+			fonecheck.classList.remove('valido');
+		} else {
+			fonecheck.classList.add('valido');
+			fonecheck.classList.remove('invalido');
+		}
+	});
+};

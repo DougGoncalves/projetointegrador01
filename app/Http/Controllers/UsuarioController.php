@@ -47,7 +47,8 @@ class UsuarioController extends Controller
 
         $usuario = Usuario::find($id_usuario);
 
-        return view('editarUsuario', compact('usuario'));
+        $confirmasenha = true;
+        return view('editarUsuario', compact('confirmasenha', 'usuario'));
 
     }
 
