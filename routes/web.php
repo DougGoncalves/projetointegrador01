@@ -42,8 +42,6 @@ Route::get('/addcarrinho/{id}', 'CarrinhoController@addToCart')->name('add.carri
 Route::get('/removecarrinho/{id}', 'CarrinhoController@decrement')->name('decrement.carrinho'); //diminui quantidade de items adicionados ao carrinho
 Route::get('/deletecarrinho/{id}', 'CarrinhoController@remove')->name('remove.carrinho');// remove item por completo do carrinho
 
-
-
 Auth::routes();
 
 Route::get('/cadastrointerno', 'CadastrointernoController@index');
@@ -72,3 +70,6 @@ Route::post('/admin/pedido/excluir/{id}', 'PedidoController@remove');
 // Login
 Route::post('/login', 'LoginController@checkLogin');
 Route::post('/login/sendingEmail', 'LoginController@sendingEmail');
+
+//Perfil
+Route::get('/profile', 'ProfileController@profile')->name('profile');

@@ -113,7 +113,7 @@
                 <button class="btn btn-primary btn-lg btn-enviar" style="margin-right: 10px;">Enviar</button>
             </div>
             <div class="cancelar">
-                <button type="button" class="btn btn-primary btn-lg btn-cancelar" formnovalidate><a href="/admin/usuarios" style="text-decoration: none; color:white">Cancelar</a></button>
+                <button type="button" class="btn btn-secondary btn-lg btn-cancelar" formnovalidate><a href="/admin/usuarios" style="text-decoration: none; color:white">Cancelar</a></button>
             </div>
 
         </div>

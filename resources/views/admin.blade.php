@@ -40,7 +40,12 @@
           <td>Nenhum produto para exibir</td>
         </tr>
         @endif
+
       </tbody>
     </table>
+
+</div>
+<div class="row">
+    <a href="/admin" class="btn btn-primary" style="text-decoration:none; margin-bottom: 10px;"> <<< Voltar </a>
 </div>
 @endsection

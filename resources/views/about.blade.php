@@ -21,8 +21,11 @@
                 </figure>
                 <article>
                     <h4>{{$pessoa->nome}}</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis sit iusto
-                        perspiciatis.</p>
+                    <p>Você pode entrar em contato pelo link abaixo: </p>
+                        <a href={{$pessoa->linkedin}} target="_blank" title="Veja no Linkedin">
+                        <img src="{{asset('../../Assets/Icon/SocialMedia/linkedin.svg')}}" id="logolinkedin">
+                    LinkedIn
+                    </a>
                 </article>
             </div>
             @endforeach

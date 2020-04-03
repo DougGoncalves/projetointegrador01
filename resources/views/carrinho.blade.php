@@ -68,7 +68,10 @@
 
                 @endif
 
-                <a href="/experiencias" style="text-decoration: none; color:#000;"><< Continuar Comprando </a>
+                <div class="row">
+                    <a href="/experiencias" class="btn btn-primary" style="text-decoration:none; margin-bottom: 10px;"> <<< Continuar Comprando </a>
+                </div>
+
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Roboto', Verdana, Tahoma, sans-serif;
-    
+
 }
 .parallaxbg {
     /* Imagem do parallax */
@@ -17,40 +17,33 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 60vh;
-    padding-bottom: 50vh; 
-    
+    padding-bottom: 50vh;
 }
-
 .sobre {
     display: flex;
     overflow: hidden;
-    background-color: rgba(247, 240, 240, 0.5);
+    background-color: rgba(247, 240, 240, 0.8);
     flex-wrap: wrap;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
 .sobreBlendTour {
     display: flex;
     overflow: hidden;
 }
-
 .sobreBlendTour h1 {
     text-transform: uppercase;
     font-size: 65px;
     font-weight: 700;
     margin-left: 100px;
 }
-
 .sobreBlendTour article p {
     padding: 30px 100px;
-    font-size: 17px;
+    font-size: 22px;
     text-align: justify;
     min-width: 70%;
 }
-
 .sobreBlendTour figure img {
-    /* display: flex; */
     max-width: 600px;
     max-height: 398px;
     min-width: 400px;
@@ -58,26 +51,19 @@ body {
     width: auto;
     height: auto;
     margin: 30px 80px 0 0 ;
-
 }
-
 .equipeBlendTour {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 50px;
-    /* border: 4px solid blue; */
 }
-
 .cardPessoa {
     display: flex;
     max-width: 40vw;
     flex-wrap: wrap;
 }
-
 .cardPessoa figure {
-    /* A ideia é usar vetor PHP para atribuir as imagens e texto */
-    /* background-image: url("../Assets/Pessoas/pessoa1.jpg"); */
     width: 150px;
     height: 150px;
     background-position: 50% 50%;
@@ -85,18 +71,19 @@ body {
     background-repeat: no-repeat;
     clip-path: circle(40%);
 }
-
 .cardPessoa article {
     width: 50%;
     padding: 20px 5px;
 }
-
 .cardPessoa h4,
 .cardPessoa p {
     margin: 5px;
     text-align: justify;
 }
-
+.cardPessoa a{
+    text-decoration: none;
+    color: inherit; 
+}
 #eqpHeading {
     width: 100vw;
     text-align: center;
@@ -105,7 +92,6 @@ body {
     font-weight: 700;
     font-size: 65px;
 }
-
 #contato {
     margin: 50px 50px;
 }
@@ -114,69 +100,60 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    font-size: 65px; 
+    font-size: 65px;
     margin: 50px;
     flex-wrap: wrap;
 }
-
 #contatoForm {
     display: flex;
     flex-direction: column;
     width: 35%;
-}    
-
+}
 #contatoForm input {
     margin: 8px 0;
     height: calc(1.5em + .75rem + 2px);
 }
-
 #contatoForm textarea {
     height: 10vh;
     margin: 8px 0;
 }
-
 .btnContato {
     margin-top: 8px;
-    width: 50px;
     height: calc(1.5em + .75rem + 10px);
     border-radius: 8px;
     text-align: center;
     color: #FFF;
     background: #4A2AEB 0% 0% no-repeat padding-box;
 }
-
 .areaContato {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .endereco {
     margin-right: 50px;
 }
-
-
 #sobreLink {
     color: #fff;
     font-size:19px;
     text-decoration: none
 }
-
 #equipeLink {
     color: #fff;
     text-decoration: none;
 }
-
 #contatoLink {
     color: #fff;
     text-decoration: none;
 }
-
 #faqLink {
     color: #fff;
     text-decoration: none;
 }
-
+#logolinkedin{
+    width: 20px;
+    height: 20px;
+}
 /* CSS para funcionamento da FAQ como sanfona */
 .accordion {
     background-color: #eee;
@@ -190,12 +167,12 @@ body {
     transition: 0.4s;
     overflow-wrap: break-word;
   }
-  
+
   /* Adiciona a cor de fundo e caso o botao clicado adiciona o .active class usando o javascript */
   .active, .accordion:hover {
     background-color: #ccc;
   }
-  
+
   /* Estilo do painel */
   .panel {
     padding: 0 18px;
@@ -213,7 +190,7 @@ body {
     float: right;
     margin-left: 5px;
   }
-  
+
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
@@ -305,7 +282,7 @@ body {
 
     .endereco iframe {
         width: 380px;
-        height: 165px;        
+        height: 165px;
     }
 
     #faq {
@@ -320,7 +297,7 @@ body {
     .sobreBlendTour article p {
         padding: 50px;
     }
-    
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -332,7 +309,7 @@ body {
     #faq {
         margin: 0 50px 50px;
     }
-    
+
 }
 
 @media only screen and (min-width:375px) and (max-width:414px){
@@ -362,5 +339,5 @@ body {
         justify-content: space-evenly;
     }
 
-    
+
 }

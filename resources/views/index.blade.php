@@ -12,65 +12,59 @@
 </section>
 <section id="todo">
     <div>
-                    <h1 class="titulos">O QUE FAZER ?</h1>
+        <h1 class="titulos">O QUE FAZER ?</h1>
         <img id="fotoprincipal"src="./Galeria/imageDB/Cidades/salvador.png" alt="cidade_salvador">
         <a href="/experiencias#Cidades">
-        <img id="iconemaior"src="./Assets/Icon/cities.png" alt="icone_cidade">
-        <h2 id="titulomaior">CIDADES</h2>
+            <img id="iconemaior"src="./Assets/Icon/cities.png" alt="icone_cidade">
+            <h2 id="titulomaior">CIDADES</h2>
         </a>
     </div>
     <div class="container">
         <img class="miniaturas"src="./Galeria/imageDB/Historico Cultural/museu_niteroi.png" alt="museu_niteroi">
         <a href="/experiencias#Histórico Cultural">
-        <img id="iconecultura"src="./Assets/Icon/culture.png" alt="icone_cultura">
-        <h2 id="tituloicon1">CULTURAL</h2>
+            <img id="iconecultura"src="./Assets/Icon/culture.png" alt="icone_cultura">
+            <h2 id="tituloicon1">CULTURAL</h2>
         </a>
         <img class="miniaturas" src="./Galeria/imageDB/Aventura/biketrail.png" alt="trilha_bike">
         <a href="/experiencias#Aventura">
-        <img id="iconeaventura"src="./Assets/Icon/adventure.png" alt="icone_aventura">
+            <img id="iconeaventura"src="./Assets/Icon/adventure.png" alt="icone_aventura">
         </a>
         <h2 id="tituloicon3">AVENTURA</h2>
         <img class="miniaturas" src="./Galeria/imageDB/Gastronomia/acai.png" alt="bowl_acai">
         <a href="/experiencias#Gastronomia">
-        <img id="iconecomida"src="./Assets/Icon/food.png" alt="icone_comida">
-        <h2 id="tituloicon2">COMIDA</h2>
+            <img id="iconecomida"src="./Assets/Icon/food.png" alt="icone_comida">
+            <h2 id="tituloicon2">COMIDA</h2>
         </a>
         <img class="miniaturas" src="./Galeria/imageDB/Natureza/floresta.png" alt="floresta">
         <a href="/experiencias#Natureza">
-        <img id="iconenatureza"src="./Assets/Icon/nature.png" alt="icone_natureza">
-        <h2 id="tituloicon4">NATUREZA</h2>
+            <img id="iconenatureza"src="./Assets/Icon/nature.png" alt="icone_natureza">
+            <h2 id="tituloicon4">NATUREZA</h2>
         </a>
     </div>
 </section>
 <section id="mapainterativo">
-        <div class="descritivo">
-                <h1 class="titulomap">ONDE IR ?</h1>
-                <h2 class="subtitulos">Escolha por Região</h2>
-                <p class="expmapa">
-                Selecione a região clicando no mapa e conheça um pouco mais sobre o Brasil
-                </p>
-            <div class="cards">
-                <div class="container">
-                    <div class="box">
-                        <div class="imgbx">
-                            <img src="./Galeria/imageDB/Cidades/saopaulo.jpg" alt="cidade_sao_paulo">
-                        </div>
-                        <div class="content">
-                            <h3>Região Sudeste</h3>
-                            <p>
-                                 É a região mais populosa e economicamente mais desenvolvida do país, com grande concentração industrial, financeira e comercial.
-                                 O clima predominante no litoral é o tropical atlântico e nos planaltos o clima é o tropical de altitude, com temperaturas apresentando grandes variações.
-                                 Os Estados que compõe a região são: São Paulo (SP), Rio de Janeiro (RJ), Minas Gerais (MG) e Espírito Santo (ES).
-                            </p>
-                            <div class="box">
-                                <div class="imgbx">
-                                    <img src="./Galeria/imageDB/Cidades/saopaulo.jpg" alt="cidade_sao_paulo">
-                                </div>
+    <div class="descritivo">
+        <h1 class="titulomap">ONDE IR ?</h1>
+        <h2 class="subtitulos">Escolha por Região</h2>
+        <p class="expmapa">Selecione a região clicando no mapa e conheça um pouco mais sobre o Brasil </p>
+        <div class="cards">
+            <div class="container">
+                <div class="box">
+                    <div class="imgbx">
+                        <img src="./Galeria/imageDB/Cidades/saopaulo.jpg" alt="cidade_sao_paulo">
+                    </div>
+                    <div class="content">
+                        <h3>Região Sudeste</h3>
+                        <p>É a região mais populosa e economicamente mais desenvolvida do país, com grande concentração industrial, financeira e comercial.O clima predominante no litoral é o tropical atlântico e nos planaltos o clima é o tropical de altitude, com temperaturas apresentando grandes variações.Os Estados que compõe a região são: São Paulo (SP), Rio de Janeiro (RJ), Minas Gerais (MG) e Espírito Santo (ES).</p>
+                        <div class="box">
+                            <div class="imgbx">
+                                <img src="./Galeria/imageDB/Cidades/saopaulo.jpg" alt="cidade_sao_paulo">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     <div class="interactive">
     <svg class="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" viewBox=" 0 0 460 465">
         <g class="model-green">

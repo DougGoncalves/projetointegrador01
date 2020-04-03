@@ -73,7 +73,7 @@
                </a>
           </li>
            <li>
-               <a href="https://instagram.com">
+               <a href="https://instagram.com/blendtour">
                <img src="{{asset('../../Assets/Icon/SocialMedia/instagram.svg')}}" alt="instagram">
             </a>
             </li>

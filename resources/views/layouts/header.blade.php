@@ -66,7 +66,7 @@
                 <div>
             @else
                 </div>
-                <a id="cadastro" href="#">Olá, {{ $_SESSION["usuario"]}}!</a>
+                <a id="cadastro" href="/profile">Olá, {{ $_SESSION["usuario"]}}!</a>
                 <div>
             @endif
             <form action="/pesquisa" method="GET">
