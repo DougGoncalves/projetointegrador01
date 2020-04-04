@@ -25,6 +25,6 @@ window.addEventListener('load', function(){
     }else{
         document.getElementById('modal-newsletter').style.display = "flex";
 
-        setTimeout(openModal, 1000);
+        setTimeout(openModal, 10000);
     }
 });
