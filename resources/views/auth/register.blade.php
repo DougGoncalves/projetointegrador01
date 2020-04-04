@@ -14,13 +14,11 @@
                 <div class="col- col-sm-10 col-md-10 col-lg-8 col-xl-8">
                     <fieldset id="cad-simples">
                         <div class="form-group">
-                            <label for="email" {{ __('E-Mail Address') }}>E-mail</label>
+                            <label for="email">E-mail</label>
                             @if(isset($usuario))
-                            <input type="email" class="form-control" id="email" placeholder="email@email.com"
-                            @error('email') is-invalid @enderror" name="email" value="abc" required autocomplete="email" onkeyup="validaEmail()">
+                            <input type="email" class="form-control" id="email" placeholder="email@email.com" @error('email') is-invalid @enderror" name="email" value="{{$usuario->email}}" required autocomplete="email" onfocus="validaEmail()">
                             @else
-                            <input type="email" class="form-control" id="email" placeholder="email@email.com"
-                            @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" onkeyup="validaEmail()">
+                            <input type="email" class="form-control" id="email" placeholder="email@email.com" @error('email') is-invalid @enderror" name="email" required autocomplete="email" onfocus="validaEmail()">
                             @endif
                             <ul class="valida-entrada">
                                 <li class="mailcheck">Insira um e-mail válido</li>
@@ -32,9 +30,9 @@
                             @enderror
 
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="senha" {{ __('Password') }}>Senha</label>
-                            <input type="password" class="form-control" id="senha" placeholder="***************"@error('password') is-invalid @enderror" name="senha" required autocomplete="new-password" onkeyup="validaSenha()">
+                            <input type="password" class="form-control" id="senha" placeholder="***************"@error('password') is-invalid @enderror" name="senha" required autocomplete="new-password" onfocus="validaSenha()">
                             @if(isset($usuario))
                             <div class="alert alert-danger" role="alert">
                                 As senhas não coincidem!
@@ -45,16 +43,16 @@
                                 <li class="passchknumero">Conter ao menos 1 numero</li>
                                 <li class="passchklmin">Conter ao menos 1 letra minuscula</li>
                                 <li class="passchklmai">Conter ao menos 1 letra maiuscula</li>
-					            <li class="passespecial">Conter um caracter especial (ex. @ ! #)</li>
+					            <li class="passespecial">Conter um caractere especial (ex. @ ! #)</li>
 				            </ul>
                         </div>
                         <div class="form-group">
                             <label for="password-confirm" {{ __('Confirm Password') }}>Confirme sua senha</label>
-                            <input id="password-confirm" type="password" class="form-control" name="confirmasenha" required autocomplete="new-password" placeholder="***************" onkeyup="confirmaSenha()">
+                            <input id="password-confirm" type="password" class="form-control" name="confirmasenha" required autocomplete="new-password" placeholder="***************" onfocus="confirmaSenha()">
                             <ul class="valida-entrada">
                                 <li class="passconfirm">As senhas não conferem</li>
 				            </ul>
-                        </div>
+                        </div> -->
                     </fieldset>
                 </div>
             </div>
@@ -108,7 +106,7 @@
             </div>
 
             <div class="row">
-                <button class="btn btn-primary btn-prosseguir">Prosseguir</button>
+                <button class="btn btn-primary btn-prosseguir btn-novalidate">Prosseguir</button>
             </div>
         </form>
     </div>
