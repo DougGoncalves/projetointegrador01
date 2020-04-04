@@ -61,13 +61,8 @@
                             <label class="form-check-label" for="remember" style="color:#fff;">
                                 {{ __('Mantenha-me Conectado') }}
                             </label>
-                            <script class="alert alert-success">
-                                    var msg = '{{Session::get('alert')}}';
-                                    var exist = '{{Session::has('alert')}}';
-                                    if(exist){
-                                        alert(msg);
-                                    }
-                            </script>
+
+                           
                         </form>
                     </section>
                     <section class="card-footer">
@@ -87,45 +82,86 @@
 
 
 
-<form method="POST" action="/login/sendingEmail">
-    @csrf
-    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <form method="POST" action="/login/sendingEmail">
+        @csrf
+        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="modalmsgLabel"
+        aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title w-100 font-weight-bold">Esqueci minha senha</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <label>Seu e-mail</label>
+                    <input type="email" id="defaultForm-email" class="form-control validate" name="sendemail"
+                    @error('email') is-invalid @enderror" name="sendemail" value="{{ old('email') }}" required autocomplete="sendemail" autofocus>
+                    <label for="defaultForm-email" data-error="errado" data-success="certo"></label>
+
+                        @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+
+
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center form-group">
+                <!-- <button id="btn-TelaLogin">Entrar</button> -->
+                <input type="submit" value="{{ __('Entrar') }}" id="btn-TelaLogin">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    </form>
+
+
+
+<!-- Modal retorno erro -->
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    
+    <div class="modal fade" id="modalmsg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">Esqueci minha senha</h4>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalmsg">Blend Tour</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-            <div class="modal-body mx-3">
-            <div class="md-form mb-5">
-                <i class="fas fa-envelope prefix grey-text"></i>
-                <label>Seu e-mail</label>
-                <input type="email" id="defaultForm-email" class="form-control validate" name="sendemail"
-                @error('email') is-invalid @enderror" name="sendemail" value="{{ old('email') }}" required autocomplete="sendemail" autofocus>
-                <label for="defaultForm-email" data-error="errado" data-success="certo"></label>
-
-                    @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-
-
+                <div class="modal-body">
+                    <p>Texto livre!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
             </div>
         </div>
-        <div class="modal-footer d-flex justify-content-center form-group">
-            <!-- <button id="btn-TelaLogin">Entrar</button> -->
-            <input type="submit" value="{{ __('Entrar') }}" id="btn-TelaLogin">
-        </div>
     </div>
-    </div>
-  </div>
 
-</form>
 
+    <script class="alert alert-success" type="text/javascript">
+
+        var exist = '{{Session::has('alert')}}';
+        var msg = '{{Session::get('alert')}}';
+
+        if(exist) {
+            $(document).ready(function() {
+                $('#modalmsg').modal('show');
+                var paragrafo = document.querySelector('p');
+                paragrafo.innerText = msg;
+                if(msg != 'Senha enviada com sucesso') {
+                    paragrafo.style.color = 'red'; }
+            });
+        }
+
+    </script>
 
 
     <!-- Optional JavaScript -->

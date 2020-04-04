@@ -47,6 +47,8 @@ class LoginController extends Controller
 
                 session_destroy();
                 return redirect()->back()->with('alert', 'Senha inválida!');
+
+                
             }
 
         } else {
