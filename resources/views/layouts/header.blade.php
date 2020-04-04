@@ -68,20 +68,28 @@
                 </div>
                 <a id="cadastro" href="/profile">Olá, {{ $_SESSION["usuario"]}}!</a>
                 <div>
+
             @endif
+            
             <form action="/pesquisa" method="GET">
             <input type="search" name="busca" id="busca" placeholder="Busca..." required><br>
                 <button id="btn-busca"type="submit">Buscar</button>
             </form>
+
             @if (!isset( $_SESSION["usuario"] ))
+
             <a href="/login">
                 <input type="submit" id="btn-login" value="Login">
             </a>
+
             @else
+
             <a href="/carrinho">
                 <input type="submit" id="btn-login" value="Carrinho">
             </a>
+
             @endif
+
             </div>
             <div class="menu-toggle">
                 <div class="hamburger"></div>
