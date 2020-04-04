@@ -1,5 +1,5 @@
 <h1 align="center">
-     <img alt="BlendTour" title="#logo" src="public/Galeria/logos/logoadesivo.png" width="250px" />
+     <img alt="BlendTour" title="#delicinha" src="public/Galeria/logos/logoadesivo.png" width="250px" />
 </h1>
 
  <p align="center">
@@ -27,14 +27,6 @@
  ## 💻 Projeto
 
  Projeto integrador referente ao curso de Web Full Stack da [Digital House](https://www.digitalhouse.com/br), elaborado utilizando todas as tecnologias que foram aprendidas no decorrer do curso. Para este projeto foi elaborado um e-commerce de 'experiências' turísticas, onde o cliente escolhe o que gostaria de fazer, baseado em algumas das categorias pré-estabelecidas.
-
- Break-points de responsividade disponíveis para os seguintes tamanhos:
-- 375px;
-- 576px;
-- 767px;
-- 991px;
-- 1199px;
-- 1366px;
 
  Se quiser ver o projeto, em versão live, você pode acessá-lo nesse [link](). --EM BREVE
 
