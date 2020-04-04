@@ -2,6 +2,9 @@
 function closedModal(event){
     if(event.keyCode == 27){
         document.getElementById('modal-newsletter').style.display = "none";
+
+        //Pressionando o Esc criará é criado o Cookie: cookieModal
+        document.cookie = "cookieModal="+fecharModal+" ; patch=http://127.0.0.1:8000/";
     }
 }
 
@@ -23,8 +26,9 @@ window.addEventListener('load', function(){
             document.getElementById('modal-newsletter').style.display = "none";
 
     }else{
-        document.getElementById('modal-newsletter').style.display = "flex";
-
+        function openModal(){
+            document.getElementById('modal-newsletter').style.display = "flex";
+        }
         setTimeout(openModal, 10000);
     }
 });
