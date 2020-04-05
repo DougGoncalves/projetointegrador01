@@ -44,6 +44,7 @@ Route::get('/deletecarrinho/{id}', 'CarrinhoController@remove')->name('remove.ca
 
 Auth::routes();
 
+//Cadastro Inicial
 Route::get('/cadastrointerno', 'CadastrointernoController@index');
 Route::post('/register/insert', 'RegisterController@insert');
 Route::post('/cadastrointerno/{id}', 'CadastrointernoController@update');

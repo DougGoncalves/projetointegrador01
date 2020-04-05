@@ -48,12 +48,10 @@ class CadastrointernoController extends Controller
             $arquivo->move($caminhoAbsoluto, $nomeArquivo);
             $usuario->imagem = $caminhoRelativo;
         }
-
-        var_dump($usuario);
         
         $usuario->save();
 
-        return redirect('/login');
+        return view('usuarioCriado');
 
     }
 }
