@@ -11,7 +11,7 @@
                     <div class="form-group col-md-8">
                         <label for="nome">Nome</label>
                         <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Completo"
-                            onkeypress="validaNome()"  onchange="validaBtn()" required>
+                            onfocus="validaNome()" required>
                         <ul class="valida-entrada">
                             <li class="namecheck">Insira seu nome completo</li>
                         </ul>
@@ -22,7 +22,7 @@
                     <div class="form-group col-md-8">
                         <label for="cpf">CPF</label>
                         <input type="text" class="form-control" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx"
-                            maxlength="14" required onkeypress="validaCpf()" onchange="validaBtn()">
+                            maxlength="14" required onfocus="validaCpf()" >
                         <ul class="valida-entrada">
                             <li class="cpfcheck">Insira um CPF Válido</li>
                         </ul>
@@ -51,7 +51,7 @@
                     <div class="form-group col-md-4">
                         <label for="telefoneUm">Telefone para contato</label>
                         <input type="text" class="form-control fone" name="telefoneUm" id="telefoneUm"
-                            placeholder="(99)99999-9999" maxlength="11" required onkeypress="validaFoneUm()" onchange="validaBtn()">
+                            placeholder="(99)99999-9999" maxlength="11" required onfocus="validaFoneUm()" >
                         <ul class="valida-entrada">
                             <li class="telefonecheck">Somente Números</li>
                         </ul>
@@ -60,7 +60,7 @@
                     <div class="form-group col-md-4">
                         <label for="telefoneDois">Telefone para contato</label>
                         <input type="text" class="form-control fone" name="telefoneDois" id="telefoneDois"
-                            placeholder="(99)99999-9999" maxlength="11" onkeypress="validaFoneDois()" onchange="validaBtn()">
+                            placeholder="(99)99999-9999" maxlength="11" onfocus="validaFoneDois()" >
                         <ul class="valida-entrada">
                             <li class="telefonecheckdois">Somente Números</li>
                         </ul>
@@ -70,7 +70,7 @@
                     <div class="form-group col-md-8">
                         <label for="email">E-mail</label>
                         <input type="email" class="form-control" name="email" id="email" value="{{$usuario->email}}"
-                            onkeypress="validaEmail()" onchange="validaBtn()" required>
+                            onfocus="validaEmail()"  required>
                         <ul class="valida-entrada">
                             <li class="mailcheck valido">Insira um e-mail válido</li>
                         </ul>
@@ -82,7 +82,7 @@
                         <label for="senha">Senha</label>
 
                         <input type="password" class="form-control" name="senha" id="senha"
-                            placeholder="**********" onkeypress="validaSenha()" onchange="validaBtn()" required autocomplete="new-password">
+                            placeholder="**********" onfocus="validaSenha()"  required autocomplete="new-password">
                         <ul class="valida-entrada cadastrointerno">
                             <li class="passchksize" style="font-size: 0.80em">Conter ao menos 8 caracteres</li>
                             <li class="passchknumero" style="font-size: 0.80em">Conter ao menos 1 numero</li>
@@ -96,7 +96,7 @@
                     <div class="form-group col-md-4">
                         <label for="conf-senha">Confirme a Senha</label>
                         <input type="password" class="form-control" name="confirmasenha" id="password-confirm"
-                            placeholder="**********" onkeypress="confirmaSenha()" onchange="validaBtn()" required autocomplete="new-password">
+                            placeholder="**********" onfocus="confirmaSenha()"  required autocomplete="new-password">
                         <ul class="valida-entrada cadastrointerno">
                             <li class="passconfirm" style="font-size: 0.80em">As senhas não conferem</li>
                         </ul>
