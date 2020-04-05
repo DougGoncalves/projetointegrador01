@@ -31,13 +31,14 @@ class LoginController extends Controller
 
                 $_SESSION["usuario"] = $usuario[0]->nome;
                 $_SESSION["id_usuario"] = $usuario[0]->id_usuario; // inclusão de id_usuario na sessão
+                
 
                 if ($request->remember == true) {
                     $_SESSION["time"] = time()+7200; // 2 horas de sessão
                 } else {
                     $_SESSION["time"] = time()+1800; // 30 minutos de sessão
                 }
-                
+
 
                 return redirect ('/');
 
@@ -46,7 +47,7 @@ class LoginController extends Controller
                 session_destroy();
                 return redirect()->back()->with('alert', 'Senha inválida!');
 
-                
+
             }
 
         } else {
