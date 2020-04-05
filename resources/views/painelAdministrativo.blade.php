@@ -1,8 +1,9 @@
-@extends('layouts.master_layout')
-@section('conteudo')
+@extends('layouts.admin_layout')
+@section('content')
+<?php session_start(); ?>
 
 
-{{-- @if (!isset( $_SESSION["usuario"] ) )
+@if (!isset( $_SESSION["usuario"]))
 
 <div class="container-formulario" style="margin-top: 40px;">
     <div class="row">
@@ -10,9 +11,9 @@
     </div>
 </div>
 
-@else --}}
+@else
 
-<h1 class="titulo-cadastro">Bem vindo, {{ Session::get('nome') }}! </h1>
+<h1 class="titulo-cadastro">Bem vindo, {{ $_SESSION["usuario"] }}! </h1>
 
     <div class="container-formulario">
         <h2 style="text-align:center;">Gostaria de acessar qual sessão ? </h2>
@@ -26,5 +27,5 @@
         <a href="/" class="btn btn-primary" style="text-decoration:none; margin-bottom: 10px;"> <<< Home </a>
     </div>
 
-{{-- @endif --}}
+@endif
 @endsection

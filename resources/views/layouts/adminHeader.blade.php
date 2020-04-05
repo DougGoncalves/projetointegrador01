@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="{{asset('../CSS/cadastroInterno.css')}}">
     <!-- CSS para pagina pesquisa -->
     <link rel="stylesheet" href="{{asset('../CSS/pesquisa.css')}}">
-
-
-<link rel="shortcut icon" href="{{asset('../Assets/Icon/fav.ico')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('../Assets/Icon/fav.ico')}}" type="image/x-icon">
     <title>Blend Tour</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -34,61 +32,36 @@
     <header>
         <nav>
             <a href="/">
-            <img id="logo"src="{{asset('../../Galeria/logos/logoadesivo.png')}}" alt="logo_blend">
+                <img id="logo"src="{{asset('../../Galeria/logos/logoadesivo.png')}}" alt="logo_blend">
             </a>
             <div>
-            <ul class="chamadas">
-                <li><a href="/about">Sobre</a></li>
-                <li><a href="/experiencias">Experiências</a></li>
-                <li><a href="/conheca">Conheça</a></li>
-                <li><a href="/suaviagem">Sua Viagem</a></li>
-            </ul>
-
-            <?php
-                // reabre sessão
-                session_start();
-
-                if (isset($_SESSION["time"]))
-                {
-                    if ($_SESSION["time"]<time())
-                    {
-                        session_destroy();
-                    }
-                } else {
-                    session_destroy();
-                }
-
-            ?>
+                <ul class="chamadas">
+                    <li><a href="/about">Sobre</a></li>
+                    <li><a href="/experiencias">Experiências</a></li>
+                    <li><a href="/conheca">Conheça</a></li>
+                    <li><a href="/suaviagem">Sua Viagem</a></li>
+                </ul>
 
             @if (!isset( $_SESSION["usuario"] ) )
-                </div>
+
+            </div>
                 <a href="/register" id="cadastro">Cadastre-se</a>
-                <div>
+            <div>
             @else
-                </div>
+            </div>
                 <a id="cadastro" href="/profile">Olá, {{ $_SESSION["usuario"]}}!</a>
-                <div>
+            <div>
 
             @endif
 
             <form action="/pesquisa" method="GET">
-            <input type="search" name="busca" id="busca" placeholder="Busca..." required><br>
+                <input type="search" name="busca" id="busca" placeholder="Busca..." required><br>
                 <button id="btn-busca"type="submit">Buscar</button>
             </form>
-
-            @if (!isset( $_SESSION["usuario"] ))
-
-            <a href="/login">
-                <input type="submit" id="btn-login" value="Login">
-            </a>
-
-            @else
 
             <a href="/carrinho">
                 <input type="submit" id="btn-login" value="Carrinho">
             </a>
-
-            @endif
 
             </div>
             <div class="menu-toggle">

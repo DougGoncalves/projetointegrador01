@@ -1,10 +1,11 @@
 @extends('layouts.master_layout')
 @section('conteudo')
 <h1 class="titulo">Carrinho de Compras</h1>
+
 <!-- Exibe mensagem de alerta de confirmação de pedido-->
 @if (session('message'))
 
-<div class="alert alert-sucess">
+<div class="alert alert-primary" style="text-align: center;">
     {{session('message')}}
 </div>
 

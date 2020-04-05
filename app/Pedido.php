@@ -19,8 +19,10 @@ class Pedido extends Model
 
     public function newOrderProducts($totalCart, $paymentId, $identify, $itemsCart)
     {
+        session_start();
+
         $pedido = $this->create([
-            'fk_usuario' => 1, //ALTERAR PARA ROTA DE USUARIO LOGADO, DEPOIS DE ESTABELECIDA
+            'fk_usuario' => $_SESSION["id_usuario"], //Id do usuário logado
             'total'      => $totalCart,
             'status'     => 'started',
             'payment_id' => $paymentId,
