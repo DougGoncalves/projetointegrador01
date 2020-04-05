@@ -3,24 +3,6 @@
 <h1 class="titulo-cadastro text-center">Meu Perfil</h1>
     <section class="container-formulario">
         <div class="row-cadastro">
-<<<<<<< HEAD
-            @if(isset($meuperfil))
-            @foreach($meuperfil as $usuario)
-            <form method="POST" action="/admin/usuario/{{$usuario->id_usuario}}" enctype="multipart/form-data">
-            @csrf
-
-                <div class="form-row">
-                    <div class="form-group col-md-8">
-                        <label for="nome">Nome</label>
-                        <input type="text" class="form-control" name="nome" id="nome" value="{{$usuario->nome}}" onkeyup="validaNome()"
-                            required autofocus>
-                        <ul class="valida-entrada">
-                            <li class="namecheck">Insira seu nome completo</li>
-                        </ul>
-                    </div>
-
-                    <div class="form-group col-md-4"></div>
-=======
             <form method="POST" action="/admin/usuario/{{$usuario->id_usuario}}" onsubmit="return checkForm()" enctype="multipart/form-data">
             @csrf
             @if(isset($usuario))
@@ -33,7 +15,6 @@
                         <li class="namecheck valido">Insira seu nome completo</li>
                     </ul>
                 </div>
->>>>>>> cd56e2d4bda5d43c23076b514cd704f0e88143ba
 
                 <div class="form-group col-md-4"></div>
 
@@ -140,7 +121,7 @@
                 </div>
                 <div class="cancelar">
                     <button type="button" class="btn btn-secondary btn-lg btn-cancelar" formnovalidate><a
-                            href="/admin/usuarios" style="text-decoration: none; color:white">Cancelar</a></button>
+                            href="/profile" style="text-decoration: none; color:white">Cancelar</a></button>
                 </div>
 
             </div>
