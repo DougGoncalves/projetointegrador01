@@ -4039,6 +4039,10 @@ input:not([type="checkbox"]) + .valida-entrada {
   transition: max-height 1s ease-out;
 }
 
+.hidealert {
+  display: none;
+}
+
 /* input:not([type="checkbox"]):hover + .valida-entrada, */
 input:not([type="checkbox"]):focus + .valida-entrada,
 input:not([type="checkbox"]):active + .valida-entrada {

@@ -15,10 +15,13 @@
                         <fieldset id="cad-simples">
                             <div class="form-group">
                                 <label for="email">E-mail</label>
-                                @if(isset($usuario))
+                                @if (session('status'))
                                 <input type="email" class="form-control" id="email" placeholder="email@email.com"
-                                    @error('email') is-invalid @enderror" name="email" value="{{$usuario->email}}"
-                                    required autocomplete="email" onfocus="validaEmail()">
+                                    @error('email') is-invalid @enderror" name="email" value="{{ session('status') }}"
+                                    required autocomplete="email" onkeyup="validaEmail()">
+                                <div class="alert alert-danger form-control" id="emailexiste" role="alert">
+                                    E-mail já cadastrado!
+                                </div>
                                 @else
                                 <input type="email" class="form-control" id="email" placeholder="email@email.com"
                                     @error('email') is-invalid @enderror" name="email" required autocomplete="email"

@@ -30,6 +30,8 @@ var	passchklmin = document.querySelector('li.passchklmin');
 var passchklmai = document.querySelector('li.passchklmai');
 var passespecial = document.querySelector('li.passespecial');
 var passconfirm = document.querySelector('li.passconfirm');
+var fonecheck = document.querySelector('li.telefonecheck');
+var fonecheckdois = document.querySelector('li.telefonecheckdois');
 
 
 function validaNome() {
@@ -54,7 +56,7 @@ function validaCpf() {
     document.addEventListener('keyup', function (evento) {
         ulVisible = document.querySelector('li.cpfcheck').parentElement;
 
-        if (!getCpf.value.match(/([0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[-][0-9]{2})/g) && !getCpf.value.match(/([0-9]{3}[0-9]{3}[0-9]{3}[0-9]{2})/g)) {
+        if (!getCpf.value.match(/([0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[-][0-9]{2})/g) && !getCpf.value.match(/(^[0-9]{3}[0-9]{3}[0-9]{3}[0-9]{2}$)/g)) {
             cpfcheck.classList.add('invalido');
             cpfcheck.classList.remove('valido');
             ulVisible.classList.add('valida-entrada-invalido');
@@ -65,14 +67,6 @@ function validaCpf() {
             ulVisible.classList.add('valida-entrada');
             ulVisible.classList.remove('valida-entrada-invalido');
         }
-
-        // for (var i = 0; i < cpfcheck.classList.length; i++) {
-        //     if (cpfcheck.classList[i] == 'invalido') {
-        //         document.querySelector('button.btn-novalidate').setAttribute('disabled', 'disbaled');
-        //     } else {
-        //         document.querySelector('button.btn-novalidate').removeAttribute('disabled');
-        //     }
-        // }
 
     });
 };
@@ -91,15 +85,22 @@ function validaEmail() {
             mailcheck.classList.add('valido');
             ulVisible.classList.add('valida-entrada');
             ulVisible.classList.remove('valida-entrada-invalido');
-        }
+		}
 
+		if (document.querySelector('div#emailexiste')) {
+		 	alertVisible = document.querySelector('div#emailexiste');
+		 	alertVisible.classList.add('hidealert');
+		}
+
+        if(document.querySelector('button.btn-prosseguir')) {
         for (var i = 0; i < mailcheck.classList.length; i++) {
             if (mailcheck.classList[i] == 'invalido') {
                 document.querySelector('button.btn-prosseguir').setAttribute('disabled', 'disbaled');
             } else {
                 document.querySelector('button.btn-prosseguir').removeAttribute('disabled');
-            }
+                }
 
+            }
         }
 
 
@@ -174,13 +175,6 @@ function validaSenha() {
             ulVisible.classList.add('valida-entrada-invalido');
             ulVisible.classList.remove('valida-entrada');
         }
-        // for (var i = 0; i < passchksize.classList.length; i++) {
-        //     if (passchksize.classList[i] == 'invalido' || passchknumero.classList[i] == 'invalido' || passchklmin.classList[i] == 'invalido' || passchklmai.classList[i] == 'invalido' || passespecial.classList[i] == 'invalido') {
-        //         document.querySelector('button.btn-novalidate').setAttribute('disabled', 'disbaled');
-        //     } else {
-        //         document.querySelector('button.btn-novalidate').removeAttribute('disabled');
-        //     }
-        // }
     });
 }
 
@@ -198,23 +192,13 @@ function confirmaSenha() {
             ulVisible.classList.add('valida-entrada');
             ulVisible.classList.remove('valida-entrada-invalido');
 		}
-		
-        // for (var i = 0; i < passconfirm.classList.length; i++) {
-        //     if (passconfirm.classList[i] == 'invalido') {
-        //         document.querySelector('button.btn-novalidate').setAttribute('disabled', 'disbaled');
-        //     } else {
-        //         document.querySelector('button.btn-novalidate').removeAttribute('disabled');
-        //     }
-
-        // }
     });
 };
 
 function validaFoneUm() {
     document.addEventListener('keyup', function (evento) {
-        fonecheck = document.querySelector('li.telefonecheck');
         ulVisible = document.querySelector('li.telefonecheck').parentElement;
-        if (!getFoneUm.value.match(/([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])/g)) {
+        if (!getFoneUm.value.match(/([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]?[0-9])/g)) {
             fonecheck.classList.add('invalido');
             fonecheck.classList.remove('valido');
             ulVisible.classList.add('valida-entrada-invalido');
@@ -225,31 +209,21 @@ function validaFoneUm() {
             ulVisible.classList.add('valida-entrada');
             ulVisible.classList.remove('valida-entrada-invalido');
         }
-
-        // for (var i = 0; i < fonecheck.classList.length; i++) {
-        //     if (fonecheck.classList[i] == 'invalido') {
-        //         document.querySelector('button.btn-novalidate').setAttribute('disabled', 'disbaled');
-        //     } else {
-        //         document.querySelector('button.btn-novalidate').removeAttribute('disabled');
-        //     }
-
-        // }
     });
 };
 
 function validaFoneDois() {
-    document.addEventListener('keyup', function (evento) {
-        fonecheck = document.querySelector('li.telefonecheckdois');
+        document.addEventListener('keyup', function (evento) {
 		ulVisible = document.querySelector('li.telefonecheckdois').parentElement;
 		check = 'fonecheck';
-        if (!getFoneDois.value.match(/([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])/g)) {
-            fonecheck.classList.add('invalido');
-            fonecheck.classList.remove('valido');
+        if (!getFoneDois.value.match(/([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]?[0-9])/g)) {
+            fonecheckdois.classList.add('invalido');
+            fonecheckdois.classList.remove('valido');
             ulVisible.classList.add('valida-entrada-invalido');
             ulVisible.classList.remove('valida-entrada');
         } else {
-            fonecheck.classList.add('valido');
-            fonecheck.classList.remove('invalido');
+            fonecheckdois.classList.add('valido');
+            fonecheckdois.classList.remove('invalido');
             ulVisible.classList.add('valida-entrada');
             ulVisible.classList.remove('valida-entrada-invalido');
 		}
@@ -258,19 +232,72 @@ function validaFoneDois() {
 
 function validaBtn() {
 
-	for (var i = 0; i < document.querySelectorAll('li').length; i++) {
-		if (nomecheck.classList[i] == 'valido' && cpfcheck.classList[i] == 'valido' 
-		&& mailcheck.classList[i] == 'valido' && passchksize.classList[i] == 'valido'
-		 && passchknumero.classList[i] == 'valido' && passchklmin.classList[i] == 'valido' 
-		 && passespecial.classList[i] == 'valido' && passconfirm.classList[i] == 'valido') {
-			// document.querySelector('button.btn-novalidate').setAttribute('disabled', 'disbaled');
-			console.log("Entrei");
-			document.querySelector('button.btn-novalidate').removeAttribute('disabled');
-			break;
-		} else {
-			console.log("Sai");
-			document.querySelector('button.btn-novalidate').setAttribute('disabled', 'disabled');
-		}
-	}
+	// for (var i = 0; i < document.querySelectorAll('li').length; i++) {
+	// 	if (nomecheck.classList[i] == 'valido'
+    //     && cpfcheck.classList[i] == 'valido' 
+    //     && mailcheck.classList[i] == 'valido'
+    //     && passchksize.classList[i] == 'valido'
+    //     && passchknumero.classList[i] == 'valido'
+    //     && passchklmin.classList[i] == 'valido' 
+    //     && passchklmai.classList[i] == 'valido' 
+    //     && passespecial.classList[i] == 'valido'
+    //     && passconfirm.classList[i] == 'valido'
+    //     && fonecheck.classList[i] == 'valido'
+    //     && fonecheckdois.classList[i] == 'valido') {
+    //         console.log("Entrei");
+    //         console.log((nomecheck.classList[i] == 'valido' && cpfcheck.classList[i] == 'valido' 
+    //         && mailcheck.classList[i] == 'valido' && passchksize.classList[i] == 'valido'
+    //          && passchknumero.classList[i] == 'valido' && passchklmin.classList[i] == 'valido' 
+    //          && passespecial.classList[i] == 'valido' && passconfirm.classList[i] == 'valido'));
+	// 		document.querySelector('button.btn-novalidate').removeAttribute('disabled');
+	// 		break;
+	// 	} else {
+	// 		console.log("Sai");
+    //         document.querySelector('button.btn-novalidate').setAttribute('disabled', 'disabled');
+	// 	}
+	// }
 }
 
+function checkForm() {
+    if (document.querySelector('li.namecheck.valido')
+    && document.querySelector('li.cpfcheck.valido')
+    && document.querySelector('li.mailcheck.valido')
+    && document.querySelector('li.passchksize.valido')
+    && document.querySelector('li.passchknumero.valido')
+    && document.querySelector('li.passchklmin.valido')
+    && document.querySelector('li.passchklmai.valido')
+    && document.querySelector('li.passespecial.valido')
+    && document.querySelector('li.passconfirm.valido')
+    && document.querySelector('li.telefonecheck.valido')
+    && document.querySelector('li.telefonecheckdois.valido')) {
+        console.log(document.querySelector('li.nomecheck.valido'));
+console.log(document.querySelector('li.cpfcheck.valido'));
+console.log(document.querySelector('li.mailcheck.valido'));
+console.log(document.querySelector('li.passchksize.valido'));
+console.log(document.querySelector('li.passchknumero.valido'));
+console.log(document.querySelector('li.passchklmin.valido'));
+console.log(document.querySelector('li.passchklmai.valido'));
+console.log(document.querySelector('li.passespecial.valido'));
+console.log(document.querySelector('li.passconfirm.valido'));
+console.log(document.querySelector('li.telefonecheck.valido'));
+console.log(document.querySelector('li.telefonecheckdois.valido'));
+        console.log('Form Validado OK');
+        return true;
+    } else {
+        console.log(document.querySelector('li.namecheck.valido'));
+console.log(document.querySelector('li.cpfcheck.valido'));
+console.log(document.querySelector('li.mailcheck.valido'));
+console.log(document.querySelector('li.passchksize.valido'));
+console.log(document.querySelector('li.passchknumero.valido'));
+console.log(document.querySelector('li.passchklmin.valido'));
+console.log(document.querySelector('li.passchklmai.valido'));
+console.log(document.querySelector('li.passespecial.valido'));
+console.log(document.querySelector('li.passconfirm.valido'));
+console.log(document.querySelector('li.telefonecheck.valido'));
+console.log(document.querySelector('li.telefonecheckdois.valido'));
+        console.log('Estranho');
+        return false;
+    }
+    
+
+}
