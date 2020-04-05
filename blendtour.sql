@@ -138,7 +138,7 @@ DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
   `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(145) DEFAULT NULL,
-  `email` varchar(145) DEFAULT NULL,
+  `email` varchar(145) DEFAULT NULL UNIQUE,
   `senha` varchar(200) DEFAULT NULL,
   `cpf` varchar(11) DEFAULT NULL,
   `dtnasc` date DEFAULT NULL,

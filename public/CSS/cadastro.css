@@ -4002,13 +4002,28 @@ button.bg-primary:focus {
   color: rgb(110,110,110);
 }
 
+.valida-entrada-invalido {
+    overflow: visible;
+    font-style: italic;
+    text-align: left;
+    list-style: disc;
+    list-style-position: inside;
+    margin: 10px;
+}
 
+.valida-entrada-invalido li.invalido {
+  color: #f74c3c;
+}
+
+.valida-entrada li.valido {
+  color: #2fcf71;
+}
 
 .valida-entrada li.invalido {
   color: #f74c3c;
 }
 
-.valida-entrada li.valido {
+.valida-entrada-invalido li.valido {
   color: #2fcf71;
 }
 
@@ -4024,7 +4039,11 @@ input:not([type="checkbox"]) + .valida-entrada {
   transition: max-height 1s ease-out;
 }
 
-input:not([type="checkbox"]):hover + .valida-entrada,
+.hidealert {
+  display: none;
+}
+
+/* input:not([type="checkbox"]):hover + .valida-entrada, */
 input:not([type="checkbox"]):focus + .valida-entrada,
 input:not([type="checkbox"]):active + .valida-entrada {
   max-height: 1000px;

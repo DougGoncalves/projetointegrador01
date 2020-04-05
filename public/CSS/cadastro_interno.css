@@ -58,7 +58,7 @@
 .btn-enviar,
 .btn-cancelar {
   font: Bold 23px Roboto;
-  margin: 20px 30px 20px 0px;
+  margin: 20px 300px 20px 0px;
   border-radius: 8px;
 }
 
@@ -9820,4 +9820,10 @@ input:not([type="checkbox"]):focus + .valida-entrada,
 input:not([type="checkbox"]):active + .valida-entrada {
   max-height: 1000px;
   transition: max-height 1s ease-in;
+}
+
+.cancelar {
+  margin: 100px;
+  display: inline-block;
+
 }

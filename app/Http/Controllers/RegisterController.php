@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Usuario;
-
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Redirector;
 class RegisterController extends Controller
 {
    
@@ -14,6 +15,12 @@ class RegisterController extends Controller
         $usuario = new Usuario();
 
         $usuario->email = $request->email;
+
+        if ($usuario->where('email', $request->email)->value('email')) {
+            $email = $usuario->where('email', $request->email)->value('email');
+            return redirect('/register')->with('status', $email);
+
+        } else {
 
 
         if ($request->senha != $request->confirmasenha) {
@@ -45,5 +52,5 @@ class RegisterController extends Controller
 
         return view('/cadastrointerno', compact('usuario'));
         
-    }
+    }}
 }

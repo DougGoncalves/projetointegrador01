@@ -44,6 +44,7 @@ Route::get('/deletecarrinho/{id}', 'CarrinhoController@remove')->name('remove.ca
 
 Auth::routes();
 
+//Cadastro Inicial
 Route::get('/cadastrointerno', 'CadastrointernoController@index');
 Route::post('/register/insert', 'RegisterController@insert');
 Route::post('/cadastrointerno/{id}', 'CadastrointernoController@update');
@@ -74,5 +75,5 @@ Route::post('/login/sendingEmail', 'LoginController@sendingEmail');
 //Perfil
 Route::get('/profile', 'ProfileController@profile')->name('profile');
 Route::get('/profile/meuspedidos', 'ProfileController@meuspedidos')->name('meuspedidos');
-Route::get('/profile/meuperfil', 'ProfileController@meuperfil')->name('meusperfil');
+Route::get('/profile/meuperfil', 'ProfileController@meuperfil')->name('meuperfil');
 Route::get('/profile/logout', 'ProfileController@logout')->name('logout');

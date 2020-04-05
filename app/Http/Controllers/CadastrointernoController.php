@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Usuario;
+use Illuminate\Support\Facades\Hash;
 
 class CadastrointernoController extends Controller
 {
@@ -22,7 +23,7 @@ class CadastrointernoController extends Controller
             return view('cadastrointerno', compact('confirmasenha', 'usuario'));
             
         }
-        
+
         $usuario->nome = $request->nome;
         $request->cpf = trim($request->cpf);
         $request->cpf = str_replace(".", "", $request->cpf);
@@ -31,7 +32,7 @@ class CadastrointernoController extends Controller
         $usuario->cpf = $request->cpf;
         $usuario->dtnasc = $request->dtnasc;
         $usuario->sexo = $request->sexo;
-        $usuario->senha = $request->senha;
+        $usuario->senha = Hash::make($request->senha);
         $usuario->telefoneUm = $request->telefoneUm;
         $usuario->telefoneDois = $request->telefoneDois;
 
@@ -47,12 +48,10 @@ class CadastrointernoController extends Controller
             $arquivo->move($caminhoAbsoluto, $nomeArquivo);
             $usuario->imagem = $caminhoRelativo;
         }
-
-        var_dump($usuario);
         
         $usuario->save();
 
-        return redirect('/');
+        return view('usuarioCriado');
 
     }
 }
