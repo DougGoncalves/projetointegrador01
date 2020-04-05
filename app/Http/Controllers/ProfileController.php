@@ -27,9 +27,10 @@ class ProfileController extends Controller
     {
         session_start();
         $ses = $_SESSION['id_usuario'];
-        $meuperfil = Usuario::all()->where('id_usuario', '=', $ses );
+        // $usuario = Usuario::all()->where('id_usuario', '=', $ses );
+        $usuario = Usuario::find($ses);
 
-        return view('meuperfil', compact('meuperfil'));
+        return view('meuPerfil', compact('usuario'));
     }
 
     public function logout()

@@ -69,7 +69,7 @@
                 <div class="form-group col-md-8">
                     <label for="email">E-mail</label>
                     <input type="email" class="form-control" name="email" id="email" value="{{ $usuario->email }}"
-                        required onfocus="validaEmail()">
+                        required onfocus="validaEmail()" readonly>
                     <ul class="valida-entrada">
                         <li class="mailcheck valido">Insira um e-mail válido</li>
                     </ul>
@@ -80,7 +80,7 @@
                 <div class="form-group col-md-4">
                     <label for="senha">Senha</label>
                     <input type="password" class="form-control" name="senha" id="senha"
-                        placeholder="**********" value="{{ $usuario->senha }}" onfocus="validaSenha()" required>
+                        placeholder="**********" onfocus="validaSenha(), confirmaSenha()">
                     <ul class="valida-entrada cadastrointerno">
                         <li class="passchksize valido" style="font-size: 0.80em">Conter ao menos 8 caracteres</li>
                         <li class="passchknumero valido" style="font-size: 0.80em">Conter ao menos 1 numero</li>
@@ -93,7 +93,7 @@
                 <div class="form-group col-md-4">
                     <label for="conf-senha">Confirme a Senha</label>
                     <input type="password" class="form-control" name="confirmasenha" id="password-confirm"
-                        placeholder="**********" value="{{ $usuario->senha }}" onfocus="confirmaSenha()" required>
+                        placeholder="**********" onfocus="validaSenha(), confirmaSenha()">
                     <ul class="valida-entrada cadastrointerno">
                         <li class="passconfirm valido" style="font-size: 0.80em">As senhas não conferem</li>
                     </ul>

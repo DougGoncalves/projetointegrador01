@@ -5,8 +5,7 @@
         <div class="row-cadastro">
             <form method="POST" action="/admin/usuario/{{$usuario->id_usuario}}" enctype="multipart/form-data">
             @csrf
-            @if(isset($meuperfil))
-            @foreach($meuperfil as $usuario)
+            @if(isset($usuario))
                 <div class="form-row">
                     <div class="form-group col-md-8">
                         <label for="nome">Nome</label>
@@ -109,7 +108,6 @@
         <div class="form-group col-md-4">
             <img src="{{$usuario->imagem}}" alt="capa de {{$usuario->nome}}" class="img-thumbnail" style="max-height: 480px; max-width: 340px; width: auto; height: auto">
         </div>
-        @endforeach
         @endif
                 <div class="botoes" style="display: flex;">
                 <div class="enviar">

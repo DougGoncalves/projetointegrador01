@@ -70,11 +70,16 @@
                     <div class="form-group col-md-8">
                         <label for="email">E-mail</label>
                         <input type="email" class="form-control" name="email" id="email" value="{{$usuario->email}}"
-                            onfocus="validaEmail()"  required>
+                            onfocus="validaEmail()"  readonly required>
                         <ul class="valida-entrada">
                             <li class="mailcheck valido">Insira um e-mail válido</li>
                         </ul>
                     </div>
+                    @if(isset($emailduplicado))
+                    <div class="alert alert-danger form-control" role="alert">
+                        E-mail já cadastrado!
+                    </div>
+                    @endif
 
                     <div class="form-group col-md-4"></div>
 
@@ -82,7 +87,7 @@
                         <label for="senha">Senha</label>
 
                         <input type="password" class="form-control" name="senha" id="senha"
-                            placeholder="**********" onfocus="validaSenha()"  required autocomplete="new-password">
+                            placeholder="**********" onfocus="validaSenha(), confirmaSenha()"  required autocomplete="new-password">
                         <ul class="valida-entrada cadastrointerno">
                             <li class="passchksize" style="font-size: 0.80em">Conter ao menos 8 caracteres</li>
                             <li class="passchknumero" style="font-size: 0.80em">Conter ao menos 1 numero</li>
@@ -96,7 +101,7 @@
                     <div class="form-group col-md-4">
                         <label for="conf-senha">Confirme a Senha</label>
                         <input type="password" class="form-control" name="confirmasenha" id="password-confirm"
-                            placeholder="**********" onfocus="confirmaSenha()"  required autocomplete="new-password">
+                            placeholder="**********" onfocus="validaSenha(), confirmaSenha()"  required autocomplete="new-password">
                         <ul class="valida-entrada cadastrointerno">
                             <li class="passconfirm" style="font-size: 0.80em">As senhas não conferem</li>
                         </ul>

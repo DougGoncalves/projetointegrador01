@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Usuario;
+use Illuminate\Support\Facades\Hash;
 
 class UsuarioController extends Controller
 {
@@ -64,7 +65,11 @@ class UsuarioController extends Controller
         $usuario->cpf = $request->cpf;
         $usuario->dtnasc = $request->dtnasc;
         $usuario->sexo = $request->sexo;
-        $usuario->senha = $request->senha;
+        
+        if($request->senha != '') {
+            $usuario->senha = Hash::make($request->senha);
+        }
+
         $usuario->telefoneUm = $request->telefoneUm;
         $usuario->telefoneDois = $request->telefoneDois;
         $usuario->email = $request->email;
