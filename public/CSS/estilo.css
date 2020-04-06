@@ -3241,3 +3241,25 @@ nav ul li {
     border: none;
     color: #ffffff;
 }
+
+@media (max-width: 800px){
+    .titulo-modal{
+        margin-bottom: 20px;
+        font-size: 25px; 
+        font-weight: bold;
+    }
+
+    .modal{
+        width: 80%;
+        padding: 40px;
+    } 
+    
+    .input{
+        width: 100%;
+    }
+
+    .button{
+        height: 40px;
+        width: 40%;
+    }
+}

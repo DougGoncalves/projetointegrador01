@@ -37,8 +37,8 @@
 
                 <div class="form-group col-md-4">
                     <label for="sexo">Sexo:</label>
-                    <select class="custom-select btn-sexo" name="sexo" id="sexo">
-                        <option selected>Selecione</option>
+                    <select class="custom-select btn-sexo" name="sexo" id="sexo" required>
+                        <option selected disabled></option>
                         <option value="F" {{$usuario->sexo == 'F' ? 'selected' : '' }}>Feminino</option>
                         <option value="M" {{$usuario->sexo == 'M' ? 'selected' : '' }}>Masculino</option>
                         <option value="O" {{$usuario->sexo == 'O' ? 'selected' : '' }}>Outros</option>
@@ -105,7 +105,6 @@
                 @endif -->
                 @endif
 
-                <hr id="line">
             </div>
             <div class="form-group pt-5">
                 <label for="imagem"> Imagem </label><br>

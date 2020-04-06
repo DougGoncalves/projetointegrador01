@@ -36,8 +36,8 @@
 
                     <div class="form-group col-md-4">
                         <label for="sexo">Sexo:</label>
-                        <select class="custom-select btn-sexo" name="sexo" id="sexo">
-                            <option selected>Selecione</option>
+                        <select class="custom-select btn-sexo" name="sexo" id="sexo" required>
+                            <option selected disabled></option>
                             <option value="F">Feminino</option>
                             <option value="M">Masculino</option>
                             <option value="O">Outros</option>
@@ -109,8 +109,6 @@
                         As senhas não coincidem!
                     </div>
                     @endif
-
-                    <hr id="line">
          
                     <div class="form-group pt-5">
                         <label for="imagem" style="display:block"> Imagem </label>
@@ -118,7 +116,9 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <hr id="line">
+
+                <div class="row" style="margin-top: 10px;">
                     <div class="col-2 col-sm-12 col-sm-12 col-lg-12 col-xl-12 alinhamento">
                     <h3 class="text-center">Interesses</h3>
                         <fieldset class="form-group">
@@ -166,7 +166,7 @@
                     <div class="enviar">
                         <button class="btn btn-primary btn-lg btn-enviar btn-novalidate">Enviar</button>
                     </div>
-                    <div class="cancelar">
+                    <div class="cancelar" style="margin-left: 15px;">
                         <button class="btn btn-secondary btn-lg btn-cancelar" formnovalidate><a href="/"
                                 style="text-decoration: none; color: white">Cancelar</a></button>
                     </div>

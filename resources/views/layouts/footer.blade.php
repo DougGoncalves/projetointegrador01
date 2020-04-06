@@ -102,7 +102,7 @@
     <div class="modal">
     <button id="fechar" class="fechar">X</button>
         <div style="text-align: center;">
-            <h3 style="margin-bottom:20px; font-weight: bold;">Inscreva-se para receber as melhores ofertas</h3>
+            <h3 class="titulo-modal">Inscreva-se para receber as melhores ofertas</h3>
             <input type="email" name="email" class="input" placeholder="Digite seu e-mail" autofocus>
             <input type="button" value="Enviar" class="button">
         </div>

@@ -28,9 +28,9 @@
                 </div>
 
                 <div class="form-group col-md-4">
-                    <label for="sexo">Sexo:</label>
+                    <label for="sexo">Sexo</label>
                     <select disabled class="custom-select btn-sexo" name="sexo" id="sexo">
-                        <option selected>Selecione</option>
+                        <option selected disabled></option>
                         <option alue="F" {{$usuario->sexo == 'F' ? 'selected' : '' }}>Feminino</option>
                         <option alue="M" {{$usuario->sexo == 'M' ? 'selected' : '' }}>Masculino</option>
                         <option value="O" {{$usuario->sexo == 'O' ? 'selected' : '' }}>Outros</option>
@@ -71,11 +71,11 @@
                         placeholder="***************">
                 </div>
                 @endif
-                <hr id="line">
 
-                <div class="form-group pt-5">
-                    <label for="imagem"> Imagem </label><br>
+                <div class="form-group col-md-12 pt-5">
+                <label>Imagem</label>
                 </div>
+
                 <div class="form-group col-md-4">
                     <img src="{{$usuario->imagem}}" alt="capa de {{$usuario->nome}}" class="img-thumbnail"
                         style="max-height: 480px; max-width: 340px; width: auto; height: auto">
