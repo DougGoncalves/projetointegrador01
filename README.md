@@ -23,6 +23,7 @@
  - [Laravel](https://laravel.com/)
  - [Javascript](https://www.javascript.com/)
  - [PayPal API](https://developer.paypal.com/docs/api/overview/)
+ - [Instagram API](https://developers.facebook.com/products/instagram/?locale=pt_BR)
 
  ## 💻 Projeto
 
@@ -37,6 +38,7 @@
 - 1366px
 
  Se quiser ver o projeto, em versão live, você pode acessá-lo nesse [link](). --EM BREVE
+
 
  ## :memo: Licença
 
